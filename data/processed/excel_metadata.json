@@ -1,0 +1,9 @@
+[
+  {
+    "document_id": "example-uuid",
+    "source_name": "회의록.xlsx",
+    "doc_type": "excel",
+    "created_at": "2024-07-11T12:00:00",
+    "extra_meta": {"project": "스마트야드"}
+  }
+]
