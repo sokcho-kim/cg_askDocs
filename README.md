@@ -26,7 +26,8 @@ project_root/
 ├── scripts/
 │   ├── parse_pdf.py               # PDF 전처리 (담당: 속초)
 │   ├── parse_excel.py             # Excel 전처리 (담당: 제로)
-│   └── index_to_chroma.py         # 벡터DB 인덱싱 (공용)
+│   ├── index_to_chroma.py         # 벡터DB 인덱싱 (공용)
+│   └── test_chunk_processors.py   # 청크 프로세서 테스트
 │
 ├── rag/
 │   ├── retriever.py               # Retriever 정의
@@ -39,7 +40,8 @@ project_root/
 │
 ├── utils/
 │   ├── file_utils.py              # 파일 관련 유틸
-│   └── ocr_or_image_utils.py      # OCR/이미지 유틸
+│   ├── ocr_or_image_utils.py      # OCR/이미지 유틸
+│   └── chunk_processor.py         # 🔹 청크 처리 공통 클래스
 │
 ├── .gitignore
 ├── .env.example
@@ -77,11 +79,17 @@ project_root/
 ## 파이프라인 요약
 1. **문서 수집**: data/raw/에 PDF, Excel 등 저장
 2. **전처리**: 담당자별 스크립트 실행
-   - 속초: `scripts/parse_pdf.py` (PDF → 청크)
-   - 제로: `scripts/parse_excel.py` (Excel → 청크)
+   - 속초: `scripts/parse_pdf.py` (PDF → 청크, VLM 이미지 캡션 포함)
+   - 제로: `scripts/parse_excel.py` (Excel → 청크, 시트/행 단위 분할)
 3. **청크 요약/임베딩**: LLM 요약, 임베딩 생성
 4. **저장**: 관계형DB(documents, chunks), 벡터DB(chunks)
 5. **검색/응답**: 벡터DB에서 유사도 검색 → LLM context로 활용
+
+### 🔹 청크 처리 아키텍처
+- **공통 클래스**: `utils/chunk_processor.py`의 `ChunkProcessor` 추상 클래스
+- **PDF 전용**: `PDFChunkProcessor` (기본), `SmartYardPDFProcessor` (VLM 포함)
+- **Excel 전용**: `ExcelChunkProcessor` (기본), `MeetingRecordExcelProcessor` (공정회의록 전용)
+- **확장성**: 새로운 문서 타입은 `ChunkProcessor`를 상속하여 구현
 
 ---
 
@@ -112,10 +120,52 @@ project_root/
 
 ---
 
-## 실행 방법
+## 설치 및 실행
+
+### 1. 의존성 설치
+```bash
+pip install -r requirements.txt
+```
+
+### 2. 환경 변수 설정
+```bash
+cp .env.example .env
+# .env 파일에서 OPENAI_API_KEY 등 필요한 API 키 설정
+```
+
+### 3. 실행
 ```bash
 python main.py
 ```
+
+### 4. 테스트 및 개별 실행
+
+#### 청크 프로세서 테스트
+```bash
+python scripts/test_chunk_processors.py
+```
+
+#### 개별 문서 처리
+```bash
+# PDF 처리
+python scripts/parse_pdf.py
+
+# Excel 처리  
+python scripts/parse_excel.py
+```
+
+### 5. 개발 환경 설정 (선택사항)
+```bash
+# 코드 포맷팅
+black .
+
+# 린팅
+flake8 .
+
+# 테스트 실행
+pytest
+```
+
 (실제 실행 코드는 추후 구현 예정)
 
 ---
