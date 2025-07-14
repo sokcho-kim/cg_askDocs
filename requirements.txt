@@ -20,6 +20,8 @@ requests
 python-dotenv
 openai
 jinja2
+numpy==1.26.4
+
 
 # 무거운 패키지는 별도 나중에 로드 또는 Docker 환경에서 사용
 chromadb==0.4.24  # ← 최신 버전은 무겁고 빌드 에러 많음, 이 버전까지는 성공률 높음
