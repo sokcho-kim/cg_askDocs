@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI, Request, UploadFile, File, Form
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
@@ -15,7 +16,19 @@ templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 retriever = EnhancedRetriever()
-chatbot = RAGChatbot(retriever)
+
+# Gemma API URL 설정
+gemma_api_url = os.getenv('GEMMA_API_URL')
+if gemma_api_url:
+    print("✅ Gemma API URL이 설정되어 있습니다. Gemma 모델을 사용합니다.")
+    chatbot = RAGChatbot(
+        retriever,
+        gemma_api_url=gemma_api_url,
+        gemma_model="google/gemma-3-12b-it"
+    )
+else:
+    print("⚠️ Gemma API URL이 설정되지 않았습니다. 대체 답변 모드를 사용합니다.")
+    chatbot = RAGChatbot(retriever)
 
 UPLOAD_DIR = Path("uploaded_files")
 UPLOAD_DIR.mkdir(exist_ok=True)

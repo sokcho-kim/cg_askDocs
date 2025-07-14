@@ -4,6 +4,8 @@ RAG 챗봇 구현
 """
 
 import json
+import os
+import requests
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 
@@ -18,13 +20,31 @@ from rag.retriever import EnhancedRetriever
 class RAGChatbot:
     """향상된 검색 기능을 활용하는 RAG 챗봇"""
     
-    def __init__(self, retriever: Optional[EnhancedRetriever] = None):
+    def __init__(self, retriever: Optional[EnhancedRetriever] = None, 
+                 gemma_api_url: Optional[str] = None, 
+                 gemma_model: str = "google/gemma-3-12b-it"):
         """
         Args:
             retriever: EnhancedRetriever 인스턴스 (None이면 자동 생성)
+            gemma_api_url: Gemma API URL (None이면 환경변수에서 자동 로드)
+            gemma_model: 사용할 Gemma 모델명
         """
         self.retriever = retriever or EnhancedRetriever()
         self.conversation_history = []
+        
+        # Gemma API 설정
+        self.gemma_model = gemma_model
+        if gemma_api_url:
+            self.gemma_api_url = gemma_api_url
+        else:
+            # 환경변수에서 API URL 로드
+            self.gemma_api_url = os.getenv('GEMMA_API_URL')
+            if not self.gemma_api_url:
+                print("Warning: GEMMA_API_URL 환경변수가 설정되지 않았습니다.")
+                self.gemma_api_url = None
+        
+        # API 사용 가능 여부 확인
+        self.llm_available = self.gemma_api_url is not None
         
     def search_context(self, query: str, search_method: str = "hybrid", **kwargs) -> List[Dict[str, Any]]:
         """
@@ -107,12 +127,12 @@ class RAGChatbot:
         
         return sorted_results[:n_results]
     
-    def format_context_for_llm(self, contexts: List[Dict[str, Any]]) -> str:
-        """검색된 컨텍스트를 LLM 입력용으로 포맷팅합니다."""
+    def format_search_results(self, contexts: List[Dict[str, Any]]) -> str:
+        """검색 결과를 사용자 친화적으로 포맷팅합니다."""
         if not contexts:
             return "관련 정보를 찾을 수 없습니다."
         
-        formatted_contexts = []
+        formatted_results = []
         for i, context in enumerate(contexts, 1):
             chunk_id = context.get('chunk_id', 'unknown')
             content = context.get('content', '')
@@ -124,216 +144,154 @@ class RAGChatbot:
             location = metadata.get('location', 'unknown')
             title = metadata.get('title', '')
             
-            # 내용이 너무 길면 자르기
-            if len(content) > 400:
-                content = content[:400] + "..."
-            
-            # 구조화된 컨텍스트 포맷
-            context_info = f"[{i}] 📄 문서: {document_id}"
+            # 결과 포맷팅
+            result_info = f"[{i}] 📄 문서: {document_id}"
             if location != 'unknown':
-                context_info += f" | 📍 위치: {location}"
+                result_info += f" | 📍 위치: {location}"
             if title:
-                context_info += f" | 📝 제목: {title}"
-            context_info += f" | ⭐ 점수: {score:.3f}\n"
-            context_info += f"💬 내용: {content}"
+                result_info += f" | 📝 제목: {title}"
+            result_info += f" | ⭐ 점수: {score:.3f}\n"
+            result_info += f"💬 내용: {content}"
             
-            formatted_contexts.append(context_info)
+            formatted_results.append(result_info)
         
-        return "\n\n".join(formatted_contexts)
+        return "\n\n".join(formatted_results)
     
     def generate_response(self, query: str, contexts: List[Dict[str, Any]]) -> str:
-        """컨텍스트를 바탕으로 응답을 생성합니다 (LLM 시뮬레이션)"""
+        """컨텍스트를 바탕으로 응답을 생성합니다."""
         if not contexts:
             return "죄송합니다. 질문에 대한 관련 정보를 찾을 수 없습니다."
         
-        # 검색된 컨텍스트 분석
-        excel_contents = []
-        pdf_contents = []
-        all_contents = []
+        # Gemma API 사용 가능한 경우
+        if self.llm_available:
+            try:
+                prompt = self._build_llm_prompt(query, contexts)
+                response = self._call_gemma_api(prompt)
+                if response:
+                    return response
+            except Exception as e:
+                print(f"Gemma API 호출 실패, 대체 답변 사용: {e}")
         
-        for ctx in contexts[:10]:  # 상위 10개 컨텍스트 사용
+        # Gemma API 사용이 불가능한 경우 또는 실패한 경우
+        return self._generate_simple_response(query, contexts)
+    
+    def _build_llm_prompt(self, query: str, contexts: List[Dict[str, Any]]) -> str:
+        """LLM용 프롬프트를 생성합니다."""
+        if not contexts:
+            return "관련 정보를 찾을 수 없습니다."
+        
+        # 컨텍스트 포맷팅
+        context_strs = []
+        for i, ctx in enumerate(contexts, 1):
+            chunk_id = ctx.get('chunk_id', 'unknown')
             content = ctx.get('content', '')
-            chunk_id = ctx.get('chunk_id', '')
             metadata = ctx.get('metadata', {})
             
-            if content and len(content.strip()) > 10:  # 의미있는 내용만
-                all_contents.append({
-                    'content': content.strip(),
-                    'chunk_id': chunk_id,
-                    'metadata': metadata,
-                    'score': ctx.get('score', 0)
-                })
-                
-                # 문서 타입별 분류 (chunk_id 기반)
-                if 'excel' in chunk_id.lower():
-                    excel_contents.append({
-                        'content': content.strip(),
-                        'chunk_id': chunk_id,
-                        'metadata': metadata,
-                        'score': ctx.get('score', 0)
-                    })
-                elif 'pdf' in chunk_id.lower() or 'smart_yard' in chunk_id.lower():
-                    pdf_contents.append({
-                        'content': content.strip(),
-                        'chunk_id': chunk_id,
-                        'metadata': metadata,
-                        'score': ctx.get('score', 0)
-                    })
-        
-        if not all_contents:
-            return "관련 정보를 찾았지만 구체적인 내용이 부족합니다."
-        
-        # 질문 유형 분석
-        query_lower = query.lower()
-        
-        # 공정 관련 질문 처리
-        if any(keyword in query_lower for keyword in ["공정", "지연", "이슈", "주차", "위험", "밸브재", "협력사", "입고", "사외블록"]):
-            response = "공정 관련 정보를 찾았습니다:\n\n"
+            # 문서 정보 추출
+            document_id = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+            location = metadata.get('location', 'unknown')
+            title = metadata.get('title', '')
             
-            if excel_contents:
-                # 엑셀 데이터 기반 답변
-                response += "📊 공정 이슈 현황:\n"
-                
-                # 주차별 이슈 분석
-                if "주차" in query_lower:
-                    response += "주차별 이슈 현황:\n"
-                    for item in excel_contents[:3]:
-                        content = item['content']
-                        if "주차:" in content:
-                            response += f"• {content[:300]}...\n"
-                    response += "\n"
-                
-                # 지연 관련 분석
-                if "지연" in query_lower:
-                    response += "공정 지연 관련 이슈:\n"
-                    for item in excel_contents:
-                        content = item['content']
-                        if "지연" in content:
-                            response += f"• {content[:300]}...\n"
-                    response += "\n"
-                
-                # 이슈 분석
-                if "이슈" in query_lower:
-                    response += "주요 이슈 현황:\n"
-                    for item in excel_contents[:3]:
-                        content = item['content']
-                        if "이슈:" in content:
-                            response += f"• {content[:300]}...\n"
-                    response += "\n"
-                
-                # 밸브재 관련
-                if "밸브재" in query_lower:
-                    response += "밸브재 관련 이슈:\n"
-                    for item in excel_contents:
-                        content = item['content']
-                        if "밸브재" in content:
-                            response += f"• {content[:300]}...\n"
-                    response += "\n"
-                
-                # 협력사 관련
-                if "협력사" in query_lower:
-                    response += "협력사 관련 이슈:\n"
-                    for item in excel_contents:
-                        content = item['content']
-                        if "협력사" in content:
-                            response += f"• {content[:300]}...\n"
-                    response += "\n"
-                
-                # 대응방안
-                response += "대응방안:\n"
-                for item in excel_contents:
-                    content = item['content']
-                    if "대응방안:" in content:
-                        response += f"• {content[:300]}...\n"
-                        break
-                
+            # 컨텍스트 정보 구성
+            context_info = f"[{i}] 문서: {document_id}"
+            if location != 'unknown':
+                context_info += f" | 위치: {location}"
+            if title:
+                context_info += f" | 제목: {title}"
+            
+            context_strs.append(f"{context_info}\n내용: {content}")
+        
+        context_block = "\n\n".join(context_strs)
+        
+        # 프롬프트 구성
+        prompt = f"""다음은 사용자의 질문과 관련된 문서 정보입니다.
+
+---
+{context_block}
+---
+
+위 정보를 참고하여 아래 질문에 답변하세요.
+
+질문: {query}
+
+답변 형식:
+1. 질문에 대한 직접적인 답변을 제공하세요
+2. 답변 후 "참고 정보:" 섹션에서 사용한 문서의 출처와 위치를 명시하세요
+3. 답변은 한국어로 작성하세요
+
+답변:"""
+        
+        return prompt
+    
+    def _call_gemma_api(self, prompt: str) -> str:
+        """Gemma API를 호출하여 답변을 생성합니다."""
+        if not self.gemma_api_url:
+            raise Exception("Gemma API URL이 설정되지 않았습니다.")
+        
+        headers = {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+        }
+        
+        payload = {
+            "messages": [{"role": "user", "content": prompt}],
+            "model": self.gemma_model,
+            "stream": False
+        }
+        
+        try:
+            response = requests.post(self.gemma_api_url, headers=headers, json=payload, timeout=30)
+            response.raise_for_status()
+            
+            result = response.json()
+            if 'choices' in result and len(result['choices']) > 0:
+                return result['choices'][0]['message']['content'].strip()
             else:
-                # PDF 데이터 기반 답변
-                response += "관련 정보:\n"
-                for item in all_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
-            
-            # 출처 정보 추가
-            sources = set()
-            for item in all_contents[:3]:
-                chunk_id = item['chunk_id']
-                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
-                sources.add(doc_name)
-            
-            response += f"\n📍 출처: {', '.join(sources)}\n\n"
+                print(f"API 응답 형식 오류: {result}")
+                return None
+                
+        except requests.exceptions.RequestException as e:
+            print(f"Gemma API 호출 중 오류 발생: {e}")
+            return None
+        except Exception as e:
+            print(f"예상치 못한 오류: {e}")
+            return None
+    
+    def _generate_simple_response(self, query: str, contexts: List[Dict[str, Any]]) -> str:
+        """단순한 검색 결과 기반 답변 생성"""
+        if not contexts:
+            return "죄송합니다. 질문에 대한 관련 정보를 찾을 수 없습니다."
         
-        # 스마트 야드 관련 질문
-        elif "스마트 야드" in query_lower or "스마트야드" in query_lower:
-            response = "스마트 야드에 대한 정보를 찾았습니다:\n\n"
-            
-            if pdf_contents:
-                response += "📋 스마트 야드 정보:\n"
-                for item in pdf_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
-            else:
-                response += "관련 정보:\n"
-                for item in all_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
-            
-            # 출처 정보 추가
-            sources = set()
-            for item in all_contents[:3]:
-                chunk_id = item['chunk_id']
-                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
-                sources.add(doc_name)
-            
-            response += f"\n📍 출처: {', '.join(sources)}\n\n"
+        # 상위 3개 컨텍스트 사용
+        top_contexts = contexts[:3]
         
-        # 기술 관련 질문
-        elif any(keyword in query_lower for keyword in ["기술", "ai", "인공지능", "자동화", "iot"]):
-            response = "기술 관련 정보를 찾았습니다:\n\n"
-            
-            if pdf_contents:
-                response += "🔧 기술 정보:\n"
-                for item in pdf_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
-            else:
-                response += "관련 정보:\n"
-                for item in all_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
-            
-            # 출처 정보 추가
-            sources = set()
-            for item in all_contents[:3]:
-                chunk_id = item['chunk_id']
-                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
-                sources.add(doc_name)
-            
-            response += f"\n📍 출처: {', '.join(sources)}\n\n"
+        response = f"질문: {query}\n\n"
+        response += "관련 정보를 찾았습니다:\n\n"
         
-        # 일반적인 질문
-        else:
-            response = "질문에 대한 관련 정보를 찾았습니다:\n\n"
+        for i, ctx in enumerate(top_contexts, 1):
+            chunk_id = ctx.get('chunk_id', 'unknown')
+            content = ctx.get('content', '')
+            metadata = ctx.get('metadata', {})
             
-            # 가장 관련성 높은 컨텐츠 선택
-            if excel_contents:
-                response += "📊 데이터 기반 정보:\n"
-                for item in excel_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
-            elif pdf_contents:
-                response += "📋 문서 기반 정보:\n"
-                for item in pdf_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
-            else:
-                response += "관련 정보:\n"
-                for item in all_contents[:3]:
-                    response += f"• {item['content'][:300]}...\n"
+            # 문서 정보 추출
+            document_id = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+            location = metadata.get('location', 'unknown')
             
-            # 출처 정보 추가
-            sources = set()
-            for item in all_contents[:3]:
-                chunk_id = item['chunk_id']
-                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
-                sources.add(doc_name)
-            
-            response += f"\n📍 출처: {', '.join(sources)}\n\n"
+            response += f"[{i}] 문서: {document_id}"
+            if location != 'unknown':
+                response += f" | 위치: {location}"
+            response += f"\n내용: {content[:300]}...\n\n"
         
+        # 출처 정보 추가
+        sources = set()
+        for ctx in top_contexts:
+            chunk_id = ctx.get('chunk_id', 'unknown')
+            document_id = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+            sources.add(document_id)
+        
+        response += f"참고 정보:\n출처: {', '.join(sources)}\n\n"
         response += "더 구체적인 질문이 있으시면 말씀해 주세요."
+        
         return response
     
     def chat(self, query: str, search_method: str = "enhanced", **kwargs) -> Dict[str, Any]:
@@ -424,7 +382,7 @@ def test_rag_chatbot():
         result = chatbot.chat(query, search_method="hybrid", n_results=3)
         
         print(f"📊 검색 결과: {result['contexts_found']}개 컨텍스트")
-        print(f"🤖 응답: {result['response'][:200]}...")
+        print(f"🤖 응답: {result['response']}")
         
         # 상위 컨텍스트 정보
         if result['contexts']:
