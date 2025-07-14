@@ -21,6 +21,7 @@ python-dotenv
 openai
 jinja2
 numpy==1.26.4
+python-multipart
 
 
 # 무거운 패키지는 별도 나중에 로드 또는 Docker 환경에서 사용
