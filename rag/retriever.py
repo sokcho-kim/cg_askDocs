@@ -56,9 +56,12 @@ class EnhancedRetriever:
             metadata = chunk.get("metadata", {})
             
             if chunk_id and content:
+                # ChromaDB 호환 형식으로 metadata 변환
+                chroma_metadata = self._convert_metadata_for_chroma(metadata)
+                
                 ids.append(chunk_id)
                 documents.append(content)
-                metadatas.append(metadata)
+                metadatas.append(chroma_metadata)
         
         # 벡터 DB에 추가 (ChromaDB가 자동으로 임베딩 생성)
         if ids:
@@ -68,6 +71,28 @@ class EnhancedRetriever:
                 metadatas=metadatas
             )
             print(f"[✓] {len(ids)}개 청크를 벡터 DB에 추가했습니다.")
+    
+    def _convert_metadata_for_chroma(self, metadata: Dict[str, Any]) -> Dict[str, Any]:
+        """ChromaDB 호환 형식으로 metadata 변환"""
+        import json
+        
+        chroma_metadata = {}
+        
+        for key, value in metadata.items():
+            if isinstance(value, list):
+                # 리스트는 JSON 문자열로 변환 (더 안전함)
+                chroma_metadata[key] = json.dumps(value, ensure_ascii=False)
+            elif isinstance(value, dict):
+                # 딕셔너리도 JSON 문자열로 변환
+                chroma_metadata[key] = json.dumps(value, ensure_ascii=False)
+            elif isinstance(value, (str, int, float, bool)) or value is None:
+                # ChromaDB가 지원하는 타입은 그대로 유지
+                chroma_metadata[key] = value
+            else:
+                # 기타 타입은 문자열로 변환
+                chroma_metadata[key] = str(value)
+        
+        return chroma_metadata
     
     def keyword_search(self, query: str, n_results: int = 5) -> List[Dict[str, Any]]:
         """키워드 기반 검색 (메타데이터의 keywords 필드 활용)"""
@@ -84,30 +109,49 @@ class EnhancedRetriever:
         
         # 키워드 매칭 점수 계산
         scored_results = []
-        for i, metadata in enumerate(all_docs['metadatas']):
-            if not metadata:
-                continue
+        if all_docs['metadatas']:
+            for i, metadata in enumerate(all_docs['metadatas']):
+                if not metadata:
+                    continue
+                    
+                # keywords 필드를 문자열에서 리스트로 파싱
+                keywords_str = metadata.get('keywords', '')
+                if isinstance(keywords_str, str):
+                    try:
+                        # JSON 문자열인 경우 파싱
+                        if keywords_str.startswith('[') and keywords_str.endswith(']'):
+                            import json
+                            chunk_keywords = json.loads(keywords_str)
+                        else:
+                            # 쉼표로 구분된 문자열인 경우
+                            chunk_keywords = [kw.strip() for kw in keywords_str.split(',') if kw.strip()]
+                    except:
+                        # 파싱 실패시 쉼표로 분리
+                        chunk_keywords = [kw.strip() for kw in keywords_str.split(',') if kw.strip()]
+                else:
+                    chunk_keywords = []
                 
-            chunk_keywords = metadata.get('keywords', [])
-            if not chunk_keywords:
-                continue
-            
-            # 키워드 매칭 점수 계산
-            matches = set(query_keywords) & set(chunk_keywords)
-            if matches:
-                score = len(matches) / len(query_keywords)
-                quality_score = metadata.get('quality_score', 0)
+                if not chunk_keywords:
+                    continue
                 
-                # 최종 점수 = 키워드 매칭 점수 * 품질 점수
-                final_score = score * quality_score
-                
-                scored_results.append({
-                    'chunk_id': all_docs['ids'][i],
-                    'content': all_docs['documents'][i],
-                    'metadata': metadata,
-                    'score': final_score,
-                    'keyword_matches': list(matches)
-                })
+                # 키워드 매칭 점수 계산
+                matches = set(query_keywords) & set(chunk_keywords)
+                if matches:
+                    score = len(matches) / len(query_keywords)
+                    quality_score = metadata.get('quality_score', 0)
+                    if not isinstance(quality_score, (int, float)):
+                        quality_score = 0
+                    
+                    # 최종 점수 = 키워드 매칭 점수 * 품질 점수
+                    final_score = score * quality_score
+                    
+                    scored_results.append({
+                        'chunk_id': all_docs['ids'][i],
+                        'content': all_docs['documents'][i],
+                        'metadata': metadata,
+                        'score': final_score,
+                        'keyword_matches': list(matches)
+                    })
         
         # 점수 순으로 정렬
         scored_results.sort(key=lambda x: x['score'], reverse=True)

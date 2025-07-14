@@ -98,8 +98,8 @@ def main():
     
     # 처리할 파일들
     chunk_files = [
-        "data/processed/pdf_chunks.json",
-        "data/processed/excel_metadata.json"
+        "data/processed/DR_공정회의자료_추출본(데모용)_chunks.json",
+        "data/processed/DR_스마트야드개론(데모용)_chunks.json"
     ]
     
     all_chunks = []
@@ -109,36 +109,6 @@ def main():
         if Path(file_path).exists():
             print(f"\n📁 파일 처리 중: {file_path}")
             chunks = load_chunks_from_json(file_path)
-            
-            # 기존 형식을 통일된 형식으로 변환 (필요시)
-            if chunks and 'document_id' not in chunks[0]:
-                print("  🔄 기존 형식을 통일된 형식으로 변환 중...")
-                converted_chunks = []
-                for i, chunk in enumerate(chunks):
-                    # Excel 형식을 통일된 형식으로 변환
-                    if 'row_index' in chunk:
-                        converted_chunk = {
-                            "chunk_id": f"excel_converted_{i}",
-                            "document_id": "excel_converted",
-                            "chunk_index": i,
-                            "chunk_type": "table",
-                            "location": f"row:{chunk.get('row_index', i)}",
-                            "content": chunk.get('content', ''),
-                            "embedding": None,
-                            "metadata": {
-                                "length": len(chunk.get('content', '')),
-                                "chunk_in_content": 0,
-                                "row_index": chunk.get('row_index', i),
-                                "column": chunk.get('column', ''),
-                                "data_type": "excel_row_converted"
-                            }
-                        }
-                        converted_chunks.append(converted_chunk)
-                    else:
-                        # 이미 통일된 형식인 경우
-                        converted_chunks.append(chunk)
-                chunks = converted_chunks
-            
             all_chunks.extend(chunks)
             print(f"  ✓ {len(chunks)}개 청크 추가됨")
         else:

@@ -1,0 +1,10 @@
+{
+  "chunking_method": "block",
+  "pdf_chunks_count": 286,
+  "excel_chunks_count": 34,
+  "total_chunks": 320,
+  "files": {
+    "pdf_chunks": "DR_스마트야드개론(데모용)_chunks.json",
+    "excel_chunks": "DR_공정회의자료_추출본(데모용)_chunks.json"
+  }
+}

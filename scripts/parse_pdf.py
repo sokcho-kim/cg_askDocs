@@ -163,15 +163,16 @@ def compare_chunking_methods(pdf_path: str, output_dir: str = "data/processed"):
 if __name__ == "__main__":
     pdf_file = "./data/raw/DR_스마트야드개론(데모용).pdf"
     
-    # 1. 기본 실행 (적응형 청킹)
-    print("🚀 PDF 파싱 시작 (적응형 청킹)")
+    # 1. 실제용 실행 (BLOCK 청킹 - 최적 성능)
+    print("🚀 PDF 파싱 시작 (실제용 - BLOCK 청킹)")
     parse_pdf_to_chunks(
         pdf_path=pdf_file,
-        output_path="./data/processed/pdf_chunks.json",
-        document_id="smart_yard_intro",
-        chunking_method="adaptive"
+        output_path="./data/processed/DR_스마트야드개론(데모용)_chunks.json",
+        document_id="smart_yard_intro_production",
+        chunking_method="block"  # 실험 결과 최적 성능 방식
     )
     
-    # 2. 청킹 방식 비교 (선택사항)
-    print("\n" + "=" * 60)
-    compare_chunking_methods(pdf_file)
+    # 2. 실험용 실행 (모든 방식 비교) - 주석 처리됨
+    # print("\n" + "=" * 60)
+    # print("🔬 실험용: 청킹 방식 비교 분석")
+    # compare_chunking_methods(pdf_file)
