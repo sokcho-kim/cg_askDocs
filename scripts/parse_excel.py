@@ -22,6 +22,16 @@ Excel 파일을 판다스로 읽어 행/시트 단위로 텍스트 청크를 추
     }
 }
 """
+import sys
+from pathlib import Path
+
+# 프로젝트 루트를 Python 경로에 추가
+project_root = Path(__file__).parent.parent
+sys.path.append(str(project_root))
+
+from docs.pdf_document import PDFDocument
+from utils.chunk_processor import PDFChunkProcessor
+import json
 
 import pandas as pd
 import json
