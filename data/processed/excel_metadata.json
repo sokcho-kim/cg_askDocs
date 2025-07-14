@@ -1,9 +1,3162 @@
 [
   {
-    "document_id": "example-uuid",
-    "source_name": "회의록.xlsx",
-    "doc_type": "excel",
-    "created_at": "2024-07-11T12:00:00",
-    "extra_meta": {"project": "스마트야드"}
+    "chunk_id": "bfc7d58f-4bba-43da-9fc9-7e1379ce0a75",
+    "row_index": 0,
+    "column": "주차",
+    "content": "주차: 2452",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "38ca77a4-9e01-4096-8365-6c0e13a1042a",
+    "row_index": 0,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "f84aef83-3583-4e62-b5f4-e8d774717365",
+    "row_index": 0,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "1739831b-ba0d-4767-ac9a-9a7c24367706",
+    "row_index": 0,
+    "column": "이슈",
+    "content": "이슈: 사외블록 2개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "815f5e27-7019-484f-beb2-f1edbbf6f6ea",
+    "row_index": 0,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "3089601e-a691-40ba-a4e7-8845343c2512",
+    "row_index": 0,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "168c9e97-7a21-482b-9661-892399965807",
+    "row_index": 0,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 29
+    }
+  },
+  {
+    "chunk_id": "f004878a-b9a2-4de0-a038-27fb6d98dd70",
+    "row_index": 0,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "abc79318-55c9-4ada-bfd4-d046d8bdcc10",
+    "row_index": 0,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "a8f842cd-9c7f-4913-b079-c9b63fa3df78",
+    "row_index": 0,
+    "column": "부가정보",
+    "content": "부가정보: 건화 2ea : H2538 2ea (P-WAY)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "61141435-fc35-4eae-bcc7-0ff368230761",
+    "row_index": 1,
+    "column": "주차",
+    "content": "주차: 2451",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "d76011df-732f-44e2-b776-792766069960",
+    "row_index": 1,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "6f908ccc-39d0-4323-b8e2-2d45c88e4157",
+    "row_index": 1,
+    "column": "팀",
+    "content": "팀: 배관재구매팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "430420c5-cd09-4617-9ac3-0ecf54a5cb41",
+    "row_index": 1,
+    "column": "이슈",
+    "content": "이슈: 밸브재 보급충족률 저조 (위험 단계)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 24
+    }
+  },
+  {
+    "chunk_id": "a90c4423-c749-4f7e-b4ae-e460c6fba51e",
+    "row_index": 1,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "50b13fcb-6313-412f-ba8a-6e8c8cf73a54",
+    "row_index": 1,
+    "column": "원인",
+    "content": "원인: 밸브재 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "240637ec-38cd-40cd-a606-12534184332b",
+    "row_index": 1,
+    "column": "영향",
+    "content": "영향: 의장 공정 지연 (조립의장, 선행의장, 후행, 사외)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 33
+    }
+  },
+  {
+    "chunk_id": "56a09db3-e809-4959-b22d-ebd9f0b9f2f1",
+    "row_index": 1,
+    "column": "대응방안",
+    "content": "대응방안: 재고 관리 강화 | 공급사에 입고관리 요청 | PND 점검 및 업데이트",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 45
+    }
+  },
+  {
+    "chunk_id": "537fbcf7-c9f4-4818-b3f3-10a687572b47",
+    "row_index": 1,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 밸브재 입고 현황 | 밸브재 운송 일정 | 밸브재 생산 완료 일정",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 57
+    }
+  },
+  {
+    "chunk_id": "2a4cf7dc-f10a-4bfb-bc95-72179c13975c",
+    "row_index": 1,
+    "column": "부가정보",
+    "content": "부가정보: 사외블록 설치 밸브 입고 심각(Unit 설치 밸브 포함)\n √50주: H2540, H2544, H2563 & H2570 에코텍 설치물량 심각\n → SNRI(77) / 하이록(63) / 에스앤에스(38) 등",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 120
+    }
+  },
+  {
+    "chunk_id": "15e62313-a676-4d9d-b2f7-190e6727b9a5",
+    "row_index": 2,
+    "column": "주차",
+    "content": "주차: 2450",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "36ec0177-e56a-485c-a829-785360253215",
+    "row_index": 2,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "4e8c2811-6195-4a3b-90dc-6c96a574903f",
+    "row_index": 2,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "e63eba6e-4ba7-435d-80a9-b704d582f2fa",
+    "row_index": 2,
+    "column": "이슈",
+    "content": "이슈: 사외블록 3개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "d0caab0c-648d-4a67-a4ba-ec0cde2d375d",
+    "row_index": 2,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "110fc345-f75e-4be0-b482-fced9dd10565",
+    "row_index": 2,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "3ddd193b-3bcc-4006-b413-341fdc5946e7",
+    "row_index": 2,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 29
+    }
+  },
+  {
+    "chunk_id": "d8de6f4d-279e-45bf-b2bc-e469f11a6497",
+    "row_index": 2,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "3409b98d-6264-41f0-a09c-7fbb0909ad20",
+    "row_index": 2,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "2ce706ee-9e3c-4c8a-a96e-bdefb19464dd",
+    "row_index": 2,
+    "column": "부가정보",
+    "content": "부가정보: 신한 3ea : H2542 1ea (E/C), H4377 2ea (D/H, E/C)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 52
+    }
+  },
+  {
+    "chunk_id": "54fe276b-5035-49e8-996e-67da6f32b240",
+    "row_index": 3,
+    "column": "주차",
+    "content": "주차: 2450",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "0a26684a-038a-45f2-8f31-8bcf18e9e668",
+    "row_index": 3,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "eb20283e-9765-4900-b5fd-8e79c2874483",
+    "row_index": 3,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "dc631b18-0fba-4ad9-9088-622c314e6f41",
+    "row_index": 3,
+    "column": "이슈",
+    "content": "이슈: 2519 90AB, 91A/910 PE검사 착수 2개월 이상 지연 (신한중공업)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 48
+    }
+  },
+  {
+    "chunk_id": "fc5d9c4d-43e5-48ed-a140-8339cf54aa76",
+    "row_index": 3,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "b04204a2-d809-4d48-aeee-936a94d85985",
+    "row_index": 3,
+    "column": "원인",
+    "content": "원인: PE 작업 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 12
+    }
+  },
+  {
+    "chunk_id": "c24508a8-aba3-46ee-9cec-2c59748e4137",
+    "row_index": 3,
+    "column": "영향",
+    "content": "영향: B/P 일정 지연 | PND 일정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 25
+    }
+  },
+  {
+    "chunk_id": "7ac3ba2a-cb5d-4bb3-bffb-9942907cc38b",
+    "row_index": 3,
+    "column": "대응방안",
+    "content": "대응방안: 돌관작업 | 사외공정관리자 상주로 밀착 관리",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 30
+    }
+  },
+  {
+    "chunk_id": "6b451582-1ee0-42c3-b301-8c14e79f1832",
+    "row_index": 3,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "6793bf6c-6683-4a66-b34b-c27509e2a50e",
+    "row_index": 4,
+    "column": "주차",
+    "content": "주차: 2445",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "23c7807e-3f20-4574-b214-6f0825ff9915",
+    "row_index": 4,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "b109e178-27ce-4104-b941-ed599e6f2aa1",
+    "row_index": 4,
+    "column": "팀",
+    "content": "팀: 배관재구매팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "d3ffcb8a-f450-411f-96bf-21494162b7d5",
+    "row_index": 4,
+    "column": "이슈",
+    "content": "이슈: 밸브재 보급충족률 저조 (주의 단계)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 24
+    }
+  },
+  {
+    "chunk_id": "c3c54a13-de8c-44a9-a6a5-88bcb1d17edc",
+    "row_index": 4,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "b05a9809-fc6b-4dc4-8a75-76b3add86254",
+    "row_index": 4,
+    "column": "원인",
+    "content": "원인: 밸브재 입고 지연 | SNRI 미입고 물량 과다 | 초저온 밸브 공급사 (SNRI) 법정관리",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 55
+    }
+  },
+  {
+    "chunk_id": "0bc3ad91-2e70-4913-93b3-8ac6498cbd2f",
+    "row_index": 4,
+    "column": "영향",
+    "content": "영향: 의장 공정 지연 (조립의장, 선행의장, 후행, 사외)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 33
+    }
+  },
+  {
+    "chunk_id": "ef62ef40-3fa1-426e-a5d2-28b3e004f3ab",
+    "row_index": 4,
+    "column": "대응방안",
+    "content": "대응방안: 국내 공급사 변경(Dual 적용) 추진 및 SchuF 신규 오더 협상 병행",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 47
+    }
+  },
+  {
+    "chunk_id": "e0a09a35-f8ea-4fa0-bc09-166d7aa0ed98",
+    "row_index": 4,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 밸브재 입고 현황 | 밸브재 운송 일정 | 밸브재 생산 완료 일정 | 공급사 법정관리 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 71
+    }
+  },
+  {
+    "chunk_id": "9665fb90-0de3-4117-8b73-aac82b4f137f",
+    "row_index": 5,
+    "column": "주차",
+    "content": "주차: 2445",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "92dde8cd-6774-4adf-8fce-2ab5dfef8466",
+    "row_index": 5,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "6b097c2d-ea96-43d2-b8cf-798f2e6157fc",
+    "row_index": 5,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "887ea25e-06b9-48c0-bb0c-e2491f96891d",
+    "row_index": 5,
+    "column": "이슈",
+    "content": "이슈: 사외블록 3개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "e7343146-db5d-4bd6-80a1-370d9589701b",
+    "row_index": 5,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "7586ca83-3cb6-41f9-a28d-1bd3672fc233",
+    "row_index": 5,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "b32ba2c5-26e3-42d6-8f34-f4d6a4464e67",
+    "row_index": 5,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "47406561-8d2f-4505-90d9-f6aada49b351",
+    "row_index": 5,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "ab1a6040-0255-46e7-a06e-605ce473a58a",
+    "row_index": 5,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "6f4b7dc6-141c-4111-ad2d-2a464b99ed6d",
+    "row_index": 5,
+    "column": "부가정보",
+    "content": "부가정보: 세진 1ea : H2534 1ea (E/C)\n신한 3ea : H2541 1ea (E/C), H4376 2ea (D/H, E/C)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 77
+    }
+  },
+  {
+    "chunk_id": "fb720a85-2073-4518-998b-a04310ff30c5",
+    "row_index": 6,
+    "column": "주차",
+    "content": "주차: 2444",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "e71930c1-a881-4cd2-9eaa-4d059e6e98c9",
+    "row_index": 6,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "84dd44bb-ce51-49fe-9392-8825b103a07c",
+    "row_index": 6,
+    "column": "팀",
+    "content": "팀: 배관재구매팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "70ce79f5-f308-41e0-b5ec-20bd1a1f002a",
+    "row_index": 6,
+    "column": "이슈",
+    "content": "이슈: 밸브재 보급충족률 저조 (주의 단계)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 24
+    }
+  },
+  {
+    "chunk_id": "fffbd787-5298-4378-a367-c2d39861dd34",
+    "row_index": 6,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "81e7259e-9ff1-4a96-b347-810a997e2776",
+    "row_index": 6,
+    "column": "원인",
+    "content": "원인: 밸브재 입고 지연 | SNRI 미입고 물량 과다",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 30
+    }
+  },
+  {
+    "chunk_id": "edfe5ab1-b37e-43c4-9ce6-0d6909642764",
+    "row_index": 6,
+    "column": "영향",
+    "content": "영향: 의장 공정 지연 (조립의장, 선행의장, 후행, 사외)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 33
+    }
+  },
+  {
+    "chunk_id": "39feb38e-1844-48d1-a7b5-7f88e6e53f3a",
+    "row_index": 6,
+    "column": "대응방안",
+    "content": "대응방안: H2535/63/64/66/67 “SNRI_SchuF” → “S&S” 전량이관 ",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 50
+    }
+  },
+  {
+    "chunk_id": "1ab7e7c3-d1aa-4498-bd42-4deecf15fe44",
+    "row_index": 6,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 밸브재 입고 현황 | 밸브재 운송 일정 | 밸브재 생산 완료 일정 | 밸브재 물량 이관 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 72
+    }
+  },
+  {
+    "chunk_id": "06c5f5d6-c4bb-4507-a16b-408ef76346e4",
+    "row_index": 7,
+    "column": "주차",
+    "content": "주차: 2440",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "a7f7712a-a168-431b-9764-70e1256725bb",
+    "row_index": 7,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "d390283c-8d26-4c37-8c98-c3f764a2f235",
+    "row_index": 7,
+    "column": "팀",
+    "content": "팀: 배관재구매팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "5634f007-d623-485a-8dd6-42784570d58c",
+    "row_index": 7,
+    "column": "이슈",
+    "content": "이슈: 밸브재 보급충족률 저조 (주의 단계)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 24
+    }
+  },
+  {
+    "chunk_id": "45b66c86-bbcc-48b9-9106-91471f15d3dc",
+    "row_index": 7,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "056a1c99-6abc-46f7-840d-4a64f5193b42",
+    "row_index": 7,
+    "column": "원인",
+    "content": "원인: 밸브재 입고 지연 | SNRI 법정관리",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 25
+    }
+  },
+  {
+    "chunk_id": "2da7ef66-2fff-4e9c-91c7-1fc51a2816f7",
+    "row_index": 7,
+    "column": "영향",
+    "content": "영향: 의장 공정 지연 (조립의장, 선행의장, 후행, 사외)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 33
+    }
+  },
+  {
+    "chunk_id": "bc6ae027-1e89-4e97-b596-1ec34c229823",
+    "row_index": 7,
+    "column": "대응방안",
+    "content": "대응방안: 재고 관리 강화 | 공급사에 입고관리 요청 | PND 점검 및 업데이트 | SNRI 제작 미진행호선 물량에 대해 빠른 업체 변경 결정 필요",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 83
+    }
+  },
+  {
+    "chunk_id": "a7136173-af9d-41a4-8a06-95a4391ea875",
+    "row_index": 7,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 밸브재 입고 현황 | 밸브재 운송 일정 | 밸브재 생산 완료 일정",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 57
+    }
+  },
+  {
+    "chunk_id": "b8a9ca2b-94b7-45d2-a912-bf5435cd4877",
+    "row_index": 8,
+    "column": "주차",
+    "content": "주차: 2436",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "16be8a23-4d1c-476c-90c2-f4c8d1c1fa0b",
+    "row_index": 8,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "7a9020a8-91bf-4987-91b0-73d1bcbc194e",
+    "row_index": 8,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "8f75291b-0b06-4a9c-a81c-9cdb3ef4e212",
+    "row_index": 8,
+    "column": "이슈",
+    "content": "이슈: 블루오션 소조장 저부하에 따른 소조(921/931) 일부 착수(8/14)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 44
+    }
+  },
+  {
+    "chunk_id": "64540719-63df-4785-97f4-65917b40337e",
+    "row_index": 8,
+    "column": "리스크",
+    "content": "리스크: 명휴 발생",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "1dae3258-b650-4cb4-8964-19e5e97fec87",
+    "row_index": 8,
+    "column": "원인",
+    "content": "원인: 소조장 저부하",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 11
+    }
+  },
+  {
+    "chunk_id": "30ad75c0-6e99-4aa0-b51b-e3aa25393b36",
+    "row_index": 8,
+    "column": "영향",
+    "content": "영향: 소조장 명휴 발생",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "13928385-2cbc-4ac7-80b8-70537ed914a3",
+    "row_index": 8,
+    "column": "대응방안",
+    "content": "대응방안: 소조 작업 일부 선 착수",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 19
+    }
+  },
+  {
+    "chunk_id": "6c6ad52a-f781-4d6e-bc02-369a59d5c7f1",
+    "row_index": 8,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 사외협력사 작업장 부하",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 50
+    }
+  },
+  {
+    "chunk_id": "f11d3c05-d0e5-4879-ac41-035bf2d0f642",
+    "row_index": 9,
+    "column": "주차",
+    "content": "주차: 2435",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "977ef783-da89-47e6-87b9-74f590ee0abe",
+    "row_index": 9,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "5ea667e6-66b4-424d-bbad-8e4ea3158959",
+    "row_index": 9,
+    "column": "팀",
+    "content": "팀: 배관재구매팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "c1cbce0b-49c6-41bf-9353-039d0ab552e9",
+    "row_index": 9,
+    "column": "이슈",
+    "content": "이슈: Cry. Globe/Gate/Check Valve  공급사 SNRI (프랑스) 법정관리 건",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 54
+    }
+  },
+  {
+    "chunk_id": "73fb72cd-940e-474c-890f-2ba94cced2b5",
+    "row_index": 9,
+    "column": "리스크",
+    "content": "리스크: 자재 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "edf26452-521f-4fc4-a2f6-cc8aa8030302",
+    "row_index": 9,
+    "column": "영향",
+    "content": "영향: SNRI 공급 물량 미입고",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 18
+    }
+  },
+  {
+    "chunk_id": "bf55b55c-dc2c-4509-8760-d74f30848c4d",
+    "row_index": 9,
+    "column": "대응방안",
+    "content": "대응방안: 진행중 호선 (14척) 납기 준수 긴밀 점검 | 미진행 호선 (19척) 국내 공급사 변경 추진 | T/F  수행 지속 (현안 종료시까지) : 구매/설계/품질/생산/사업부 ",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 101
+    }
+  },
+  {
+    "chunk_id": "6cf66908-c852-47fb-9c9d-5a0d3d0fa845",
+    "row_index": 9,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 밸브재 발주 현황 | 밸브재 공급사 법정관리 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 48
+    }
+  },
+  {
+    "chunk_id": "dbd1c32b-4038-49a8-94cc-59ebafda6e2e",
+    "row_index": 9,
+    "column": "부가정보",
+    "content": "부가정보: 대응방향\n1. 진행중 호선 (14척) 납기 준수 긴밀 점검 \n2. 미진행 호선 (19척) 국내 공급사 변경 추진 \n3.  T/F  수행 지속 (현안 종료시까지) : 구매/설계/품질/생산/사업부",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 113
+    }
+  },
+  {
+    "chunk_id": "3fd6176d-abf7-49c0-8e3e-98c38289c77e",
+    "row_index": 10,
+    "column": "주차",
+    "content": "주차: 2430",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "21eeb62a-f0f3-43e2-a417-e5d2d73f56ec",
+    "row_index": 10,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "b8a02bc8-d887-4697-a983-3a6e10839c1c",
+    "row_index": 10,
+    "column": "팀",
+    "content": "팀: 배관재구매팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "339ab5b1-1bfe-49f1-b10a-c43f3426dfe0",
+    "row_index": 10,
+    "column": "이슈",
+    "content": "이슈: Cry. Globe/Gate/Check Valve  공급사 SNRI (프랑스) 법정관리 건",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 54
+    }
+  },
+  {
+    "chunk_id": "756d5cde-1d0e-4237-9e93-7c8da766649f",
+    "row_index": 10,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "91240e1e-15e8-44a9-acbd-944dbb5c1262",
+    "row_index": 10,
+    "column": "원인",
+    "content": "원인: 밸브재 공급사 SNRI 법정 관리로 인한 미입고",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 30
+    }
+  },
+  {
+    "chunk_id": "56181f06-1872-44af-a383-0502fa1629a3",
+    "row_index": 10,
+    "column": "영향",
+    "content": "영향: 의장 공정 지연 및 중단",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "f8cf5f8d-36e8-41d3-999e-4ca4ffa46c27",
+    "row_index": 10,
+    "column": "대응방안",
+    "content": "대응방안: SNRI사 공정 우선순위 지시 (8월중 구매 SNRI사 현지 출장 예정) | 공급사 변경 통한 사전 제작 진행 (유관부서 협의 진행중) ",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 82
+    }
+  },
+  {
+    "chunk_id": "dc95ac29-1c54-4f8e-b4e4-25527124daae",
+    "row_index": 10,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 밸브재 입고 현황 | 밸브재 운송 일정 | 밸브재 생산 완료 일정 | 밸브재 공급사 이슈",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 70
+    }
+  },
+  {
+    "chunk_id": "b63f9df6-929a-44bc-ace9-9ab6816f6973",
+    "row_index": 11,
+    "column": "주차",
+    "content": "주차: 2425",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "5f7d347b-4558-4161-a88c-df87be3d639d",
+    "row_index": 11,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "864e65c3-2d7f-4216-b3d7-16425b9af83c",
+    "row_index": 11,
+    "column": "팀",
+    "content": "팀: 구매1팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 15
+    }
+  },
+  {
+    "chunk_id": "7e05e190-4274-4ddc-a621-d19b6b142ed9",
+    "row_index": 11,
+    "column": "이슈",
+    "content": "이슈: 강재 결품",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 9
+    }
+  },
+  {
+    "chunk_id": "142a0552-bca3-47ef-9677-8b9fbb17ff94",
+    "row_index": 11,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "0c30ca80-414e-4b2b-9e24-3c726a9f3599",
+    "row_index": 11,
+    "column": "원인",
+    "content": "원인: 공급사 생산 지연 | 강재 운송 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 24
+    }
+  },
+  {
+    "chunk_id": "f698e206-34b5-441f-ab50-9d2a9dfb0276",
+    "row_index": 11,
+    "column": "영향",
+    "content": "영향: S/C 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "1273700a-74fa-459c-a2a0-572bb9edd115",
+    "row_index": 11,
+    "column": "대응방안",
+    "content": "대응방안: 재고 관리 강화 | 공급사에 입고관리 요청 | PND 점검 및 업데이트",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 45
+    }
+  },
+  {
+    "chunk_id": "765abaa8-667b-4a10-b515-48b9d34c5487",
+    "row_index": 11,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 강재 발주 현황 | 강재 입고 현황 | 강재 운송 일정 | 강재 생산 완료 일정",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 65
+    }
+  },
+  {
+    "chunk_id": "d8c0a5a9-c078-46af-b69f-d07834c84d37",
+    "row_index": 11,
+    "column": "부가정보",
+    "content": "부가정보: 주요 지연 품목 : H2550 일반재 24톤(8장), H2562 일반재 20톤(6장), H2537 박물재 10톤(3장)_x000B_                      H4377 일반재 8톤(2장), H4376 일반재8톤(6장), H2535 일반재 8톤(2장)_x000B_                      H2542 일반재 6톤(1장), H2566 일반배 2톤(3장), H2547 일반재 2톤 (1장)_x000B_                      H2531 박물재 1톤(1장)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 279
+    }
+  },
+  {
+    "chunk_id": "40114425-0178-4c75-a7d7-0ebccf060a15",
+    "row_index": 12,
+    "column": "주차",
+    "content": "주차: 2425",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "02adbb1e-d521-4179-80df-954fd84b4fe3",
+    "row_index": 12,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "6861eacc-a03a-410d-952c-3294641672d4",
+    "row_index": 12,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "19f67db1-ee45-4aeb-9fb6-9bc0c89aaf23",
+    "row_index": 12,
+    "column": "이슈",
+    "content": "이슈: 사외블록 3개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "53068743-7d02-4ddc-a01d-05be22c0644e",
+    "row_index": 12,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "bbb5436f-4b7b-4615-bf47-9b41f98dcf78",
+    "row_index": 12,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "79866351-3c6e-4a8e-b823-9f8369bd273b",
+    "row_index": 12,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "b86b1cf7-54a5-44de-9b39-48772e036edf",
+    "row_index": 12,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "49f72a0f-5869-4243-b1c1-1d5b0376cdc9",
+    "row_index": 12,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "a750f79c-6bf2-486c-9773-e6f4f7954057",
+    "row_index": 12,
+    "column": "부가정보",
+    "content": "부가정보: 세진 2ea : H4383 2ea (D/H, E/C)\n기득 1ea : H2530 1ea (FORE BODY)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 66
+    }
+  },
+  {
+    "chunk_id": "77765759-006a-4f5b-a886-95afa388c7dc",
+    "row_index": 13,
+    "column": "주차",
+    "content": "주차: 2422",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "6e83a824-7b13-4470-b69f-ced0508d5491",
+    "row_index": 13,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "74c71128-2c47-4eac-8d71-7ab31e913680",
+    "row_index": 13,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "9e27d222-bbed-4e24-a80c-aa8d6d0c2160",
+    "row_index": 13,
+    "column": "이슈",
+    "content": "이슈: 신한중공업 2549호선 91A 유일 이관: L/T 부족 (6M → 4M)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 44
+    }
+  },
+  {
+    "chunk_id": "cefa6024-6b31-462d-971e-d7b4803ce497",
+    "row_index": 13,
+    "column": "리스크",
+    "content": "리스크: 공정 지연, 블록 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 20
+    }
+  },
+  {
+    "chunk_id": "d9bee041-f8a0-4b6c-9ab9-7593ea51c610",
+    "row_index": 13,
+    "column": "원인",
+    "content": "원인: L/T 부족 | 바닥도장, 결선 미완료",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 25
+    }
+  },
+  {
+    "chunk_id": "e24fd316-cf4a-4759-a5a0-a42c0a8c9755",
+    "row_index": 13,
+    "column": "대응방안",
+    "content": "대응방안: 사외 협력사 유일에 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 19
+    }
+  },
+  {
+    "chunk_id": "4da9ff25-c7aa-4e5e-ab3d-146c2edf6299",
+    "row_index": 13,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "ae77d2a8-b67e-453d-9777-8f93838eabf3",
+    "row_index": 14,
+    "column": "주차",
+    "content": "주차: 2421",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "6375dfd1-8906-4327-b9e2-e3613a57f218",
+    "row_index": 14,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "94babce5-1f68-4c02-9f39-363040a3a019",
+    "row_index": 14,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "35707b7a-8c31-4106-a5c7-5b26c45cdd53",
+    "row_index": 14,
+    "column": "이슈",
+    "content": "이슈: 사외블록 5개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "a90d5a4c-0511-400d-a085-ea78c8c99b19",
+    "row_index": 14,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "7c5e6000-a1f8-4e59-9704-bd0b2fa2a5f6",
+    "row_index": 14,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "3b9db646-eaee-4a2c-9ede-b44472e83d25",
+    "row_index": 14,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "72103750-7692-4ca0-b5a9-581afbb739f7",
+    "row_index": 14,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "af9c619e-e65a-4764-9994-0a56f41eaade",
+    "row_index": 14,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "69906dc9-5585-4e35-846d-a00c53939eef",
+    "row_index": 14,
+    "column": "부가정보",
+    "content": "부가정보: JL중공업 3ea : H4386 2ea (Water Break), H4387 1ea (E/R Insert) \n세진 2ea : H4383 2ea (D/H, E/C)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 96
+    }
+  },
+  {
+    "chunk_id": "1be6b9e3-8769-4e59-bed7-aad4a7cf3bff",
+    "row_index": 15,
+    "column": "주차",
+    "content": "주차: 2420",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "153cd83c-1d5f-46ac-8b2f-d1866a06c183",
+    "row_index": 15,
+    "column": "대분류",
+    "content": "대분류: 선행",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "66835d71-6066-4167-baae-7b00ba5b6828",
+    "row_index": 15,
+    "column": "팀",
+    "content": "팀: 탑재1팀 | 탑재2팀 | 해양선체팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 30
+    }
+  },
+  {
+    "chunk_id": "d6d1b744-40c5-4460-a500-32b9fa713f3e",
+    "row_index": 15,
+    "column": "이슈",
+    "content": "이슈: PE 일정준수율 급락",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 15
+    }
+  },
+  {
+    "chunk_id": "b949fc7d-c021-4ad8-aad6-6e3c6ed43ff8",
+    "row_index": 15,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "fbef29aa-ac71-4dbf-a2ba-2ad1cc5ea24c",
+    "row_index": 15,
+    "column": "원인",
+    "content": "원인: PE 일정 계획 62EA 中 미준수 30EA (정반 및 순서대기 23EA, 짝블록/BASE 지연 7EA)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 62
+    }
+  },
+  {
+    "chunk_id": "30505024-0a56-41b3-919a-6dc8ec5f647b",
+    "row_index": 15,
+    "column": "영향",
+    "content": "영향: 탑재 지연 | 후행으로 작업 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 22
+    }
+  },
+  {
+    "chunk_id": "d1576013-8ff7-4ae5-b93c-6944ca02e5af",
+    "row_index": 15,
+    "column": "대응방안",
+    "content": "대응방안: PE 돌관작업 | PE 일정 집중 관리",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 27
+    }
+  },
+  {
+    "chunk_id": "45273df3-a861-4f1e-9e3f-f839c48a8671",
+    "row_index": 15,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): PE 일정 계획/실적",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "ec51ec35-880b-4691-8714-2e5f584eda74",
+    "row_index": 16,
+    "column": "주차",
+    "content": "주차: 2419",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "7a48f165-1325-483f-be1c-6f39e162dcfd",
+    "row_index": 16,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "ec9fba4d-43b4-4c1a-84f4-1134c0fe8c12",
+    "row_index": 16,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "08c0610d-45bf-46af-b12d-d74ef58e11e1",
+    "row_index": 16,
+    "column": "이슈",
+    "content": "이슈: 블루오션 2530호선 90A/B PE 완료지연(곡직사 부족)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 37
+    }
+  },
+  {
+    "chunk_id": "750ad68b-d4ca-43ef-bdb7-85fdd72ec682",
+    "row_index": 16,
+    "column": "리스크",
+    "content": "리스크: 공정 지연, 블록 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 20
+    }
+  },
+  {
+    "chunk_id": "56bc97ec-dbc8-4c7e-a2b4-ab4909fa95fb",
+    "row_index": 16,
+    "column": "원인",
+    "content": "원인: 곡직사 부족",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "f5e29abe-d5c5-426f-afbe-a55a7367675d",
+    "row_index": 16,
+    "column": "영향",
+    "content": "영향: PE 완료지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 11
+    }
+  },
+  {
+    "chunk_id": "5c3e165f-3861-4656-b4d1-cbe601e0e7a9",
+    "row_index": 16,
+    "column": "대응방안",
+    "content": "대응방안: SHI 물량팀 투입(토,일 주말), 신규 곡직사 충원(5명)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 39
+    }
+  },
+  {
+    "chunk_id": "826c82c2-5ed0-43c7-81bb-a4aa1118533f",
+    "row_index": 16,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 사외 협력사 인력 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 50
+    }
+  },
+  {
+    "chunk_id": "45c0eec0-3e15-48f1-8042-5e7a792d5627",
+    "row_index": 17,
+    "column": "주차",
+    "content": "주차: 2418",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "4d6fdf9a-0f70-42bc-ab4a-e8302287d273",
+    "row_index": 17,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "3315324e-e583-4135-abe3-556852d89860",
+    "row_index": 17,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "2d2e8fee-2c6e-4e83-bbf4-e78f239c00ad",
+    "row_index": 17,
+    "column": "이슈",
+    "content": "이슈: 신한중공업 곡직사 부족으로 PE 검사 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 27
+    }
+  },
+  {
+    "chunk_id": "97791ef5-fd73-4b2e-a462-a00789f886bb",
+    "row_index": 17,
+    "column": "리스크",
+    "content": "리스크: 공정 지연, 블록 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 20
+    }
+  },
+  {
+    "chunk_id": "59f6618a-02af-41b7-b5d2-839639ed762c",
+    "row_index": 17,
+    "column": "원인",
+    "content": "원인: 협력사 곡직사 부족",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 14
+    }
+  },
+  {
+    "chunk_id": "e61d745e-14af-491a-8c7b-4bd6daf5cb88",
+    "row_index": 17,
+    "column": "영향",
+    "content": "영향: PE 검사 지연 | 선적일 지연 | 탑재 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 29
+    }
+  },
+  {
+    "chunk_id": "bf045780-08d1-47d3-8347-6a71b22e9115",
+    "row_index": 17,
+    "column": "대응방안",
+    "content": "대응방안: 선적일정 협의",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "85e31364-fe9f-4ee7-8403-0058215c7df7",
+    "row_index": 17,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 사외 협력사 인력 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 50
+    }
+  },
+  {
+    "chunk_id": "6c877c55-42d7-4dd9-b53d-ef42ba65ecb8",
+    "row_index": 18,
+    "column": "주차",
+    "content": "주차: 2416",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "dbfaa764-d71a-40c6-af00-66b5b6ab5210",
+    "row_index": 18,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "3872fb5d-0548-4e91-a736-b811fc6c0dcd",
+    "row_index": 18,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "b5d4d220-19e1-4ad6-99fe-424c11b5fe82",
+    "row_index": 18,
+    "column": "이슈",
+    "content": "이슈: 사외블록 5개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "1ee75edf-b2c0-4f4b-bd17-86302ce046e8",
+    "row_index": 18,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "06ba0bb2-82ae-4c2e-bbcc-37c2cabe31e5",
+    "row_index": 18,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "e8cd2e04-edf5-466c-a64c-03d52c6d1db7",
+    "row_index": 18,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "1779f8fd-358c-409b-88c5-2eb04f13633f",
+    "row_index": 18,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "4ea5848c-24d5-41e2-8fa1-6e29910c3a5d",
+    "row_index": 18,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "b4a1da95-a70f-4d42-ba33-4a73f38b8084",
+    "row_index": 18,
+    "column": "부가정보",
+    "content": "부가정보: 신한 2ea : H4373 2ea (D/H, E/C)\nEK 2ea : H2530 2ea (S/Boss)\n블루오션 1ea : H2527 1ea (D/H)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 90
+    }
+  },
+  {
+    "chunk_id": "9737dd2b-2483-4e28-b6e1-a44366213440",
+    "row_index": 19,
+    "column": "주차",
+    "content": "주차: 2415",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "990d569c-839f-4172-b5d9-e5914388b05b",
+    "row_index": 19,
+    "column": "대분류",
+    "content": "대분류: 자재",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "103bb269-7819-4b88-8b2b-919b9c00969b",
+    "row_index": 19,
+    "column": "팀",
+    "content": "팀: 배관재구매팀 | 생산계획팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "bfbf3dcb-e06e-4708-849d-3fb9c3f18b42",
+    "row_index": 19,
+    "column": "이슈",
+    "content": "이슈: 밸브재 보급충족률 저조 (주의 단계)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 24
+    }
+  },
+  {
+    "chunk_id": "b4139c58-be5a-42ff-8838-1e6f9ca4f17a",
+    "row_index": 19,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "c4121f76-5e38-4675-bf85-56792787f32e",
+    "row_index": 19,
+    "column": "원인",
+    "content": "원인: 밸브재 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "5eaf8b9c-c087-4e60-92ae-dd9cd346118b",
+    "row_index": 19,
+    "column": "영향",
+    "content": "영향: 의장 공정 지연 (조립의장, 후행, 사외)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 27
+    }
+  },
+  {
+    "chunk_id": "3df79375-9b52-4669-ab77-e87ac07e84cd",
+    "row_index": 19,
+    "column": "대응방안",
+    "content": "대응방안: 재고 관리 강화 | 공급사에 입고관리 요청 | PND 점검 및 업데이트",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 45
+    }
+  },
+  {
+    "chunk_id": "4b49c138-31fa-468e-a90b-6e610e91aa12",
+    "row_index": 19,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 밸브재 발주 현황 | 밸브재 입고 현황 | 밸브재 운송 일정 | 밸브재 생산 완료 일정",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 69
+    }
+  },
+  {
+    "chunk_id": "37ce4a9e-5431-4ac9-8640-41bc243a0e09",
+    "row_index": 20,
+    "column": "주차",
+    "content": "주차: 2414",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "9f29f645-f717-4388-8d20-4052d8f4802b",
+    "row_index": 20,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "573a660e-f783-40b1-88b5-9d6888380856",
+    "row_index": 20,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "3989e5a7-5bfd-4edd-bb81-98d980a1aaf1",
+    "row_index": 20,
+    "column": "이슈",
+    "content": "이슈: 사외블록 8개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "763e51ea-5a19-43a2-a277-23323bbd5ca8",
+    "row_index": 20,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "1f05d1d1-c197-4994-ba3f-30e2f1a0a8a1",
+    "row_index": 20,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "8a1f8087-e1f4-482c-9111-546b4ce73a0e",
+    "row_index": 20,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "c864e164-0e5c-4800-bee3-cb1b9e299d36",
+    "row_index": 20,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "44fdd1fa-42de-4cd2-b8a9-53ff61f8adf7",
+    "row_index": 20,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "5281987e-c69d-4a0b-914f-addcdb1cf662",
+    "row_index": 20,
+    "column": "부가정보",
+    "content": "부가정보: 신한 4ea : H2546 1ea, H2547 1ea, (D/H), H2546 1ea, H2547 1ea (E/C)\n건화 2ea : H4386 2ea (E/ROOM)\n유일 1ea : H2529 1ea (E/C)\n기득 1ea : H4387 1ea (S/Boss)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 151
+    }
+  },
+  {
+    "chunk_id": "03cf0be2-00c5-4f35-80a1-a1f91f28c0fc",
+    "row_index": 21,
+    "column": "주차",
+    "content": "주차: 2413",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "a7df47c8-2583-4783-8cf1-5bef52cc2f1c",
+    "row_index": 21,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "ff0af5cc-a5c2-4281-a080-49e1c6de8d8f",
+    "row_index": 21,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "bd1e2ece-4641-4a0c-a319-57aa2996c2e7",
+    "row_index": 21,
+    "column": "이슈",
+    "content": "이슈: 사외블록 9개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "ec7eeb8a-a043-4e0f-b861-e6ca9d1d5aaa",
+    "row_index": 21,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "bd442d79-3d5c-459e-9e27-e2ade0b00075",
+    "row_index": 21,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "65c2937a-c306-482c-8315-85910f6d42a5",
+    "row_index": 21,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "3d399530-6353-4fb2-8a3f-55aa726a0586",
+    "row_index": 21,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "6718f4fb-97d3-4df3-b755-e8262b53a28d",
+    "row_index": 21,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "daafe4e0-bab9-47d3-898b-2ddd04acffb6",
+    "row_index": 21,
+    "column": "부가정보",
+    "content": "부가정보: 신한 5ea : H2546 1ea, H2547 1ea, H4381 1ea (D/H), H2546 1ea, H4381 1ea (E/C)\n문성 2ea : H4384 2ea (WATER BREAK)\n유일 1ea : H2529 1ea (E/C)\n기득 1ea : H4387 1ea (S/Boss)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 166
+    }
+  },
+  {
+    "chunk_id": "01e042b9-8345-4466-b0a8-58c8f2c68887",
+    "row_index": 22,
+    "column": "주차",
+    "content": "주차: 2413",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "592ada29-b833-4542-ab48-f82eab3b6cf1",
+    "row_index": 22,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "40eeb50b-1e8d-47f7-aa66-b56e3e4d3a14",
+    "row_index": 22,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "42fbd613-fec5-43aa-9cd6-3194e5066d3a",
+    "row_index": 22,
+    "column": "이슈",
+    "content": "이슈: 블루오션 2527호선 90A/B - 의장협력사 이탈로 대체 협력사 투입 중, 가구입고 지연, 4/26 선적 시 전체 판넬 설치 완료, 1차 가구 설치 완료",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 90
+    }
+  },
+  {
+    "chunk_id": "f7ac8450-a6e8-4662-ac13-d84974400a00",
+    "row_index": 22,
+    "column": "리스크",
+    "content": "리스크: 공정 지연, 작업 물량 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 20
+    }
+  },
+  {
+    "chunk_id": "69571f7a-4c98-4fba-a7d7-60a4c50af767",
+    "row_index": 22,
+    "column": "원인",
+    "content": "원인: 조립 착수(5일), 조립 완료(19일), PE착수(27일), PE 검사(43일) 지연 | 의장협력사 이탈",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 62
+    }
+  },
+  {
+    "chunk_id": "62b79af3-4b56-44d0-b7fc-3992e9d55898",
+    "row_index": 22,
+    "column": "영향",
+    "content": "영향: 잔여 작업 사내로 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 16
+    }
+  },
+  {
+    "chunk_id": "5f74fd14-c01e-4ce4-b314-55ae85438da6",
+    "row_index": 22,
+    "column": "대응방안",
+    "content": "대응방안: 잔여작업 사내 A/S 일정 수립 | 대체 의장협력사 투입",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 37
+    }
+  },
+  {
+    "chunk_id": "e76dc5c7-208a-42f7-9fe8-8a1fc80fe3a3",
+    "row_index": 22,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "bb795f41-aa60-45f2-b330-13d305c2f902",
+    "row_index": 22,
+    "column": "부가정보",
+    "content": "부가정보: PE 검사 완료, UPP.~D-Dk Inside 전처리 완료/UPP.~B-Dk 보온 완료, BP검사(A-Dk 3/29 ~예정)  \n(의장협력사 이탈로 대체 협력사 투입 중, 4/26 선적 시 전체 판넬 설치 완료, 1차 가구 설치 완료)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 138
+    }
+  },
+  {
+    "chunk_id": "700e6e6d-2b12-4723-b826-14c0f70a7e74",
+    "row_index": 23,
+    "column": "주차",
+    "content": "주차: 2413",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "b43557c7-bd71-40cf-931d-0f1dc7a62c09",
+    "row_index": 23,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "b3d4fb8b-881d-483f-bb92-df42fa2bf84e",
+    "row_index": 23,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "6b958b5c-38a0-41b3-a9a8-0d731764f86e",
+    "row_index": 23,
+    "column": "이슈",
+    "content": "이슈: 블루오션 2549호선 90A/B - 5/22 선적 시 C/D/Navi. Dk 판넬/가구 미완 ⇒ 사내 A/S",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 64
+    }
+  },
+  {
+    "chunk_id": "1675e1b3-5c10-427b-bd29-9be61a592ae8",
+    "row_index": 23,
+    "column": "리스크",
+    "content": "리스크: 공정 지연, 작업 물량 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 20
+    }
+  },
+  {
+    "chunk_id": "47a8c051-d584-4add-bad5-e0e937b4257b",
+    "row_index": 23,
+    "column": "원인",
+    "content": "원인: PE 검사 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 12
+    }
+  },
+  {
+    "chunk_id": "44604c04-d394-404a-a24c-2443061b593e",
+    "row_index": 23,
+    "column": "영향",
+    "content": "영향: 사내 A/S 물량 발생",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 16
+    }
+  },
+  {
+    "chunk_id": "a92a3438-1704-4350-8468-e8e087b31abc",
+    "row_index": 23,
+    "column": "대응방안",
+    "content": "대응방안: C/D/Navi. Dk 판넬/가구에 대한 사내 A/S",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "d7fbd80e-e54d-4495-aec7-eca34ca69414",
+    "row_index": 23,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "1194738c-61ee-4494-be41-36fdeb76680b",
+    "row_index": 23,
+    "column": "부가정보",
+    "content": "부가정보: Upp.~C-Dk PE 완료/Cable 선행포설 완료, D~Navi.-Dk 선행의장 완료\n(완설 목표관리 → 5/22 선적 시 C/D/Navi. Dk 판넬/가구 미완 ⇒ 사내 A/S)\n[5/22 선적예정] ",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 121
+    }
+  },
+  {
+    "chunk_id": "56b0ef0b-6b2b-4347-95e0-77f8cb78cb85",
+    "row_index": 24,
+    "column": "주차",
+    "content": "주차: 2413",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "9033faba-7cb8-4ea5-9af3-d9b0a6c56a28",
+    "row_index": 24,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "0eda56ca-a82c-4d58-a0db-2c55800a9439",
+    "row_index": 24,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "39f01e2f-cee1-4409-aec3-294cac837637",
+    "row_index": 24,
+    "column": "이슈",
+    "content": "이슈: 블루오션 2559호선 90A/B - 5/22 선적 시 C/D/Navi. Dk 결선/판넬/가구 미완 ⇒ 사내A/S",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 66
+    }
+  },
+  {
+    "chunk_id": "2f9d41be-10f5-4c2a-a380-808fed279167",
+    "row_index": 24,
+    "column": "리스크",
+    "content": "리스크: 공정 지연, 작업 물량 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 20
+    }
+  },
+  {
+    "chunk_id": "9fafbb4f-a40e-4055-8e2b-bdcb418e079b",
+    "row_index": 24,
+    "column": "원인",
+    "content": "원인: 의장 협력사 이탈 영향 선행의장 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 24
+    }
+  },
+  {
+    "chunk_id": "9a1651a1-d892-4056-8509-6bcd239c6ca1",
+    "row_index": 24,
+    "column": "영향",
+    "content": "영향: 사내 A/S 물량 발생 | PE 착수 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 27
+    }
+  },
+  {
+    "chunk_id": "ba2ce97e-fe62-482e-878e-eafad8fd0f0c",
+    "row_index": 24,
+    "column": "대응방안",
+    "content": "대응방안: C/D/Navi. Dk 결선/판넬/가구에 대한 사내 A/S",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 38
+    }
+  },
+  {
+    "chunk_id": "93900e98-349d-47e1-a1f5-a331bf0d0aea",
+    "row_index": 24,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 블루오션의 협력사 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 50
+    }
+  },
+  {
+    "chunk_id": "cba89365-1af1-4761-a0b5-e33131a4cc5f",
+    "row_index": 24,
+    "column": "부가정보",
+    "content": "부가정보: 전체 BLK 조립완료, 의장 협력사 이탈 영향 선행의장 지연, PE 착수지연 중\n(완설 목표관리 → 5/22 선적 시 C/D/Navi. Dk 결선/판넬/가구 미완 ⇒ 사내A/S)\n[5/22 선적예정]",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 117
+    }
+  },
+  {
+    "chunk_id": "9fb197f1-e06a-4389-ba8e-6d0639f9717a",
+    "row_index": 25,
+    "column": "주차",
+    "content": "주차: 2412",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "c9897ae0-6de2-49b1-b757-93df744bea32",
+    "row_index": 25,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "960f6014-1dbc-4b37-ab23-773113c2f5a0",
+    "row_index": 25,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "fac8a562-3531-4336-8c4d-9066b195e0ec",
+    "row_index": 25,
+    "column": "이슈",
+    "content": "이슈: 사외블록 10개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 18
+    }
+  },
+  {
+    "chunk_id": "0bc8dd74-d3dd-48e0-a0e7-25d56aff62f9",
+    "row_index": 25,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "d5d7ad56-e23f-4439-a69d-cd184ff2c618",
+    "row_index": 25,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "56393acb-d77e-4e6a-b35f-d119698ec416",
+    "row_index": 25,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "e844cbb9-7454-4a66-8264-319e4153595e",
+    "row_index": 25,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "cb1ec23c-9eee-44a6-83e3-5ce70be8bf8d",
+    "row_index": 25,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "008b078c-42c5-420c-bbe4-2c645ab3e613",
+    "row_index": 25,
+    "column": "부가정보",
+    "content": "부가정보: 신한 4ea : H4381 1ea, H4382 1ea (D/H), H4381 1ea, H4382 1ea (E/C)\nEK 2ea : H2549 2ea (S/Boss)\n문성 2ea : H4384 2ea (AFT)\n유일 1ea : H2529 1ea (E/C)\n기득 1ea : H4387 1ea (S/Boss)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 175
+    }
+  },
+  {
+    "chunk_id": "7a72901a-3495-4e97-8469-15f251fd928c",
+    "row_index": 26,
+    "column": "주차",
+    "content": "주차: 2412",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "1f71bb39-d849-48da-a8af-5f85f48db5c7",
+    "row_index": 26,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "f4c56134-857f-4bec-946f-7275bfa8b9f4",
+    "row_index": 26,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "6a49bd5e-b02c-4118-b4b2-124d5e0c3056",
+    "row_index": 26,
+    "column": "이슈",
+    "content": "이슈: 신한중공업 - 2547호선 91A PE 검사 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "bb26508e-5da0-41b7-8f6b-a60c737d83ba",
+    "row_index": 26,
+    "column": "리스크",
+    "content": "리스크: 공정 지연 | 블록 입고 지연 | 작업 물량 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "c2a7b06d-953d-44ae-96cf-ef422b592717",
+    "row_index": 26,
+    "column": "대응방안",
+    "content": "대응방안: 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "d8981a65-f5f8-4790-96ad-5aa8bbf97655",
+    "row_index": 26,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "28a4efa2-c84b-486c-b495-64a080ebcac8",
+    "row_index": 26,
+    "column": "부가정보",
+    "content": "부가정보: 3/22일 PE 검사  예정으로 PE검사 지연\n→ 외판 도장 후 진수 전 입고 목표 (돌관 예정)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 60
+    }
+  },
+  {
+    "chunk_id": "87c8659e-f763-49bf-bd60-389c3a67fcda",
+    "row_index": 27,
+    "column": "주차",
+    "content": "주차: 2411",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "13abe0a6-ddb0-442a-9967-88c3330f8d02",
+    "row_index": 27,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "42d47d5c-0dd3-4dc3-aa79-9acaa853ca84",
+    "row_index": 27,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "37e34c8f-a1cc-4979-8cd6-5db99a468768",
+    "row_index": 27,
+    "column": "이슈",
+    "content": "이슈: 신한중공업 - 2547호선 91AB DECK 곡직사 부족",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "d3cf40ae-5559-4116-9fb1-27d6aa40b2b0",
+    "row_index": 27,
+    "column": "리스크",
+    "content": "리스크: 공정 지연 | 블록 입고 지연 | 작업 물량 사내 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "8a5a6aa3-2841-48a3-a349-7250fccc3971",
+    "row_index": 27,
+    "column": "원인",
+    "content": "원인: DECK 곡직사 부족",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 15
+    }
+  },
+  {
+    "chunk_id": "99aafc89-fbf3-4f5a-8ad1-1fd82e60ecfa",
+    "row_index": 27,
+    "column": "영향",
+    "content": "영향: 공정 일정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 12
+    }
+  },
+  {
+    "chunk_id": "e2531f96-94e0-4ce2-b6fa-9ab4277b79f1",
+    "row_index": 27,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 협력사 인력 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 47
+    }
+  },
+  {
+    "chunk_id": "933343fb-5d94-48b1-9d7b-b35f17502915",
+    "row_index": 28,
+    "column": "주차",
+    "content": "주차: 2410",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "57b66779-1b51-40ce-9d70-bb1dca0a638b",
+    "row_index": 28,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "d0102478-93fe-4509-aa93-257bfa5a1454",
+    "row_index": 28,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "2040f627-9503-47ce-81ca-071e7b93e9b4",
+    "row_index": 28,
+    "column": "이슈",
+    "content": "이슈: 사외블록 8개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "2f13b8ff-43a0-4dba-b37f-5b47685a49ff",
+    "row_index": 28,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "f1b49203-7444-4e95-a8bf-85eb84177046",
+    "row_index": 28,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "e6f2e733-61f9-4f93-937e-51d5d5487176",
+    "row_index": 28,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "faf017c7-97a8-49e0-b573-8c2870e7cbc3",
+    "row_index": 28,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "bc2e691a-9ff3-4619-aaae-9f3e7d455b13",
+    "row_index": 28,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 탑재 일정 계획",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 46
+    }
+  },
+  {
+    "chunk_id": "493172aa-5ecb-4840-a3a6-fe495c964b5a",
+    "row_index": 28,
+    "column": "부가정보",
+    "content": "부가정보: 신한 4ea : H4381 1ea, H4382 1ea (D/H), H4381 1ea, H4382 1ea (E/C)\nEK 2ea : H2549 2ea (S/Boss)\n유일 1ea : H2529 1ea (E/C)\n기득 1ea : H4387 1ea (S/Boss)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 150
+    }
+  },
+  {
+    "chunk_id": "2be18bb6-68f0-4f7d-b791-0b42dcccff0f",
+    "row_index": 29,
+    "column": "주차",
+    "content": "주차: 2410",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "5482639b-fb15-47d2-ba5c-701195669690",
+    "row_index": 29,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "9ce03c69-8f46-42b8-87d4-051873977819",
+    "row_index": 29,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "476ac581-df1c-433f-84c2-6871f4904188",
+    "row_index": 29,
+    "column": "이슈",
+    "content": "이슈: 신한중공업 - 2547호선 91AB DECK 곡직사 부족",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "5931b899-f95b-46ae-8610-910e225c12a9",
+    "row_index": 29,
+    "column": "리스크",
+    "content": "리스크: 공정 지연 | 블록 입고 지연 | 작업 물량 사내 이관",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "5c2d9fb7-2104-4c84-a153-f25d6f1c9f46",
+    "row_index": 29,
+    "column": "원인",
+    "content": "원인: DECK 곡직사 부족",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 15
+    }
+  },
+  {
+    "chunk_id": "4d78f9e6-0587-4fed-8539-3bd17a0489c5",
+    "row_index": 29,
+    "column": "영향",
+    "content": "영향: 공정 일정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 12
+    }
+  },
+  {
+    "chunk_id": "f1247ca8-14fa-4a99-b01f-6650fa09d030",
+    "row_index": 29,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 협력사 인력 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 47
+    }
+  },
+  {
+    "chunk_id": "44877c3d-23b0-49ca-bc33-2f1336f3edf2",
+    "row_index": 30,
+    "column": "주차",
+    "content": "주차: 2409",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "67524874-1823-48d3-876f-f0df7b666171",
+    "row_index": 30,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "463683f7-0e35-4891-aceb-bff994c2da8c",
+    "row_index": 30,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "5218162b-53a0-4b85-adab-8bdbb954ffb6",
+    "row_index": 30,
+    "column": "이슈",
+    "content": "이슈: KHMT - H4393 고망간강 미입고",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 25
+    }
+  },
+  {
+    "chunk_id": "bd487e9f-b9cf-4466-8761-dc980c77fc94",
+    "row_index": 30,
+    "column": "리스크",
+    "content": "리스크: 공정 지연 | 블록 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 21
+    }
+  },
+  {
+    "chunk_id": "21d730e2-19a0-4756-9c27-012b03031c62",
+    "row_index": 30,
+    "column": "원인",
+    "content": "원인: 고망간강 입고 지연 (1/30→2/10→2/28→3/20)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 36
+    }
+  },
+  {
+    "chunk_id": "a1594639-1f62-472d-be21-def6a5b27499",
+    "row_index": 30,
+    "column": "영향",
+    "content": "영향: 공정 착수 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 12
+    }
+  },
+  {
+    "chunk_id": "4f9026af-c6cb-4f32-922f-a4b5cef20c16",
+    "row_index": 30,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 사외 고망간강 입고 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 51
+    }
+  },
+  {
+    "chunk_id": "c7877aa0-7ebb-48cd-bb0b-1c632d1017e1",
+    "row_index": 31,
+    "column": "주차",
+    "content": "주차: 2409",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "e9fa8f47-1f26-4ff7-b909-708bd5b9156a",
+    "row_index": 31,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "8f0d5960-6b10-4593-988c-fc82b634b006",
+    "row_index": 31,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "9252a084-659e-4306-8099-c927b87c6c5a",
+    "row_index": 31,
+    "column": "이슈",
+    "content": "이슈: 상상인 - H4386 Type-B Tank 선적일 지연 예상",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 37
+    }
+  },
+  {
+    "chunk_id": "402725e1-1c87-4004-8326-58474c69baf1",
+    "row_index": 31,
+    "column": "리스크",
+    "content": "리스크: 공정 지연 | 블록 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 21
+    }
+  },
+  {
+    "chunk_id": "f68c5539-0592-4afa-b25b-641366e65051",
+    "row_index": 31,
+    "column": "원인",
+    "content": "원인: 강재/의장재 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 16
+    }
+  },
+  {
+    "chunk_id": "f3fc9a32-362b-4ef0-a96b-26a22fe56977",
+    "row_index": 31,
+    "column": "영향",
+    "content": "영향: 공정 착수 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 12
+    }
+  },
+  {
+    "chunk_id": "a3362727-4db1-47cb-8f89-633bc1f9da3a",
+    "row_index": 31,
+    "column": "대응방안",
+    "content": "대응방안: 탑재 일정 재수립 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 25
+    }
+  },
+  {
+    "chunk_id": "d9404b05-7663-444b-8cba-bcc1f255102f",
+    "row_index": 31,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 사외 강재/의장재 입고 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 53
+    }
+  },
+  {
+    "chunk_id": "6f77539a-1be6-4ba3-bb54-e5acec283a37",
+    "row_index": 32,
+    "column": "주차",
+    "content": "주차: 2409",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "ea018179-f95e-4fb4-88dc-d1343d9e3ddd",
+    "row_index": 32,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "7baaa6c9-5ea2-41e0-bf21-e183498b3dbe",
+    "row_index": 32,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "aa3a07b4-b1a7-4207-a00a-63d5e3e737bb",
+    "row_index": 32,
+    "column": "이슈",
+    "content": "이슈: 선보 (부산) - 블록 적치로 인한 후속 호선 착수 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "333ef616-98af-44cf-b334-f0dc6881c8b1",
+    "row_index": 32,
+    "column": "리스크",
+    "content": "리스크: 공정 지연 | 블록 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 21
+    }
+  },
+  {
+    "chunk_id": "eaaa641b-1a5f-450d-be7c-1a12d06a6ec7",
+    "row_index": 32,
+    "column": "원인",
+    "content": "원인: 블록 적치로 인한 작업장 점유",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 20
+    }
+  },
+  {
+    "chunk_id": "9de2b423-6c9f-48d5-a667-0a1d32e57954",
+    "row_index": 32,
+    "column": "영향",
+    "content": "영향: 후속 H2530/2560 착수 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 23
+    }
+  },
+  {
+    "chunk_id": "6db52db7-f507-47cb-ad45-915ec30da0f7",
+    "row_index": 32,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적 | 작업장 사용 일정 현황",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 50
+    }
+  },
+  {
+    "chunk_id": "6b53031b-167a-4ff0-b3ef-71651c87f755",
+    "row_index": 33,
+    "column": "주차",
+    "content": "주차: 2402",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 8
+    }
+  },
+  {
+    "chunk_id": "b380a8b2-2b0c-4aa9-9539-b3855709ba08",
+    "row_index": 33,
+    "column": "대분류",
+    "content": "대분류: 사외",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 7
+    }
+  },
+  {
+    "chunk_id": "b33c1eda-8bb1-4935-b238-ce034973fc90",
+    "row_index": 33,
+    "column": "팀",
+    "content": "팀: 사외공정관리팀",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "b2bb844d-dbb2-4db4-9b24-8fa28c942240",
+    "row_index": 33,
+    "column": "이슈",
+    "content": "이슈: 사외블록 8개 입고 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 17
+    }
+  },
+  {
+    "chunk_id": "92508b0f-0fc1-45c0-9559-3c34823f18c3",
+    "row_index": 33,
+    "column": "리스크",
+    "content": "리스크: 공정 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 10
+    }
+  },
+  {
+    "chunk_id": "fe6820bd-405b-484c-8a54-ab4fbf04209d",
+    "row_index": 33,
+    "column": "원인",
+    "content": "원인: 협력사 생산 지연",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 13
+    }
+  },
+  {
+    "chunk_id": "a33e9052-1aee-4cc7-a9cb-a7d0b198949c",
+    "row_index": 33,
+    "column": "영향",
+    "content": "영향: 탑재 공정 지연 | 탑재 돌관작업으로 생산시수 증가",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 32
+    }
+  },
+  {
+    "chunk_id": "c6fafbe7-afd5-4ab5-8c0e-fa9285abe08b",
+    "row_index": 33,
+    "column": "대응방안",
+    "content": "대응방안: 협력사 생산/입고 관리 요청 | 탑재 돌관작업",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 31
+    }
+  },
+  {
+    "chunk_id": "12e3a022-d509-48e2-940d-01c9b8813e52",
+    "row_index": 33,
+    "column": "관련데이터(이슈 판단 근거 데이터)",
+    "content": "관련데이터(이슈 판단 근거 데이터): 사외 공정 일정 계획/실적",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 35
+    }
+  },
+  {
+    "chunk_id": "66a0066f-1d9e-409e-a35a-9080b93d3c0c",
+    "row_index": 33,
+    "column": "부가정보",
+    "content": "부가정보: 건화 3ea : H4380 1ea, H4382 2ea (RING)\nEK중공업 3ea : H2548 2ea (S/BOSS), H4382 1ea (R/HORN)\n기득 2ea : H2526 1ea (Bulwark), H4382 1ea (BOW)",
+    "metadata": {
+      "source_file": "{df}",
+      "length": 139
+    }
   }
 ]

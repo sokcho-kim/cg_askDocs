@@ -5,6 +5,7 @@ PDF 문서 전처리 및 메타/청크 추출 구현 클래스
 from .base_document import AbstractDocument
 from pathlib import Path
 import fitz  # PyMuPDF
+import re
 
 class PDFDocument(AbstractDocument):
     def __init__(self, filepath: str):
@@ -33,6 +34,105 @@ class PDFDocument(AbstractDocument):
                 "images": images,
                 "page_obj": page,
             }
+
+    def get_blocks(self):
+        """블록 단위로 텍스트/이미지 정보 반환 (generator) - 개선된 버전"""
+        for idx in range(self.pdf.page_count):
+            page = self.pdf.load_page(idx)
+            
+            # 블록 단위로 텍스트 추출
+            blocks = page.get_text("dict")["blocks"]
+            
+            for block_idx, block in enumerate(blocks):
+                if "lines" in block:  # 텍스트 블록
+                    text_content = ""
+                    for line in block["lines"]:
+                        for span in line["spans"]:
+                            text_content += span["text"]
+                    
+                    if text_content.strip():
+                        yield {
+                            "page_num": idx + 1,
+                            "block_num": block_idx + 1,
+                            "text": text_content.strip(),
+                            "bbox": block["bbox"],  # 블록 위치 정보
+                            "type": "text"
+                        }
+                
+                elif "image" in block:  # 이미지 블록
+                    yield {
+                        "page_num": idx + 1,
+                        "block_num": block_idx + 1,
+                        "image": block["image"],
+                        "bbox": block["bbox"],
+                        "type": "image"
+                    }
+
+    def get_sections(self):
+        """섹션 단위로 텍스트 정보 반환 (generator) - 제목 기반 분할"""
+        current_section = []
+        current_title = "Introduction"
+        
+        for page_info in self.get_pages():
+            page_text = page_info["text"]
+            page_num = page_info["page_num"]
+            
+            # 제목 패턴 찾기 (예: "Part 1", "Chapter", "1.", "1.1" 등)
+            lines = page_text.split('\n')
+            
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+                
+                # 제목 패턴 확인
+                if self._is_title(line):
+                    # 이전 섹션 저장
+                    if current_section:
+                        yield {
+                            "page_num": page_num,
+                            "title": current_title,
+                            "content": "\n".join(current_section),
+                            "type": "section"
+                        }
+                    
+                    # 새 섹션 시작
+                    current_title = line
+                    current_section = [line]
+                else:
+                    current_section.append(line)
+            
+            # 페이지 끝에서 섹션 저장
+            if current_section:
+                yield {
+                    "page_num": page_num,
+                    "title": current_title,
+                    "content": "\n".join(current_section),
+                    "type": "section"
+                }
+                current_section = []
+
+    def _is_title(self, line: str) -> bool:
+        """라인이 제목인지 판단"""
+        # 제목 패턴들
+        title_patterns = [
+            r'^Part\s+\d+',  # Part 1, Part 2, ...
+            r'^Chapter\s+\d+',  # Chapter 1, Chapter 2, ...
+            r'^\d+\.\s+',  # 1. 제목, 2. 제목, ...
+            r'^\d+\.\d+\s+',  # 1.1 제목, 1.2 제목, ...
+            r'^[A-Z][A-Z\s]+$',  # 대문자로만 된 라인
+            r'^[가-힣\s]+$',  # 한글로만 된 라인 (짧은 경우)
+        ]
+        
+        for pattern in title_patterns:
+            if re.match(pattern, line.strip()):
+                return True
+        
+        # 길이가 짧고 특수문자가 적은 경우
+        if len(line.strip()) < 50 and len(re.findall(r'[^\w\s]', line)) < 3:
+            return True
+        
+        return False
 
     def get_chunks(self) -> list[dict]:
         """PDF 문서의 청크(페이지/블록 등) 반환 (기본: 페이지 단위)"""
