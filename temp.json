@@ -367,17 +367,19 @@
     "chunk_index": 13,
     "chunk_type": "text",
     "location": "page:8,block:4",
-    "content": "범위공장 단위의 생산 시스템 혁신소형,경량제품 생산",
+    "content": "범위•공장 단위의 생산 시스템 혁신•소형,경량제품 생산",
     "embedding": null,
     "metadata": {
-      "length": 28,
+      "length": 30,
       "chunk_in_content": 0,
       "keywords": [
         "생산",
-        "범위공장",
+        "범위",
+        "공장",
         "단위의",
         "시스템",
-        "혁신소형",
+        "혁신",
+        "소형",
         "경량제품"
       ],
       "quality_score": 0.7,
@@ -394,10 +396,10 @@
     "chunk_index": 14,
     "chunk_type": "text",
     "location": "page:8,block:5",
-    "content": "조선소 전체의 생산 시스템 혁신 (설계, 생산, 물류, 안전, 유지 보수 등) ➔사외 공급망 공장들로도 확장대형,중량물 제작",
+    "content": "•조선소 전체의 생산 시스템 혁신 (설계, 생산, 물류, 안전, 유지 보수 등) ➔사외 공급망 공장들로도 확장•대형,중량물 제작",
     "embedding": null,
     "metadata": {
-      "length": 69,
+      "length": 71,
       "chunk_in_content": 0,
       "keywords": [
         "생산",
@@ -425,14 +427,14 @@
     "chunk_index": 15,
     "chunk_type": "text",
     "location": "page:8,block:6",
-    "content": "목표생산 공정 자동화 및 최적화, 생산 효율성 극대화, 맞춤형 생산 체계 구축",
+    "content": "목표•생산 공정 자동화 및 최적화, 생산 효율성 극대화, 맞춤형 생산 체계 구축",
     "embedding": null,
     "metadata": {
-      "length": 43,
+      "length": 44,
       "chunk_in_content": 0,
       "keywords": [
         "생산",
-        "목표생산",
+        "목표",
         "공정",
         "자동화",
         "최적화",
@@ -456,10 +458,10 @@
     "chunk_index": 16,
     "chunk_type": "text",
     "location": "page:8,block:7",
-    "content": "선박 생산 효율성 극대화, 공기 단축, 안전성 강화, 친환경 조선소 구축",
+    "content": "•선박 생산 효율성 극대화, 공기 단축, 안전성 강화, 친환경 조선소 구축",
     "embedding": null,
     "metadata": {
-      "length": 40,
+      "length": 41,
       "chunk_in_content": 0,
       "keywords": [
         "선박",
@@ -487,13 +489,14 @@
     "chunk_index": 17,
     "chunk_type": "text",
     "location": "page:8,block:8",
-    "content": "핵심기술IoT, AI, 빅데이터, 클라우드 컴퓨팅, 생산 관리 시스템 (MES), 자동화 설비 등",
+    "content": "핵심기술•IoT, AI, 빅데이터, 클라우드 컴퓨팅, 생산 관리 시스템 (MES), 자동화 설비 등",
     "embedding": null,
     "metadata": {
-      "length": 54,
+      "length": 55,
       "chunk_in_content": 0,
       "keywords": [
-        "핵심기술IoT",
+        "핵심기술",
+        "IoT",
         "AI",
         "빅데이터",
         "클라우드",
@@ -501,8 +504,7 @@
         "생산",
         "관리",
         "시스템",
-        "MES",
-        "자동화"
+        "MES"
       ],
       "quality_score": 0.7999999999999999,
       "search_priority": "high",
@@ -518,10 +520,10 @@
     "chunk_index": 18,
     "chunk_type": "text",
     "location": "page:8,block:9",
-    "content": "스마트 팩토리 기술 + 조선 특화 기술 (3D 모델링, 블록 생산 자동화, 사내외 물류 최적화, 안전/환경 기술)비정형 생산인력 지원하는 기술 (외업, 도장, 발판, 사상 등)",
+    "content": "•스마트 팩토리 기술 + 조선 특화 기술 (3D 모델링, 블록 생산 자동화, 사내외 물류 최적화, 안전/환경 기술)•비정형 생산인력 지원하는 기술 (외업, 도장, 발판, 사상 등)",
     "embedding": null,
     "metadata": {
-      "length": 98,
+      "length": 100,
       "chunk_in_content": 0,
       "keywords": [
         "기술",
@@ -549,10 +551,10 @@
     "chunk_index": 19,
     "chunk_type": "text",
     "location": "page:8,block:10",
-    "content": "공통점 4차 산업혁명 기술을 활용하여 생산성을 향상시키는 것을 목표로 함 자동화, 지능화, 데이터 기반 의사 결정을 통해 효율성을 높임 맞춤형 생산 및 유연한 생산 시스템을 추구",
+    "content": "공통점• 4차 산업혁명 기술을 활용하여 생산성을 향상시키는 것을 목표로 함• 자동화, 지능화, 데이터 기반 의사 결정을 통해 효율성을 높임• 맞춤형 생산 및 유연한 생산 시스템을 추구",
     "embedding": null,
     "metadata": {
-      "length": 99,
+      "length": 102,
       "chunk_in_content": 0,
       "keywords": [
         "생산",
@@ -580,10 +582,10 @@
     "chunk_index": 20,
     "chunk_type": "text",
     "location": "page:8,block:11",
-    "content": "차이점 적용 산업 및 범위: 스마트 팩토리는 제조업 전반, 스마트 야드는 조선업에 특화  핵심 기술: 스마트 야드는 조선업 특성을 고려한 추가 기술 필요 (3D 모델링, 블록 생산 자동화 등) 생산 대상: 스마트 팩토리는 상대적 소형,경량제품 생산, 스마트 야드는 중대형부재, 초대형 선박 건조",
+    "content": "차이점• 적용 산업 및 범위: 스마트 팩토리는 제조업 전반, 스마트 야드는 조선업에 특화 • 핵심 기술: 스마트 야드는 조선업 특성을 고려한 추가 기술 필요 (3D 모델링, 블록 생산 자동화 등)• 생산 대상: 스마트 팩토리는 상대적 소형,경량제품 생산, 스마트 야드는 중대형부재, 초대형 선박 건조",
     "embedding": null,
     "metadata": {
-      "length": 164,
+      "length": 167,
       "chunk_in_content": 0,
       "keywords": [
         "스마트",
@@ -611,10 +613,10 @@
     "chunk_index": 21,
     "chunk_type": "text",
     "location": "page:8,block:12",
-    "content": "요약 스마트 팩토리는 공장 단위의 생산 시스템 혁신을 의미하며, 스마트 야드는 수개~수십개의 사내외 공장이 유기적으로 연계되는 조선소 전체의 생산 시스템을 혁신하는 개념 스마트 야드는 스마트 팩토리의 개념을 포괄하면서도, 조선업의 특수한 환경과 요구 사항을 반영하여 더욱 고도화된 기술과 시스템을 적용",
+    "content": "요약• 스마트 팩토리는 공장 단위의 생산 시스템 혁신을 의미하며, 스마트 야드는 수개~수십개의 사내외 공장이 유기적으로 연계되는 조선소 전체의 생산 시스템을 혁신하는 개념• 스마트 야드는 스마트 팩토리의 개념을 포괄하면서도, 조선업의 특수한 환경과 요구 사항을 반영하여 더욱 고도화된 기술과 시스템을 적용",
     "embedding": null,
     "metadata": {
-      "length": 168,
+      "length": 170,
       "chunk_in_content": 0,
       "keywords": [
         "스마트",
