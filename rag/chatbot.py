@@ -82,20 +82,14 @@ class RAGChatbot:
                     'chunk_id': chunk_id,
                     'content': result['content'],
                     'metadata': result['metadata'],
-                    'score': result.get('score', 0) * 1.5,  # 엑셀 데이터 가중치 증가
+                    'score': result.get('score', 0) * 2.0,  # 엑셀 데이터 가중치 대폭 증가
                     'source': 'keyword'
                 }
         
-        # 하이브리드 검색 결과 추가
+        # 하이브리드 검색 결과 추가 (키워드 결과가 없을 때만)
         for result in hybrid_results:
             chunk_id = result['chunk_id']
-            if chunk_id in combined_results:
-                # 이미 있는 경우 점수 업데이트
-                combined_results[chunk_id]['score'] = max(
-                    combined_results[chunk_id]['score'],
-                    result.get('final_score', result.get('score', 0))
-                )
-            else:
+            if chunk_id not in combined_results:  # 키워드 결과가 없을 때만 추가
                 combined_results[chunk_id] = {
                     'chunk_id': chunk_id,
                     'content': result['content'],
@@ -153,192 +147,191 @@ class RAGChatbot:
             return "죄송합니다. 질문에 대한 관련 정보를 찾을 수 없습니다."
         
         # 검색된 컨텍스트 분석
-        relevant_contents = []
         excel_contents = []
         pdf_contents = []
+        all_contents = []
         
-        for ctx in contexts[:5]:  # 상위 5개 컨텍스트 사용
+        for ctx in contexts[:10]:  # 상위 10개 컨텍스트 사용
             content = ctx.get('content', '')
-            chunk_type = ctx.get('chunk_type', '')
-            document_id = ctx.get('document_id', '')
+            chunk_id = ctx.get('chunk_id', '')
+            metadata = ctx.get('metadata', {})
             
             if content and len(content.strip()) > 10:  # 의미있는 내용만
-                relevant_contents.append(content.strip())
+                all_contents.append({
+                    'content': content.strip(),
+                    'chunk_id': chunk_id,
+                    'metadata': metadata,
+                    'score': ctx.get('score', 0)
+                })
                 
-                # 문서 타입별 분류
-                if 'excel' in document_id.lower() or chunk_type == 'table':
-                    excel_contents.append(content.strip())
-                elif 'pdf' in document_id.lower() or chunk_type in ['text', 'section']:
-                    pdf_contents.append(content.strip())
+                # 문서 타입별 분류 (chunk_id 기반)
+                if 'excel' in chunk_id.lower():
+                    excel_contents.append({
+                        'content': content.strip(),
+                        'chunk_id': chunk_id,
+                        'metadata': metadata,
+                        'score': ctx.get('score', 0)
+                    })
+                elif 'pdf' in chunk_id.lower() or 'smart_yard' in chunk_id.lower():
+                    pdf_contents.append({
+                        'content': content.strip(),
+                        'chunk_id': chunk_id,
+                        'metadata': metadata,
+                        'score': ctx.get('score', 0)
+                    })
         
-        if not relevant_contents:
+        if not all_contents:
             return "관련 정보를 찾았지만 구체적인 내용이 부족합니다."
         
         # 질문 유형 분석
         query_lower = query.lower()
         
         # 공정 관련 질문 처리
-        if any(keyword in query_lower for keyword in ["공정", "지연", "이슈", "주차", "위험", "밸브재", "협력사", "입고"]):
+        if any(keyword in query_lower for keyword in ["공정", "지연", "이슈", "주차", "위험", "밸브재", "협력사", "입고", "사외블록"]):
+            response = "공정 관련 정보를 찾았습니다:\n\n"
+            
             if excel_contents:
                 # 엑셀 데이터 기반 답변
-                response = "공정 관련 정보를 찾았습니다:\n\n"
+                response += "📊 공정 이슈 현황:\n"
                 
                 # 주차별 이슈 분석
                 if "주차" in query_lower:
                     response += "주차별 이슈 현황:\n"
-                    for content in excel_contents[:3]:
+                    for item in excel_contents[:3]:
+                        content = item['content']
                         if "주차:" in content:
-                            response += f"• {content}\n"
+                            response += f"• {content[:300]}...\n"
                     response += "\n"
                 
-                # 지연 위험 분석
-                if "지연" in query_lower and "위험" in query_lower:
-                    response += "공정 지연 위험이 있는 항목들:\n"
-                    for content in excel_contents:
-                        if "지연" in content and ("위험" in content or "리스크" in content):
-                            response += f"• {content[:200]}...\n"
+                # 지연 관련 분석
+                if "지연" in query_lower:
+                    response += "공정 지연 관련 이슈:\n"
+                    for item in excel_contents:
+                        content = item['content']
+                        if "지연" in content:
+                            response += f"• {content[:300]}...\n"
                     response += "\n"
                 
                 # 이슈 분석
                 if "이슈" in query_lower:
                     response += "주요 이슈 현황:\n"
-                    for content in excel_contents[:3]:
+                    for item in excel_contents[:3]:
+                        content = item['content']
                         if "이슈:" in content:
-                            response += f"• {content}\n"
+                            response += f"• {content[:300]}...\n"
                     response += "\n"
                 
                 # 밸브재 관련
                 if "밸브재" in query_lower:
                     response += "밸브재 관련 이슈:\n"
-                    for content in excel_contents:
+                    for item in excel_contents:
+                        content = item['content']
                         if "밸브재" in content:
-                            response += f"• {content}\n"
+                            response += f"• {content[:300]}...\n"
                     response += "\n"
                 
                 # 협력사 관련
                 if "협력사" in query_lower:
                     response += "협력사 관련 이슈:\n"
-                    for content in excel_contents:
+                    for item in excel_contents:
+                        content = item['content']
                         if "협력사" in content:
-                            response += f"• {content}\n"
+                            response += f"• {content[:300]}...\n"
                     response += "\n"
                 
                 # 대응방안
                 response += "대응방안:\n"
-                for content in excel_contents:
+                for item in excel_contents:
+                    content = item['content']
                     if "대응방안:" in content:
-                        response += f"• {content}\n"
+                        response += f"• {content[:300]}...\n"
                         break
                 
-                # 출처 정보 추가
-                if contexts:
-                    top_context = contexts[0]
-                    metadata = top_context.get('metadata', {})
-                    location = metadata.get('location', '')
-                    document_id = top_context.get('chunk_id', '').split('_')[0] if '_' in top_context.get('chunk_id', '') else top_context.get('chunk_id', '')
-                    
-                    response += f"\n📍 출처: {document_id}"
-                    if location:
-                        response += f" | 📍 위치: {location}"
-                    response += "\n\n"
-                
             else:
-                response = "공정 관련 정보를 찾았습니다:\n\n"
-                response += relevant_contents[0][:400] + "...\n\n"
-                
-                # 출처 정보 추가
-                if contexts:
-                    top_context = contexts[0]
-                    metadata = top_context.get('metadata', {})
-                    location = metadata.get('location', '')
-                    document_id = top_context.get('chunk_id', '').split('_')[0] if '_' in top_context.get('chunk_id', '') else top_context.get('chunk_id', '')
-                    
-                    response += f"\n📍 출처: {document_id}"
-                    if location:
-                        response += f" | 📍 위치: {location}"
-                    response += "\n\n"
+                # PDF 데이터 기반 답변
+                response += "관련 정보:\n"
+                for item in all_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
+            
+            # 출처 정보 추가
+            sources = set()
+            for item in all_contents[:3]:
+                chunk_id = item['chunk_id']
+                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+                sources.add(doc_name)
+            
+            response += f"\n📍 출처: {', '.join(sources)}\n\n"
         
         # 스마트 야드 관련 질문
         elif "스마트 야드" in query_lower or "스마트야드" in query_lower:
+            response = "스마트 야드에 대한 정보를 찾았습니다:\n\n"
+            
             if pdf_contents:
-                response = "스마트 야드에 대한 정보를 찾았습니다:\n\n"
-                response += pdf_contents[0][:500] + "...\n\n"
-                if len(pdf_contents) > 1:
-                    response += "추가 정보:\n"
-                    response += pdf_contents[1][:300] + "...\n\n"
+                response += "📋 스마트 야드 정보:\n"
+                for item in pdf_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
             else:
-                response = "스마트 야드 관련 정보를 찾았습니다:\n\n"
-                response += relevant_contents[0][:400] + "...\n\n"
+                response += "관련 정보:\n"
+                for item in all_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
             
             # 출처 정보 추가
-            if contexts:
-                top_context = contexts[0]
-                metadata = top_context.get('metadata', {})
-                location = metadata.get('location', '')
-                document_id = top_context.get('chunk_id', '').split('_')[0] if '_' in top_context.get('chunk_id', '') else top_context.get('chunk_id', '')
-                
-                response += f"📍 출처: {document_id}"
-                if location:
-                    response += f" | 📍 위치: {location}"
-                response += "\n\n"
+            sources = set()
+            for item in all_contents[:3]:
+                chunk_id = item['chunk_id']
+                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+                sources.add(doc_name)
+            
+            response += f"\n📍 출처: {', '.join(sources)}\n\n"
         
         # 기술 관련 질문
         elif any(keyword in query_lower for keyword in ["기술", "ai", "인공지능", "자동화", "iot"]):
+            response = "기술 관련 정보를 찾았습니다:\n\n"
+            
             if pdf_contents:
-                response = "기술 관련 정보를 찾았습니다:\n\n"
-                response += pdf_contents[0][:500] + "...\n\n"
+                response += "🔧 기술 정보:\n"
+                for item in pdf_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
             else:
-                response = "기술 관련 정보를 찾았습니다:\n\n"
-                response += relevant_contents[0][:400] + "...\n\n"
+                response += "관련 정보:\n"
+                for item in all_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
             
             # 출처 정보 추가
-            if contexts:
-                top_context = contexts[0]
-                metadata = top_context.get('metadata', {})
-                location = metadata.get('location', '')
-                document_id = top_context.get('chunk_id', '').split('_')[0] if '_' in top_context.get('chunk_id', '') else top_context.get('chunk_id', '')
-                
-                response += f"📍 출처: {document_id}"
-                if location:
-                    response += f" | 📍 위치: {location}"
-                response += "\n\n"
+            sources = set()
+            for item in all_contents[:3]:
+                chunk_id = item['chunk_id']
+                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+                sources.add(doc_name)
+            
+            response += f"\n📍 출처: {', '.join(sources)}\n\n"
         
         # 일반적인 질문
         else:
             response = "질문에 대한 관련 정보를 찾았습니다:\n\n"
             
             # 가장 관련성 높은 컨텐츠 선택
-            best_content = None
-            best_source = None
-            
-            # 엑셀 데이터가 있으면 우선
             if excel_contents:
-                best_content = excel_contents[0]
-                best_source = "엑셀 데이터"
-            # PDF 데이터가 있으면
+                response += "📊 데이터 기반 정보:\n"
+                for item in excel_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
             elif pdf_contents:
-                best_content = pdf_contents[0]
-                best_source = "PDF 문서"
-            # 일반 컨텐츠
-            elif relevant_contents:
-                best_content = relevant_contents[0]
-                best_source = "문서"
-            
-            if best_content:
-                response += f"{best_source} 기반 정보:\n"
-                response += best_content[:400] + "...\n\n"
+                response += "📋 문서 기반 정보:\n"
+                for item in pdf_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
+            else:
+                response += "관련 정보:\n"
+                for item in all_contents[:3]:
+                    response += f"• {item['content'][:300]}...\n"
             
             # 출처 정보 추가
-            if contexts:
-                top_context = contexts[0]
-                metadata = top_context.get('metadata', {})
-                location = metadata.get('location', '')
-                document_id = top_context.get('chunk_id', '').split('_')[0] if '_' in top_context.get('chunk_id', '') else top_context.get('chunk_id', '')
-                
-                response += f"📍 출처: {document_id}"
-                if location:
-                    response += f" | 📍 위치: {location}"
-                response += "\n\n"
+            sources = set()
+            for item in all_contents[:3]:
+                chunk_id = item['chunk_id']
+                doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+                sources.add(doc_name)
+            
+            response += f"\n📍 출처: {', '.join(sources)}\n\n"
         
         response += "더 구체적인 질문이 있으시면 말씀해 주세요."
         return response

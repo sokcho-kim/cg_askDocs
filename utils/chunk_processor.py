@@ -123,6 +123,9 @@ class ChunkProcessor(ABC):
         # 품질 점수 계산
         quality_score = self.calculate_chunk_quality_score(content, chunk_type)
         
+        # 문서 타입 결정
+        data_type = "pdf_text" if "pdf" in self.document_id.lower() else "excel_table" if "excel" in self.document_id.lower() else "text"
+        
         chunk = {
             "chunk_id": f"{self.document_id}_{chunk_type}_{self.chunk_index}",
             "document_id": self.document_id,
@@ -137,6 +140,7 @@ class ChunkProcessor(ABC):
                 "keywords": keywords,
                 "quality_score": quality_score,
                 "search_priority": "high" if quality_score > 0.7 else "medium" if quality_score > 0.4 else "low",
+                "data_type": data_type,
                 **(metadata or {})
             }
         }
