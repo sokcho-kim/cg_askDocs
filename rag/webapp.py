@@ -18,7 +18,19 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 retriever = EnhancedRetriever()
 
 # Gemma API URL 설정
+# gemma_api_url = os.getenv('GEMMA_API_URL')
+
+# === 환경 변수 로드 ===
+import os
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # 배포 환경에서는 dotenv가 필요 없음
+
+# === Gemma API URL 설정 ===
 gemma_api_url = os.getenv('GEMMA_API_URL')
+
 if gemma_api_url:
     print("✅ Gemma API URL이 설정되어 있습니다. Gemma 모델을 사용합니다.")
     chatbot = RAGChatbot(

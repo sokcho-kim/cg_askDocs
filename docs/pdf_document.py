@@ -6,6 +6,54 @@ from .base_document import AbstractDocument
 from pathlib import Path
 import fitz  # PyMuPDF
 import re
+import base64
+import os
+try:
+    from openai import OpenAI
+    from dotenv import load_dotenv
+    import os
+    load_dotenv()
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
+except Exception:
+    client = None
+
+def image_to_base64(img_bytes):
+    import base64
+    return base64.b64encode(img_bytes).decode("utf-8")
+
+def get_image_caption_with_vlm(image_bytes, context_text=""):
+    if client is None:
+        return "[이미지 설명 오류: OpenAI 키 없음 또는 초기화 실패]"
+    try:
+        base64_image = image_to_base64(image_bytes)
+        image_url = f"data:image/png;base64,{base64_image}"
+        prompt = f"""
+You are analyzing an image extracted from a smart yard presentation slide.\nFocus on industrial/technical keywords like AI, robotics, digital twin, automation, smart factory, etc.\nAvoid vague or artistic expressions.
+"""
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {"type": "image_url", "image_url": {"url": image_url}}
+                    ]
+                }
+            ],
+            temperature=0.2,
+            max_tokens=150,
+        )
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        return f"[이미지 설명 오류: {str(e)}]"
+
+def clean_symbols(text):
+    symbols_to_remove = "•▪⚫"
+    for sym in symbols_to_remove:
+        text = text.replace(sym, "")
+    return text
 
 class PDFDocument(AbstractDocument):
     def __init__(self, filepath: str):
@@ -26,7 +74,8 @@ class PDFDocument(AbstractDocument):
         """페이지별 텍스트/이미지 정보 반환 (generator)"""
         for idx in range(self.pdf.page_count):
             page = self.pdf.load_page(idx)
-            text = page.get_text().strip()  # type: ignore
+            text = (page.get_text() or '').strip()  # type: ignore
+            text = clean_symbols(text)
             images = page.get_images(full=True)
             yield {
                 "page_num": idx + 1,
@@ -138,18 +187,22 @@ class PDFDocument(AbstractDocument):
         """PDF 문서의 청크(페이지/블록 등) 반환 (기본: 페이지 단위)"""
         chunks = []
         for page_info in self.get_pages():
-            # 텍스트 청크
-            if page_info["text"]:
+            text = page_info["text"] or ""
+            # 이미지가 있으면 VLM 설명을 텍스트에 이어붙임
+            if page_info["images"]:
+                for img in page_info["images"]:
+                    xref = img[0]
+                    image_data = self.pdf.extract_image(xref)
+                    img_bytes = image_data["image"]
+                    try:
+                        caption = get_image_caption_with_vlm(img_bytes)
+                    except Exception as e:
+                        caption = f"[이미지 설명 오류: {str(e)}]"
+                    text += f"\n[이미지 설명] {caption}"
+            if text.strip():
                 chunks.append({
                     "type": "text",
                     "page": page_info["page_num"],
-                    "content": page_info["text"]
-                })
-            # 이미지 청크 (xref만 제공, 실제 이미지는 필요시 추출)
-            for img in page_info["images"]:
-                chunks.append({
-                    "type": "image",
-                    "page": page_info["page_num"],
-                    "xref": img[0]
+                    "content": text.strip()
                 })
         return chunks

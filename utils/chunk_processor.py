@@ -187,7 +187,6 @@ class ChunkProcessor(ABC):
         """텍스트 내용을 청크로 분할하여 처리합니다."""
         if not text.strip():
             return
-        
         text_chunks = self.split_text_to_chunks(text)
         for i, chunk_text in enumerate(text_chunks):
             chunk_metadata = {
