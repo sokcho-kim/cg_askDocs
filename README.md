@@ -35,11 +35,31 @@ uvicorn rag.webapp:app --reload
 
 ```
 cg_askDocs/
-├── data/raw/           # 원본 파일
-├── scripts/            # 파싱 스크립트
-├── rag/               # RAG 시스템
-│   ├── webapp.py      # 웹 애플리케이션
-│   ├── chatbot.py     # 챗봇
-│   └── retriever.py   # 검색기
-└── templates/         # 웹 UI
+├── data/
+│   ├── raw/           # 원본 PDF, Excel 파일
+│   ├── processed/     # 처리된 청크 데이터
+│   └── db/           # ChromaDB 벡터 데이터베이스
+├── rag/              # RAG 시스템
+│   ├── webapp.py     # 웹 애플리케이션
+│   ├── chatbot.py    # AI 챗봇
+│   ├── retriever.py  # 벡터 검색기
+│   └── api.py        # API 엔드포인트
+├── scripts/          # 문서 처리 스크립트
+│   ├── parse_pdf.py  # PDF 파싱
+│   ├── parse_excel.py # Excel 파싱
+│   └── index_to_chroma.py # ChromaDB 인덱싱
+├── docs/             # 문서 처리 클래스
+│   ├── base_document.py
+│   ├── pdf_document.py
+│   └── excel_document.py
+├── utils/            # 유틸리티
+│   ├── chunk_processor.py
+│   └── file_utils.py
+├── templates/        # 웹 UI 템플릿
+│   └── index.html
+├── static/          # 웹 UI 스타일
+│   └── style.css
+└── prompts/         # AI 프롬프트
+    ├── rag_chat.prompt
+    └── image_description.prompt
 ```
