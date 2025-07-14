@@ -10,20 +10,19 @@
 # openai
 # jinja2
 
-# 안전하게 기본 설치
+# 필수 패키지
 fastapi
 uvicorn
 pandas
 openpyxl
-pymupdf
+pymupdf  # fitz의 PyPI 패키지명
 requests
 python-dotenv
 openai
 jinja2
 numpy==1.26.4
-python-multipart
-
-
-# 무거운 패키지는 별도 나중에 로드 또는 Docker 환경에서 사용
-chromadb==0.4.24  # ← 최신 버전은 무겁고 빌드 에러 많음, 이 버전까지는 성공률 높음
+chromadb==0.4.24  # ← 버전 고정 필수
 sentence-transformers
+
+# 기타 (필요시)
+# shutil, base64, argparse 등은 표준 라이브러리이므로 별도 설치 불필요
