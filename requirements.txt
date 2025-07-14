@@ -5,3 +5,15 @@ numpy             # 벡터 연산
 # sentence-transformers  # (로컬 임베딩, 주석 처리)
 # requests        # (HuggingFace API 등, 주석 처리)
 # python-dotenv   # (환경변수 로딩, 주석 처리)
+fastapi
+uvicorn
+pandas
+openpyxl
+pymupdf
+requests
+python-dotenv
+openai
+jinja2
+numpy==1.26.4
+python-multipart
+httpx
