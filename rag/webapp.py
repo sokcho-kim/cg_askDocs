@@ -10,6 +10,8 @@ from scripts.parse_excel import parse_excel_file
 from scripts.parse_pdf import parse_pdf_to_chunks
 from rag.retriever import EnhancedRetriever
 from rag.chatbot import RAGChatbot
+from dotenv import load_dotenv
+load_dotenv()
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
