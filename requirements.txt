@@ -1,11 +1,26 @@
+# fastapi
+# uvicorn
+# pandas
+# openpyxl
+# pymupdf
+# chromadb
+# sentence-transformers
+# requests
+# python-dotenv
+# openai
+# jinja2
+
+# 안전하게 기본 설치
 fastapi
 uvicorn
 pandas
 openpyxl
 pymupdf
-chromadb
-sentence-transformers
 requests
 python-dotenv
 openai
 jinja2
+
+# 무거운 패키지는 별도 나중에 로드 또는 Docker 환경에서 사용
+chromadb==0.4.24  # ← 최신 버전은 무겁고 빌드 에러 많음, 이 버전까지는 성공률 높음
+sentence-transformers
