@@ -203,6 +203,13 @@ class PDFDocument(AbstractDocument):
                 chunks.append({
                     "type": "text",
                     "page": page_info["page_num"],
-                    "content": text.strip()
+                    "content": page_info["text"]
+                })
+            # 이미지 청크 (xref만 제공, 실제 이미지는 필요시 추출)
+            for img in page_info["images"]:
+                chunks.append({
+                    "type": "image",
+                    "page": page_info["page_num"],
+                    "xref": img[0]
                 })
         return chunks
