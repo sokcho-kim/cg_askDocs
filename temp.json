@@ -1,23 +1,26 @@
 [
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_0",
-    "document_id": "작업의자형 달비계 안전작업 지침",
+    "chunk_id": "DR_스마트야드개론(데모용)_text_0",
+    "document_id": "DR_스마트야드개론(데모용)",
     "chunk_index": 0,
     "chunk_type": "text",
     "location": "page:1",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n작업의자형달비계안전작업지침\n2022. 12.\n한국산업안전보건공단",
+    "content": "Part １조선 산업의 현황 및 도전 과제\n글로벌 조선 시장 경쟁 심화: 중국, 일본 등 경쟁국과의 경쟁 심화, 고부가가치 선박 수주 경쟁\n노동력 부족: 조선소 인력 고령화, 젊은 인력 유입 감소, 숙련공 부족 심화\n생산성 향상 요구: 인건비 상승, 공기 단축 요구 증대, 생산 효율성 향상 필요\n강화되는 안전 및 환경 규제: 국제 해사 기구(IMO) 환경 규제 강화, 작업장 안전 기준 강화\n기술 혁신의 필요성: 4차 산업혁명 기술 융합 통한 생산성 혁신 및 경쟁력 강화 필요\n스마트 야드가 이러한 문제들을 해결할 핵심 동력임을 제시: 자동화, 디지털화, 지능화를 통해 \n생산성 향상, 비용 절감, 안전성 강화, 환경 규제 대응 가능",
     "embedding": null,
     "metadata": {
-      "length": 61,
+      "length": 355,
       "chunk_in_content": 0,
       "keywords": [
-        "2022",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "작업의자형달비계안전작업지침",
-        "12",
-        "한국산업안전보건공단"
+        "강화",
+        "경쟁",
+        "심화",
+        "생산성",
+        "향상",
+        "환경",
+        "규제",
+        "조선",
+        "부족",
+        "인력"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -27,27 +30,27 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_1",
-    "document_id": "작업의자형 달비계 안전작업 지침",
+    "chunk_id": "DR_스마트야드개론(데모용)_text_1",
+    "document_id": "DR_스마트야드개론(데모용)",
     "chunk_index": 1,
     "chunk_type": "text",
     "location": "page:2",
-    "content": "안전보건기술지침의개요\n◦작성자: 한국안전보건공단송인용\n개정자: 한국산업안전보건공단건설안전실\n◦제․개정경과\n- 2007년10월건설안전분야제정위원회심의\n- 2007년11월총괄제정위원회심의\n- 2011년12월건설안전분야제정위원회심의(개정)\n- 2022년\n2월건설안전분야표준제정위원회심의(개정)\n- 2022년12월건설안전분야표준제정위원회심의(개정)\n◦관련규격및자료\n- (KCS 21 60 10 :2020) 비계\n․[자재] 2.5 기타비계-달비계\n․[시공] 3.6 기타비계-달비계\n◦관련법규․규칙․고시등\n- 산업안전보건기준에관한규칙제35조(관리감독자의유해·위험방지업무등)\n- 산업안전보건기준에관한규칙제45조(지붕위에서의위험방지)\n- 산업안전보건기준에관한규칙제7장제4절(달비계, 달대비계및걸침비계)\n- 고용노동부고시제2020-3호가설공사표준안전작업지침\n◦기술지침의적용및문의\n- 이기술지침에대한의견또는문의는한국산업안전보건공단홈페이지\n(www.kosha.or.kr) 안전보건기술지침소관분야별문의처안내를참고하\n시기바랍니다.\n- 동지침내에서인용된관련규격및자료등에관하여최근개정내용\n이있는경우동지침에우선하여참고하시기바랍니다.\n공표일자: 2022년12월31일\n제정자: 한국산업안전보건공단이사장",
+    "content": "Part １스마트 야드의 개념 및 범위\n스마트 야드의 정의: 4차 산업혁명 기술을 융합하여 지능화된 생산 환경을 구축하고, 생산 효율\n성과 부가가치를 극대화하는 차세대 조선소\n주요 기술 요소:\n\n사물 인터넷(IoT) : 조선소 내 모든 객체 연결 및 실시간 정보 수집\n\n인공지능(AI) : 수집된 데이터 분석 통한 의사 결정 지원 및 공정 최적화\n\n빅데이터: 대량 데이터 분석 통한 생산성 향상 및 새로운 가치 창출\n\n로봇: 위험하고 반복적인 작업 자동화 및 생산성 향상\n\n디지털 트윈: 가상 모델 활용한 시뮬레이션 및 최적화\n기존 조선소와의 차별점: 자동화 수준 향상, 실시간 정보 공유, 지능형 의사 결정 시스템 도입",
     "embedding": null,
     "metadata": {
-      "length": 598,
+      "length": 347,
       "chunk_in_content": 0,
       "keywords": [
-        "개정",
-        "달비계",
-        "기타비계",
-        "안전보건기술지침의개요",
-        "작성자",
-        "한국안전보건공단송인용",
-        "개정자",
-        "한국산업안전보건공단건설안전실",
-        "개정경과",
-        "2007년10월건설안전분야제정위원회심의"
+        "향상",
+        "스마트",
+        "야드의",
+        "생산",
+        "조선소",
+        "실시간",
+        "정보",
+        "데이터",
+        "분석",
+        "통한"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -57,554 +60,57 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_2",
-    "document_id": "작업의자형 달비계 안전작업 지침",
+    "chunk_id": "DR_스마트야드개론(데모용)_text_2",
+    "document_id": "DR_스마트야드개론(데모용)",
     "chunk_index": 2,
     "chunk_type": "text",
-    "location": "page:3,block:1",
-    "content": "목차",
+    "location": "page:3",
+    "content": "Part １스마트 야드의 필요성 및 기대 효과\n생산성 향상: 자동화 및 최적화된 공정 설계를 통해 생산 효율성 극대화, 공기 단축\n비용 절감: 인건비 절감, 에너지 효율 향상, 유지 보수 비용 감소\n안전성 강화: 위험 작업 자동화, 실시간 모니터링 통한 사고 예방, 안전 관리 시스템 고도화\n환경 규제 대응: 친환경 선박 건조, 에너지 절감 시스템 도입, 오염 물질 배출 최소화\n새로운 비즈니스 모델 창출: 고객 맞춤형 생산, 스마트 선박 유지 보수 서비스, 데이터 기반 \n서비스 제공\n조선 산업의 지속 가능한 성장 기여: 생산성 향상, 환경 규제 대응, 새로운 가치 창출 통해 \n조선 산업의 미래 경쟁력 확보",
     "embedding": null,
     "metadata": {
-      "length": 2,
+      "length": 341,
       "chunk_in_content": 0,
       "keywords": [
-        "목차"
+        "향상",
+        "절감",
+        "스마트",
+        "생산성",
+        "자동화",
+        "통해",
+        "생산",
+        "비용",
+        "에너지",
+        "유지"
       ],
-      "quality_score": 0.4,
-      "search_priority": "low",
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
       "data_type": "text",
       "page": 3,
-      "block": 1,
-      "chunking_method": "adaptive_block"
+      "chunking_method": "page"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_3",
-    "document_id": "작업의자형 달비계 안전작업 지침",
+    "chunk_id": "DR_스마트야드개론(데모용)_text_3",
+    "document_id": "DR_스마트야드개론(데모용)",
     "chunk_index": 3,
     "chunk_type": "text",
-    "location": "page:3,block:2",
-    "content": "1. 목 적 ·······································································································P1",
-    "embedding": null,
-    "metadata": {
-      "length": 112,
-      "chunk_in_content": 0,
-      "keywords": [
-        "P1"
-      ],
-      "quality_score": 0.7,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 3,
-      "block": 2,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_4",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 4,
-    "chunk_type": "text",
-    "location": "page:3,block:3",
-    "content": "2. 적용범위 ·································································································P1",
-    "embedding": null,
-    "metadata": {
-      "length": 107,
-      "chunk_in_content": 0,
-      "keywords": [
-        "적용범위",
-        "P1"
-      ],
-      "quality_score": 0.7,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 3,
-      "block": 3,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_5",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 5,
-    "chunk_type": "text",
-    "location": "page:3,block:4",
-    "content": "3. 용어의 정의 ···························································································P1",
-    "embedding": null,
-    "metadata": {
-      "length": 103,
-      "chunk_in_content": 0,
-      "keywords": [
-        "용어의",
-        "정의",
-        "P1"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 4,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_6",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 6,
-    "chunk_type": "text",
-    "location": "page:3,block:5",
-    "content": "4. 작업의자형 달비계 작업순서 및 구성요소에 대한 안전조치 사항",
-    "embedding": null,
-    "metadata": {
-      "length": 36,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업의자형",
-        "달비계",
-        "작업순서",
-        "구성요소에",
-        "대한",
-        "안전조치",
-        "사항"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 5,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_7",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 7,
-    "chunk_type": "text",
-    "location": "page:3,block:6",
-    "content": "4.1 작업의자형 달비계 작업 순서 ·····················································P3",
-    "embedding": null,
-    "metadata": {
-      "length": 75,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업의자형",
-        "달비계",
-        "작업",
-        "순서",
-        "P3"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 6,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_8",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 8,
-    "chunk_type": "text",
-    "location": "page:3,block:7",
-    "content": "4.2 작업의자형 달비계의 구성요소에 대한 안전조치사항",
-    "embedding": null,
-    "metadata": {
-      "length": 30,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업의자형",
-        "달비계의",
-        "구성요소에",
-        "대한",
-        "안전조치사항"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 7,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_9",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 9,
-    "chunk_type": "text",
-    "location": "page:3,block:8",
-    "content": "4.2.1 작업용 로프 및 구명줄의 종류와 특성 ····························P4",
-    "embedding": null,
-    "metadata": {
-      "length": 57,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업용",
-        "로프",
-        "구명줄의",
-        "종류와",
-        "특성",
-        "P4"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 8,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_10",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 10,
-    "chunk_type": "text",
-    "location": "page:3,block:9",
-    "content": "4.2.2 로프의 고정점 안전조치 사항 ············································P6",
-    "embedding": null,
-    "metadata": {
-      "length": 68,
-      "chunk_in_content": 0,
-      "keywords": [
-        "로프의",
-        "고정점",
-        "안전조치",
-        "사항",
-        "P6"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 9,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_11",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 11,
-    "chunk_type": "text",
-    "location": "page:3,block:10",
-    "content": "4.2.3 고정점이 없는 옥상, 지붕에서의 안전조치 사항 ···········P8",
-    "embedding": null,
-    "metadata": {
-      "length": 45,
-      "chunk_in_content": 0,
-      "keywords": [
-        "고정점이",
-        "없는",
-        "옥상",
-        "지붕에서의",
-        "안전조치",
-        "사항",
-        "P8"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 10,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_12",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 12,
-    "chunk_type": "text",
-    "location": "page:3,block:11",
-    "content": "4.2.4 작업의자형 달비계 작업대 안전조치사항 ························P8",
-    "embedding": null,
-    "metadata": {
-      "length": 53,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업의자형",
-        "달비계",
-        "작업대",
-        "안전조치사항",
-        "P8"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 11,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_13",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 13,
-    "chunk_type": "text",
-    "location": "page:3,block:12",
-    "content": "4.2.5 매듭작업 시 주의사항 ··························································P9",
-    "embedding": null,
-    "metadata": {
-      "length": 78,
-      "chunk_in_content": 0,
-      "keywords": [
-        "매듭작업",
-        "주의사항",
-        "P9"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 12,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_14",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 14,
-    "chunk_type": "text",
-    "location": "page:3,block:13",
-    "content": "5. 작업의자형 달비계 작업 시 안전준수사항",
-    "embedding": null,
-    "metadata": {
-      "length": 24,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업의자형",
-        "달비계",
-        "작업",
-        "안전준수사항"
-      ],
-      "quality_score": 0.7,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 3,
-      "block": 13,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_15",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 15,
-    "chunk_type": "text",
-    "location": "page:3,block:14",
-    "content": "5.1 준비작업 ·························································································P10",
-    "embedding": null,
-    "metadata": {
-      "length": 101,
-      "chunk_in_content": 0,
-      "keywords": [
-        "준비작업",
-        "P10"
-      ],
-      "quality_score": 0.7,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 3,
-      "block": 14,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_16",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 16,
-    "chunk_type": "text",
-    "location": "page:3,block:15",
-    "content": "5.2 로프 내리기작업 ···········································································P11",
-    "embedding": null,
-    "metadata": {
-      "length": 91,
-      "chunk_in_content": 0,
-      "keywords": [
-        "로프",
-        "내리기작업",
-        "P11"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 15,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_17",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 17,
-    "chunk_type": "text",
-    "location": "page:3,block:16",
-    "content": "5.3 로프 결속작업 ···············································································P12",
-    "embedding": null,
-    "metadata": {
-      "length": 94,
-      "chunk_in_content": 0,
-      "keywords": [
-        "로프",
-        "결속작업",
-        "P12"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 16,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_18",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 18,
-    "chunk_type": "text",
-    "location": "page:3,block:17",
-    "content": "5.4 로프의 보호 ···················································································P12",
-    "embedding": null,
-    "metadata": {
-      "length": 97,
-      "chunk_in_content": 0,
-      "keywords": [
-        "로프의",
-        "보호",
-        "P12"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 17,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_19",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 19,
-    "chunk_type": "text",
-    "location": "page:3,block:18",
-    "content": "5.5 작업의자형 달비계에 탑승 및 작업 ·········································P13",
-    "embedding": null,
-    "metadata": {
-      "length": 67,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업의자형",
-        "달비계에",
-        "탑승",
-        "작업",
-        "P13"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 18,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_20",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 20,
-    "chunk_type": "text",
-    "location": "page:3,block:19",
-    "content": "5.6 작업 후 작업의자형 달비계의 보관 ·········································P13",
-    "embedding": null,
-    "metadata": {
-      "length": 67,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업",
-        "작업의자형",
-        "달비계의",
-        "보관",
-        "P13"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 19,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_21",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 21,
-    "chunk_type": "text",
-    "location": "page:3,block:20",
-    "content": "6. 관리감독자의 유해·위험 방지 직무수행 사항 ···························P14",
-    "embedding": null,
-    "metadata": {
-      "length": 57,
-      "chunk_in_content": 0,
-      "keywords": [
-        "관리감독자의",
-        "유해",
-        "위험",
-        "방지",
-        "직무수행",
-        "사항",
-        "P14"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 20,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_22",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 22,
-    "chunk_type": "text",
-    "location": "page:3,block:21",
-    "content": "<부록> 로프의 매듭방법 ········································································P15",
-    "embedding": null,
-    "metadata": {
-      "length": 89,
-      "chunk_in_content": 0,
-      "keywords": [
-        "부록",
-        "로프의",
-        "매듭방법",
-        "P15"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 3,
-      "block": 21,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_23",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 23,
-    "chunk_type": "text",
     "location": "page:4",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 1 -\n작업의자형달비계안전작업지침\n1. 목\n적\n이지침은「산업안전보건기준에관한규칙」(이하“안전보건규칙”이라한다)\n제7장제4절(달비계, 달대비계및걸침비계), 고용노동부고시제2012-92호가설\n공사표준안전작업지침및가설공사표준시방서의규정에따라작업의자형\n달비계를이용한작업과정에서준수하여야할안전지침을정함을목적으로한다.\n2. 적용범위\n이지침은도장, 견출, 청소, 보수, 검사등을위한외부및내부벽체등의작업\n중에서외줄달기섬유로프를이용한달비계작업에대하여적용한다.\n3. 용어의정의\n(1) 이지침에서사용하는용어의정의는다음과같다.\n(가) “작업의자형달비계(Rope Descent System)”라함은매달린외줄달기섬유\n로프에부착되어지지되는작업대를이용하여근로자가작업할수있도록\n제작된것을말한다.\n(나) “구명줄”이라함은고소작업시추락사고예방을위해안전대를체결하는밧줄을\n말하며로프또는레일등과같이유연하거나단단한고정줄로서추락발생\n시추락을저지시키는것을말한다.\n(다) “샤클(Shackle)”이라함은연강환봉을U자형으로구부리고입이벌려있는\n쪽에환봉핀을끼워서고리로하는것이며, 로프의끝부분이나달기체인\n등의연결고리에연결하여물체를들어올릴때사용하는기구를말한다.",
+    "content": "Part １스마트 야드의 개념 및 범위\nhttps://youtu.be/62-e1iHF2wg?si=ohTXAJvmXBqB8oxR\nhttps://youtu.be/62-\ne1iHF2wg?si=ohTXAJvmXBqB8oxR\nhttps://youtu.be/2dr_gFrYXUM?si=inRn2b_yvzaRMYtV\nhttps://youtu.be/2dr_gFrYX\nUM?si=inRn2b_yvzaRMYtV\nhttps://youtube.com/shorts/cKmjCWlUu8k?si=0vVVhdGuAuXa8r07\nhttps://youtube.com/shorts/cKmj\nCWlUu8k?si=0vVVhdGuAuXa8r07",
     "embedding": null,
     "metadata": {
-      "length": 590,
+      "length": 338,
       "chunk_in_content": 0,
       "keywords": [
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "작업의자형달비계안전작업지침",
-        "이지침은",
-        "산업안전보건기준에관한규칙",
-        "이하",
-        "안전보건규칙",
-        "이라한다"
+        "https",
+        "si",
+        "youtu",
+        "be",
+        "62",
+        "e1iHF2wg",
+        "ohTXAJvmXBqB8oxR",
+        "2dr",
+        "inRn2b",
+        "yvzaRMYtV"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -614,27 +120,99 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_24",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 24,
-    "chunk_type": "text",
-    "location": "page:5",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 2 -\n작업대\n아래 또는 지면으로 \n가는 로프\n견인줄\n작업용 로프\n날카로운 모서리 보호덮개\n작업용 로프 고정\n(고정점 2개소 이상)\n       구명줄 고정 \n(고정점 2개소 이상)\n구명줄\n안전대 추락방지대\n충격흡수 죔줄\n<그림1> 작업의자형달비계구성요소\n(라) “슬링(Sling)”이라함은짐등을운반할때사용하는인양로프또는인양\n용구를말한다.\n(마) “안전대”라함은벨트, 로프및그부속품에의해구성되어작업중근로자의\n추락에의한위험을방지하기위해사용되는보호구를말한다.\n(바) “고정점”이라함은작업용로프, 구명줄을결속하여고정하기위한지점을\n말한다. 이때고정점은철물(로프용고리를포함한다), 구조물(콘크리트\n및철재) 등으로할수있다.",
+    "chunk_id": "DR_스마트야드개론(데모용)_image_4",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 4,
+    "chunk_type": "image",
+    "location": "page:4",
+    "content": "[Image xref 65]",
     "embedding": null,
     "metadata": {
-      "length": 370,
+      "length": 15,
       "chunk_in_content": 0,
       "keywords": [
-        "로프",
-        "고정점",
-        "작업용",
-        "고정",
-        "2개소",
-        "이상",
-        "구명줄",
-        "안전대",
-        "KOSHA",
-        "GUIDE"
+        "Image",
+        "xref",
+        "65"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 4,
+      "image_index": 65,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_5",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 5,
+    "chunk_type": "image",
+    "location": "page:4",
+    "content": "[Image xref 66]",
+    "embedding": null,
+    "metadata": {
+      "length": 15,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "66"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 4,
+      "image_index": 66,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_6",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 6,
+    "chunk_type": "image",
+    "location": "page:4",
+    "content": "[Image xref 67]",
+    "embedding": null,
+    "metadata": {
+      "length": 15,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "67"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 4,
+      "image_index": 67,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_7",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 7,
+    "chunk_type": "text",
+    "location": "page:5",
+    "content": "Part １조선 산업의 현황 및 도전 과제\n글로벌 조선 시장 경쟁 심화: 중국, 일본 등 경쟁국과의 경쟁 심화, 고부가가치 선박 수주 경쟁\n노동력 부족: 조선소 인력 고령화, 젊은 인력 유입 감소, 숙련공 부족 심화\n생산성 향상 요구: 인건비 상승, 공기 단축 요구 증대, 생산 효율성 향상 필요\n강화되는 안전 및 환경 규제: 국제 해사 기구(IMO) 환경 규제 강화, 작업장 안전 기준 강화\n기술 혁신의 필요성: 4차 산업혁명 기술 융합 통한 생산성 혁신 및 경쟁력 강화 필요\n스마트 야드가 이러한 문제들을 해결할 핵심 동력임을 제시: 자동화, 디지털화, 지능화를 통해 \n생산성 향상, 비용 절감, 안전성 강화, 환경 규제 대응 가능\n➔Q : 2025년 현재와 근미래에 가장 중요한 도전 사항(Key Challenge)은 ?\n➔Q : 가장 핵심적인 동력과 목표(Driver & Goal)는 ?",
+    "embedding": null,
+    "metadata": {
+      "length": 444,
+      "chunk_in_content": 0,
+      "keywords": [
+        "강화",
+        "경쟁",
+        "심화",
+        "생산성",
+        "향상",
+        "환경",
+        "규제",
+        "조선",
+        "도전",
+        "부족"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -644,53 +222,29 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_25",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 25,
-    "chunk_type": "image",
-    "location": "page:5",
-    "content": "[Image xref 28]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "28"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 5,
-      "image_index": 28,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_26",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 26,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_8",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 8,
     "chunk_type": "text",
     "location": "page:6",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 3 -\n<그림2> 안전대착용예\n(2) 그밖의용어의정의는이지침에서특별한규정이있는경우를제외하고는\n산업안전보건법, 같은법시행령, 같은법시행규칙, 산업안전보건기준에관\n한규칙및기타고시에서정하는바에따른다.\n4. 작업의자형달비계작업순서및구성요소에대한안전조치사항\n4.1 작업의자형달비계작업순서\n작업의자형달비계의작업순서를보면비교적단순한편이며그와같은단순\n작업과정이지속적으로반복되는작업으로작업순서는<그림3>와같다.",
+    "content": "Part １조선 산업의 현황 및 도전 과제\n중국 조선소\n한국 조선소\n중점 분야\n자동화, 대량 생산 최적화\n설계, 생산, 유지 보수 전반의 지능화\n핵심 기술\n 생산 효율성: 대량 생산에 특화된 자동화 시스템 \n구축에 집중\n 비용 절감: 저렴하고 신속한 중국산 자동화 설비 \n도입 \n 표준화: 정부 주도의 표준화된 스마트 야드 모델 \n개발 및 보급\n 맞춤형 생산: 다품종 생산에 대응하는 유연 생산 \n시스템 구축\n 안전 및 환경: 작업자 안전 강화 및 친환경 선박 건조 \n기술\n 생애 주기 관리: 선박 설계, 생산, 인도, 운영, 유지 보수 \n등 선박 생애 주기 전반을 통합 관리하는 스마트 야드 \n시스템\n강점\n 정부 주도 대규모 투자: 중국 정부는 조선 산업의 \n디지털 전환을 국가 전략으로 추진\n 빠른 자동화: 용접, 절단, 운반 등 위험하고 노동 \n집약적인 공정을 중심으로 자동화가 빠르게 진행\n 고부가가치 선박 건조 경험: LNG 운반선, 초대형 \n컨테이너선 등 고부가가치 선박에 특화된 생산시스템\n 기술 혁신: 설계, 생산, 유지 보수 등 조선소 운영 \n전반에 걸쳐지능화\n 산학연 협력: 대학, 연구기관 협력및 산업 생태계 조성\n목표\n 정부 주도의 대규모 투자를 바탕으로 생산 효율성 \n향상에 중점\n 고부가가치신선종 선박건조에 대응하는 조선소 운영 \n전반의 지능화 및 친환경 기술 선도",
     "embedding": null,
     "metadata": {
-      "length": 248,
+      "length": 666,
       "chunk_in_content": 0,
       "keywords": [
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "그림2",
-        "안전대착용예",
-        "그밖의용어의정의는이지침에서특별한규정이있는경우를제외하고는",
-        "산업안전보건법",
-        "같은법시행령",
-        "같은법시행규칙"
+        "생산",
+        "조선소",
+        "자동화",
+        "기술",
+        "선박",
+        "설계",
+        "유지",
+        "보수",
+        "시스템",
+        "정부"
       ],
-      "quality_score": 0.8999999999999999,
+      "quality_score": 0.7999999999999999,
       "search_priority": "high",
       "data_type": "text",
       "page": 6,
@@ -698,51 +252,27 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_27",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 27,
-    "chunk_type": "image",
-    "location": "page:6",
-    "content": "[Image xref 35]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "35"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 6,
-      "image_index": 35,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_28",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 28,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_9",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 9,
     "chunk_type": "text",
     "location": "page:7",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 4 -\n옥상, 지붕위에서의안전난간설치등추락방지조치\n뾞\n작업용로프및구명줄고정점확인(또는설치)\n뾞\n구명줄고정점에묶기(매듭)\n뾞\n구명줄지상으로내리기\n뾞\n안전대착용및구명줄에추락방지대부착\n뾞\n작업용로프고정점에묶기(매듭)\n뾞\n작업용로프지상으로내리기\n뾞\n작업용로프에샤클걸기\n뾞\n샤클에작업대를걸고샤클을고정\n뾞\n로프에부착된작업대를외부로거치\n뾞\n작업대에앉기및작업실시\n뾞\n작업완료후달비계이동설치\n<그림3> 작업의자형달비계작업순서\n4.2 작업의자형달비계의구성요소에대한안전조치사항\n4.2.1 작업용로프및구명줄의종류와특성\n(1) 로프의종류및특성",
+    "content": "Part １스마트 야드의 개념 및 범위\n스마트 야드의 정의: 4차 산업혁명 기술을 융합하여 지능화된 생산 환경을 구축하고, 생산 효율\n성과 부가가치를 극대화하는 차세대 조선소\n주요 기술 요소:\n\n사물 인터넷(IoT) : 조선소 내 모든 객체 연결 및 실시간 정보 수집\n\n인공지능(AI) : 수집된 데이터 분석 통한 의사 결정 지원 및 공정 최적화\n\n빅데이터: 대량 데이터 분석 통한 생산성 향상 및 새로운 가치 창출\n\n로봇: 위험하고 반복적인 작업 자동화 및 생산성 향상\n\n디지털 트윈: 가상 모델 활용한 시뮬레이션 및 최적화\n기존 조선소와의 차별점: 자동화 수준 향상, 실시간 정보 공유, 지능형 의사 결정 시스템 도입\n➔Q : 스마트 팩토리와 스마트 야드의 차이는 ?",
     "embedding": null,
     "metadata": {
-      "length": 318,
+      "length": 375,
       "chunk_in_content": 0,
       "keywords": [
-        "매듭",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "옥상",
-        "지붕위에서의안전난간설치등추락방지조치",
-        "작업용로프및구명줄고정점확인",
-        "또는설치",
-        "구명줄고정점에묶기"
+        "스마트",
+        "야드의",
+        "향상",
+        "생산",
+        "조선소",
+        "실시간",
+        "정보",
+        "데이터",
+        "분석",
+        "통한"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -752,22 +282,25 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_29",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 29,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_10",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 10,
     "chunk_type": "text",
     "location": "page:8,block:1",
-    "content": "KOSHA GUIDE",
+    "content": "Part １스마트 야드의 개념 및 범위",
     "embedding": null,
     "metadata": {
-      "length": 11,
+      "length": 21,
       "chunk_in_content": 0,
       "keywords": [
-        "KOSHA",
-        "GUIDE"
+        "Part",
+        "스마트",
+        "야드의",
+        "개념",
+        "범위"
       ],
-      "quality_score": 0.30000000000000004,
-      "search_priority": "low",
+      "quality_score": 0.7,
+      "search_priority": "medium",
       "data_type": "text",
       "page": 8,
       "block": 1,
@@ -775,22 +308,26 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_30",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 30,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_11",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 11,
     "chunk_type": "text",
     "location": "page:8,block:2",
-    "content": "C - 33 - 2022",
+    "content": "스마트 팩토리 (Smart Factory)스마트 야드 (Smart Yard)",
     "embedding": null,
     "metadata": {
-      "length": 13,
+      "length": 42,
       "chunk_in_content": 0,
       "keywords": [
-        "33",
-        "2022"
+        "스마트",
+        "Smart",
+        "팩토리",
+        "Factory",
+        "야드",
+        "Yard"
       ],
-      "quality_score": 0.4,
-      "search_priority": "low",
+      "quality_score": 0.7,
+      "search_priority": "medium",
       "data_type": "text",
       "page": 8,
       "block": 2,
@@ -798,19 +335,26 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_31",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 31,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_12",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 12,
     "chunk_type": "text",
     "location": "page:8,block:3",
-    "content": "- 5 -",
+    "content": "적용산업제조업 전반 (자동차, 전자, 소비재 등)조선업",
     "embedding": null,
     "metadata": {
-      "length": 5,
+      "length": 30,
       "chunk_in_content": 0,
-      "keywords": [],
-      "quality_score": 0.4,
-      "search_priority": "low",
+      "keywords": [
+        "적용산업제조업",
+        "전반",
+        "자동차",
+        "전자",
+        "소비재",
+        "조선업"
+      ],
+      "quality_score": 0.7,
+      "search_priority": "medium",
       "data_type": "text",
       "page": 8,
       "block": 3,
@@ -818,21 +362,27 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_32",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 32,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_13",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 13,
     "chunk_type": "text",
     "location": "page:8,block:4",
-    "content": "<표1> 로프의종류와특성",
+    "content": "범위•공장 단위의 생산 시스템 혁신•소형,경량제품 생산",
     "embedding": null,
     "metadata": {
-      "length": 13,
+      "length": 30,
       "chunk_in_content": 0,
       "keywords": [
-        "표1",
-        "로프의종류와특성"
+        "생산",
+        "범위",
+        "공장",
+        "단위의",
+        "시스템",
+        "혁신",
+        "소형",
+        "경량제품"
       ],
-      "quality_score": 0.5,
+      "quality_score": 0.7,
       "search_priority": "medium",
       "data_type": "text",
       "page": 8,
@@ -841,21 +391,30 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_33",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 33,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_14",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 14,
     "chunk_type": "text",
     "location": "page:8,block:5",
-    "content": "종류특성용도",
+    "content": "•조선소 전체의 생산 시스템 혁신 (설계, 생산, 물류, 안전, 유지 보수 등) ➔사외 공급망 공장들로도 확장•대형,중량물 제작",
     "embedding": null,
     "metadata": {
-      "length": 6,
+      "length": 71,
       "chunk_in_content": 0,
       "keywords": [
-        "종류특성용도"
+        "생산",
+        "조선소",
+        "전체의",
+        "시스템",
+        "혁신",
+        "설계",
+        "물류",
+        "안전",
+        "유지",
+        "보수"
       ],
-      "quality_score": 0.4,
-      "search_priority": "low",
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
       "data_type": "text",
       "page": 8,
       "block": 5,
@@ -863,22 +422,29 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_34",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 34,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_15",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 15,
     "chunk_type": "text",
     "location": "page:8,block:6",
-    "content": "폴리프로필렌로프(PP rope)",
+    "content": "목표•생산 공정 자동화 및 최적화, 생산 효율성 극대화, 맞춤형 생산 체계 구축",
     "embedding": null,
     "metadata": {
-      "length": 17,
+      "length": 44,
       "chunk_in_content": 0,
       "keywords": [
-        "폴리프로필렌로프",
-        "PP",
-        "rope"
+        "생산",
+        "목표",
+        "공정",
+        "자동화",
+        "최적화",
+        "효율성",
+        "극대화",
+        "맞춤형",
+        "체계",
+        "구축"
       ],
-      "quality_score": 0.5,
+      "quality_score": 0.7,
       "search_priority": "medium",
       "data_type": "text",
       "page": 8,
@@ -887,25 +453,30 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_35",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 35,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_16",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 16,
     "chunk_type": "text",
     "location": "page:8,block:7",
-    "content": "o 고품질의폴리프로필렌섬유로만들어지며특별히자외선에대한높은저항력과취급이대단히용이한로프임o 비중(0.91)이낮아물에뜸.o 충격흡수력이뛰어나고마모에우수한저항력과뒤틀림이없으며유동성이있어작업이용이",
+    "content": "•선박 생산 효율성 극대화, 공기 단축, 안전성 강화, 친환경 조선소 구축",
     "embedding": null,
     "metadata": {
-      "length": 104,
+      "length": 41,
       "chunk_in_content": 0,
       "keywords": [
-        "고품질의폴리프로필렌섬유로만들어지며특별히자외선에대한높은저항력과취급이대단히용이한로프임o",
-        "비중",
-        "91",
-        "이낮아물에뜸",
-        "충격흡수력이뛰어나고마모에우수한저항력과뒤틀림이없으며유동성이있어작업이용이"
+        "선박",
+        "생산",
+        "효율성",
+        "극대화",
+        "공기",
+        "단축",
+        "안전성",
+        "강화",
+        "친환경",
+        "조선소"
       ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
+      "quality_score": 0.7,
+      "search_priority": "medium",
       "data_type": "text",
       "page": 8,
       "block": 7,
@@ -913,23 +484,27 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_36",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 36,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_17",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 17,
     "chunk_type": "text",
     "location": "page:8,block:8",
-    "content": "o 양식용, 육상용, 어업용및레크레이션과스포츠분야에널리사용o 중선박정박용, 도킹용,닻줄용과같은용도로가장잘알려져있는로프임",
+    "content": "핵심기술•IoT, AI, 빅데이터, 클라우드 컴퓨팅, 생산 관리 시스템 (MES), 자동화 설비 등",
     "embedding": null,
     "metadata": {
-      "length": 66,
+      "length": 55,
       "chunk_in_content": 0,
       "keywords": [
-        "양식용",
-        "육상용",
-        "어업용및레크레이션과스포츠분야에널리사용o",
-        "중선박정박용",
-        "도킹용",
-        "닻줄용과같은용도로가장잘알려져있는로프임"
+        "핵심기술",
+        "IoT",
+        "AI",
+        "빅데이터",
+        "클라우드",
+        "컴퓨팅",
+        "생산",
+        "관리",
+        "시스템",
+        "MES"
       ],
       "quality_score": 0.7999999999999999,
       "search_priority": "high",
@@ -940,23 +515,30 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_37",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 37,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_18",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 18,
     "chunk_type": "text",
     "location": "page:8,block:9",
-    "content": "나일론로프(Nylon rope)",
+    "content": "•스마트 팩토리 기술 + 조선 특화 기술 (3D 모델링, 블록 생산 자동화, 사내외 물류 최적화, 안전/환경 기술)•비정형 생산인력 지원하는 기술 (외업, 도장, 발판, 사상 등)",
     "embedding": null,
     "metadata": {
-      "length": 17,
+      "length": 100,
       "chunk_in_content": 0,
       "keywords": [
-        "나일론로프",
-        "Nylon",
-        "rope"
+        "기술",
+        "스마트",
+        "팩토리",
+        "조선",
+        "특화",
+        "3D",
+        "모델링",
+        "블록",
+        "생산",
+        "자동화"
       ],
-      "quality_score": 0.5,
-      "search_priority": "medium",
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
       "data_type": "text",
       "page": 8,
       "block": 9,
@@ -964,25 +546,27 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_38",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 38,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_19",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 19,
     "chunk_type": "text",
     "location": "page:8,block:10",
-    "content": "o 마닐라로프의강도에비해두배이상이며합섬로프중가장강도가높고탄력적인제품임o 충격에잘견디며하중을가하면그에너지를완전히흡수함o 마모에강하고로프취급에있어최적의제품임o 비중(1.14)이커물에잘가라앉음o 탄성이크고하중상쇄력이매우우수o 뒤틀림이없고신축성이좋으므로작업이용이",
+    "content": "공통점• 4차 산업혁명 기술을 활용하여 생산성을 향상시키는 것을 목표로 함• 자동화, 지능화, 데이터 기반 의사 결정을 통해 효율성을 높임• 맞춤형 생산 및 유연한 생산 시스템을 추구",
     "embedding": null,
     "metadata": {
-      "length": 142,
+      "length": 102,
       "chunk_in_content": 0,
       "keywords": [
-        "마닐라로프의강도에비해두배이상이며합섬로프중가장강도가높고탄력적인제품임o",
-        "충격에잘견디며하중을가하면그에너지를완전히흡수함o",
-        "마모에강하고로프취급에있어최적의제품임o",
-        "비중",
-        "14",
-        "이커물에잘가라앉음o",
-        "탄성이크고하중상쇄력이매우우수o",
-        "뒤틀림이없고신축성이좋으므로작업이용이"
+        "생산",
+        "공통점",
+        "4차",
+        "산업혁명",
+        "기술을",
+        "활용하여",
+        "생산성을",
+        "향상시키는",
+        "것을",
+        "목표로"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -993,23 +577,30 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_39",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 39,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_20",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 20,
     "chunk_type": "text",
     "location": "page:8,block:11",
-    "content": "o 트롤용과어업용, 선박용,안전망등에사용",
+    "content": "차이점• 적용 산업 및 범위: 스마트 팩토리는 제조업 전반, 스마트 야드는 조선업에 특화 • 핵심 기술: 스마트 야드는 조선업 특성을 고려한 추가 기술 필요 (3D 모델링, 블록 생산 자동화 등)• 생산 대상: 스마트 팩토리는 상대적 소형,경량제품 생산, 스마트 야드는 중대형부재, 초대형 선박 건조",
     "embedding": null,
     "metadata": {
-      "length": 22,
+      "length": 167,
       "chunk_in_content": 0,
       "keywords": [
-        "트롤용과어업용",
-        "선박용",
-        "안전망등에사용"
+        "스마트",
+        "야드는",
+        "생산",
+        "팩토리는",
+        "기술",
+        "차이점",
+        "적용",
+        "산업",
+        "범위",
+        "제조업"
       ],
-      "quality_score": 0.6,
-      "search_priority": "medium",
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
       "data_type": "text",
       "page": 8,
       "block": 11,
@@ -1017,22 +608,30 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_40",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 40,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_21",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 21,
     "chunk_type": "text",
     "location": "page:8,block:12",
-    "content": "비닐론로프(Vinylonrope)",
+    "content": "요약• 스마트 팩토리는 공장 단위의 생산 시스템 혁신을 의미하며, 스마트 야드는 수개~수십개의 사내외 공장이 유기적으로 연계되는 조선소 전체의 생산 시스템을 혁신하는 개념• 스마트 야드는 스마트 팩토리의 개념을 포괄하면서도, 조선업의 특수한 환경과 요구 사항을 반영하여 더욱 고도화된 기술과 시스템을 적용",
     "embedding": null,
     "metadata": {
-      "length": 18,
+      "length": 170,
       "chunk_in_content": 0,
       "keywords": [
-        "비닐론로프",
-        "Vinylonrope"
+        "스마트",
+        "생산",
+        "야드는",
+        "시스템을",
+        "요약",
+        "팩토리는",
+        "공장",
+        "단위의",
+        "시스템",
+        "혁신을"
       ],
-      "quality_score": 0.4,
-      "search_priority": "low",
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
       "data_type": "text",
       "page": 8,
       "block": 12,
@@ -1040,263 +639,27 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_41",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 41,
-    "chunk_type": "text",
-    "location": "page:8,block:13",
-    "content": "o 외관상목면(목화면)과매우유사하며자외선에높은저항력을지님o 내, 외부마모에탁월한저항력을지니고있으며취급상에있어서도대단히용이",
-    "embedding": null,
-    "metadata": {
-      "length": 67,
-      "chunk_in_content": 0,
-      "keywords": [
-        "외관상목면",
-        "목화면",
-        "과매우유사하며자외선에높은저항력을지님o",
-        "외부마모에탁월한저항력을지니고있으며취급상에있어서도대단히용이"
-      ],
-      "quality_score": 0.7,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 8,
-      "block": 13,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_42",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 42,
-    "chunk_type": "text",
-    "location": "page:8,block:14",
-    "content": "o 트롤용과어업용, 선박용,안전망등에사용",
-    "embedding": null,
-    "metadata": {
-      "length": 22,
-      "chunk_in_content": 0,
-      "keywords": [
-        "트롤용과어업용",
-        "선박용",
-        "안전망등에사용"
-      ],
-      "quality_score": 0.6,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 8,
-      "block": 14,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_43",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 43,
-    "chunk_type": "text",
-    "location": "page:8,block:15",
-    "content": "폴리에틸렌로프(P.E rope)",
-    "embedding": null,
-    "metadata": {
-      "length": 17,
-      "chunk_in_content": 0,
-      "keywords": [
-        "폴리에틸렌로프",
-        "rope"
-      ],
-      "quality_score": 0.4,
-      "search_priority": "low",
-      "data_type": "text",
-      "page": 8,
-      "block": 15,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_44",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 44,
-    "chunk_type": "text",
-    "location": "page:8,block:16",
-    "content": "o 유연성이좋고매끄러워내마모에특히우수o 인장강도는건조시나습기시에도불변",
-    "embedding": null,
-    "metadata": {
-      "length": 38,
-      "chunk_in_content": 0,
-      "keywords": [
-        "유연성이좋고매끄러워내마모에특히우수o",
-        "인장강도는건조시나습기시에도불변"
-      ],
-      "quality_score": 0.5,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 8,
-      "block": 16,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_45",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 45,
-    "chunk_type": "text",
-    "location": "page:8,block:17",
-    "content": "o 트롤등모든수산업과육상용으로폭넓게사용되어짐",
-    "embedding": null,
-    "metadata": {
-      "length": 24,
-      "chunk_in_content": 0,
-      "keywords": [
-        "트롤등모든수산업과육상용으로폭넓게사용되어짐"
-      ],
-      "quality_score": 0.5,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 8,
-      "block": 17,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_46",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 46,
-    "chunk_type": "text",
-    "location": "page:8,block:18",
-    "content": "마닐라로프(Manilarope)",
-    "embedding": null,
-    "metadata": {
-      "length": 17,
-      "chunk_in_content": 0,
-      "keywords": [
-        "마닐라로프",
-        "Manilarope"
-      ],
-      "quality_score": 0.4,
-      "search_priority": "low",
-      "data_type": "text",
-      "page": 8,
-      "block": 18,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_47",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 47,
-    "chunk_type": "text",
-    "location": "page:8,block:19",
-    "content": "o 재질이자연섬유로됨.o 실내에서사용",
-    "embedding": null,
-    "metadata": {
-      "length": 20,
-      "chunk_in_content": 0,
-      "keywords": [
-        "재질이자연섬유로됨",
-        "실내에서사용"
-      ],
-      "quality_score": 0.4,
-      "search_priority": "low",
-      "data_type": "text",
-      "page": 8,
-      "block": 19,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_48",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 48,
-    "chunk_type": "text",
-    "location": "page:8,block:20",
-    "content": "o 운동기구용(줄다리기및줄넘기),각종실내인테리어o 고가빌딩안전사다리용으로사용됨",
-    "embedding": null,
-    "metadata": {
-      "length": 43,
-      "chunk_in_content": 0,
-      "keywords": [
-        "운동기구용",
-        "줄다리기및줄넘기",
-        "각종실내인테리어o",
-        "고가빌딩안전사다리용으로사용됨"
-      ],
-      "quality_score": 0.6,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 8,
-      "block": 20,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_49",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 49,
-    "chunk_type": "text",
-    "location": "page:8,block:21",
-    "content": "(2) 작업용로프및구명줄안전조치사항",
-    "embedding": null,
-    "metadata": {
-      "length": 19,
-      "chunk_in_content": 0,
-      "keywords": [
-        "작업용로프및구명줄안전조치사항"
-      ],
-      "quality_score": 0.5,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 8,
-      "block": 21,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_50",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 50,
-    "chunk_type": "text",
-    "location": "page:8,block:22",
-    "content": "(가) 달비계를지지하는모든로프는최소22.9kN(2,340 kgf) 의강도를가진인",
-    "embedding": null,
-    "metadata": {
-      "length": 44,
-      "chunk_in_content": 0,
-      "keywords": [
-        "달비계를지지하는모든로프는최소22",
-        "9kN",
-        "340",
-        "kgf",
-        "의강도를가진인"
-      ],
-      "quality_score": 0.7999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 8,
-      "block": 22,
-      "chunking_method": "adaptive_block"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_51",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 51,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_22",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 22,
     "chunk_type": "text",
     "location": "page:9",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 6 -\n조섬유(나일론이나폴리프로필렌이적합)이어야하며, 허용하중을초과해\n서사용하여서는아니된다.\n(나) 작업에사용되는작업대및작업용기구등은떨어지지않도록부착하여야\n한다.\n(다) 작업용로프와구명줄에는다음내용이표시되거나내용이표시된꼬리표가\n부착되어있어야한다.\n- 생산자의상호, 길이/크기, 생산일, 작업투입일\n(라) 작업용로프, 구명줄은연결하여사용하지말아야한다.\n(마) 사용전에로프의손상유․무를반드시검사하여야하며검사결과과도\n하게닳거나손상, 변형된부분이발견되면즉시폐기하여야한다.\n(바) 작업용로프는사용된날부터2 년이상이되었거나제조일로부터3 년\n이상이되었을때에는사용하지않아야한다.\n(사) 건물또는구조물의단부, 날카로운물체를지나설치되는작업용로프나구명\n줄은절단이나마모로부터보호될수있도록별도의조치를하여야한다.\n(아) 작업용로프및지지설비의구조에대한안전작업하중은안전율10을\n적용하여사용하여야한다.\n(자) 일반적으로P.P 또는P.E 로프를사용하는경우, 작업용로프는직경\n22mm이상, 구명줄로프는16mm 이상을사용하여야한다.(단, 모든로프는\n최소22.9kN(2,340 kgf)의강도를갖고, 허용하중을초과해서사용하여서는\n아니된다.)\n4.2.2 로프의고정점안전조치사항\n관리감독자는작업용로프와구명줄로프가별도의고정점에결속되는지, 각로프는\n2개이상의고정점(또는고정물)에결속할수있는지확인하여야한다. 만약로프의\n고정점이충분하지아니한경우에는4.2.3에따라고정점을확보하여야한다.",
+    "content": "Part １스마트 야드의 개념 및 범위\nhttps://youtu.be/NFWFv82_o00?si=OzQsQPBYPJmeed6f\nhttps://youtu.be/NFWFv82_o00?si=OzQsQPBYPJmeed6f\nhttps://youtu.be/VNn5mQX1lQ8?si=uEo3wauJGVjbzxX7\nhttps://youtu.be/VNn5mQX1lQ8?si=uEo3wauJGVjbzxX7\nhttps://youtu.be/yG35uwFM5Dg?si=dGuBDfF-fXtn0r4i\nhttps://youtu.be/yG35uwFM5Dg?si=dGuBDfF-fXtn0r4i\nhttps://youtu.be/s8NP5TRHlLg?si=ujsc3UDlNaRZBFI3",
     "embedding": null,
     "metadata": {
-      "length": 718,
+      "length": 364,
       "chunk_in_content": 0,
       "keywords": [
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "조섬유",
-        "나일론이나폴리프로필렌이적합",
-        "이어야하며",
-        "허용하중을초과해",
-        "서사용하여서는아니된다",
-        "작업에사용되는작업대및작업용기구등은떨어지지않도록부착하여야"
+        "https",
+        "youtu",
+        "be",
+        "si",
+        "NFWFv82",
+        "o00",
+        "OzQsQPBYPJmeed6f",
+        "VNn5mQX1lQ8",
+        "uEo3wauJGVjbzxX7",
+        "yG35uwFM5Dg"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -1306,29 +669,125 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_52",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 52,
-    "chunk_type": "text",
-    "location": "page:10",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 7 -\n(1) 로프용고리(고정점)\n(가) 로프고정용고리는옥상구조물공사시매입설치하고, 매입하는로프\n고정용고리설치간격은3m 내외가적당하며, 고정용고리고정방법및\n규격은<그림4>, <그림5> 예시와같다.\n         \n<그림4> 로프용고리(매입용) 예       \n<그림5> 로프용고리측면및정면도예\n(나) 고리를매입할때고리앵커를구조물의철근에용접하거나고리앵커홀에\n철근을관통시키는방법으로고정하여로프를결속하였을때고리가뽑히는\n일이없도록하여야한다.\n(2) 콘크리트및철재구조물을이용한고정물\n(가) 지붕또는옥상의돌출물등과같은콘크리트구조물을이용할경우에는\n로프와모서리의접촉면을고무패드등으로보호하고구조물위로로프가\n벗겨지는것을방지하기위하여못이나앵글등을이용로프를고정시켜\n야한다.",
+    "chunk_id": "DR_스마트야드개론(데모용)_image_23",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 23,
+    "chunk_type": "image",
+    "location": "page:9",
+    "content": "[Image xref 81]",
     "embedding": null,
     "metadata": {
-      "length": 393,
+      "length": 15,
       "chunk_in_content": 0,
       "keywords": [
-        "로프용고리",
-        "그림4",
-        "그림5",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "고정점",
-        "로프고정용고리는옥상구조물공사시매입설치하고",
-        "매입하는로프"
+        "Image",
+        "xref",
+        "81"
       ],
-      "quality_score": 0.8999999999999999,
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 9,
+      "image_index": 81,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_24",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 24,
+    "chunk_type": "image",
+    "location": "page:9",
+    "content": "[Image xref 82]",
+    "embedding": null,
+    "metadata": {
+      "length": 15,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "82"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 9,
+      "image_index": 82,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_25",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 25,
+    "chunk_type": "image",
+    "location": "page:9",
+    "content": "[Image xref 83]",
+    "embedding": null,
+    "metadata": {
+      "length": 15,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "83"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 9,
+      "image_index": 83,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_26",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 26,
+    "chunk_type": "image",
+    "location": "page:9",
+    "content": "[Image xref 84]",
+    "embedding": null,
+    "metadata": {
+      "length": 15,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "84"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 9,
+      "image_index": 84,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_27",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 27,
+    "chunk_type": "text",
+    "location": "page:10",
+    "content": "Part １스마트 야드의 필요성 및 기대 효과\n생산성 향상: 자동화 및 최적화된 공정 설계를 통해 생산 효율성 극대화, 공기 단축\n비용 절감: 인건비 절감, 에너지 효율 향상, 유지 보수 비용 감소\n안전성 강화: 위험 작업 자동화, 실시간 모니터링 통한 사고 예방, 안전 관리 시스템 고도화\n환경 규제 대응: 친환경 선박 건조, 에너지 절감 시스템 도입, 오염 물질 배출 최소화\n새로운 비즈니스 모델 창출: 고객 맞춤형 생산, 스마트 선박 유지 보수 서비스, 데이터 기반 \n서비스 제공\n조선 산업의 지속 가능한 성장 기여: 생산성 향상, 환경 규제 대응, 새로운 가치 창출 통해 \n조선 산업의 미래 경쟁력 확보\n➔Q : 스마트 야드의 달성 지표는 (Key Performance Index) ?\n➔Q : 지속가능한 첨단 조선소의 모습은 (To-Be Image) ?",
+    "embedding": null,
+    "metadata": {
+      "length": 426,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "향상",
+        "절감",
+        "야드의",
+        "생산성",
+        "자동화",
+        "통해",
+        "생산",
+        "비용",
+        "에너지"
+      ],
+      "quality_score": 0.7999999999999999,
       "search_priority": "high",
       "data_type": "text",
       "page": 10,
@@ -1336,75 +795,27 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_53",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 53,
-    "chunk_type": "image",
-    "location": "page:10",
-    "content": "[Image xref 51]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "51"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 10,
-      "image_index": 51,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_54",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 54,
-    "chunk_type": "image",
-    "location": "page:10",
-    "content": "[Image xref 52]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "52"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 10,
-      "image_index": 52,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_55",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 55,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_28",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 28,
     "chunk_type": "text",
     "location": "page:11",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 8 -\n(나) 지붕또는옥상의철골구조물이나냉각탑, 계단의난간이나철재파이프\n같은철재구조물은구조물의상황에따라안전성이큰차이를보일수\n있으므로강도가충분하고로프가벗겨지지않은구조물을선택하여야\n한다.\n(다) 철재구조물을이용할때에는철저한점검을통하여부식이되었거나연결\n부위의처리가불량한곳에는달비계를고정하지않도록하여야한다.\n4.2.3 고정점이없는옥상, 지붕에서의안전조치사항\n(1) 로프용고리및구조물이없는옥상, 지붕에서는<그림6> 예시와같이작\n업용로프, 구명줄을결속할수있는철물등을설치하여고정점을확보하\n여야한다.\n<그림6> 로프결속용철물(참조사진)\n(2) 철물등고정점은앵커로고정하는등작업중이탈되지않도록견고하게\n설치하여야하며, 작업하중을충분히지지할수있어야한다.\n(3) 하나의고정점에작업용로프와구명줄이동시에결속되지않도록충분한\n수량의고정점을설치하여야한다.\n4.2.4 작업의자형달비계작업대안전조치사항",
+    "content": "Part １스마트 야드의 필요성 및 기대 효과\n자동차 회사\n예상 TPT\n예상 UPH\n특징\nFord\n2~3주\n30~50대\n대량 생산 시스템 효율화, 자동화 설비 적극 도입\nToyota\n2~4주\n40~60대\n린 생산 시스템(TPS) 기반 고효율 생산, 재고 최소화\nVolkswagen\n2~3주\n30~50대\n모듈형 생산 방식, 다양한 차종 유연 생산\nHyundai\n2~3주\n30~50대\n최첨단 생산 기술 도입, 글로벌 생산 네트워크 구축\nTesla\n1~2주\n20~40대\n전기차 생산에 특화된 자동화 공정, 높은 기술력\nFerrari\n2~3개월\n1~2대\n수작업 중심의 소량 생산, 최고 수준의 품질 및 성능 추구\n자동차 공장 생산성 지표\n TPT (Throughput Time): 원재료 투입부터 완성차 출고까지 걸리는 시간. 통상적으로 수일에서 수주\n UPH (Units Per Hour): 시간당 생산량으로, 시간당 수십 대를 생산\n 기타 지표 : 가동률 (Operation Rate) 불량률 (Defect Rate), 재고 회전율 (Inventory Turnover Ratio), \nMan-Hour per Vehicle (MH/V, 차량 1대당 투입 인력 시간) 등\n주요 자동차 회사별 TPT 및 UPH (추정치)\n[현장+]조선 자동화 최전선…HD현대삼호 '현장 맞춤' 조선소 가보니\nhttps://m.news.nate.com/view/20250519n03042",
     "embedding": null,
     "metadata": {
-      "length": 456,
+      "length": 705,
       "chunk_in_content": 0,
       "keywords": [
-        "그림6",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "지붕또는옥상의철골구조물이나냉각탑",
-        "계단의난간이나철재파이프",
-        "같은철재구조물은구조물의상황에따라안전성이큰차이를보일수",
-        "있으므로강도가충분하고로프가벗겨지지않은구조물을선택하여야",
-        "한다"
+        "생산",
+        "자동차",
+        "TPT",
+        "UPH",
+        "3주",
+        "30",
+        "50대",
+        "자동화",
+        "예상",
+        "시스템"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
@@ -1414,125 +825,29 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_56",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 56,
-    "chunk_type": "image",
-    "location": "page:11",
-    "content": "[Image xref 58]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "58"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 11,
-      "image_index": 58,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_57",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 57,
-    "chunk_type": "image",
-    "location": "page:11",
-    "content": "[Image xref 59]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "59"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 11,
-      "image_index": 59,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_58",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 58,
-    "chunk_type": "image",
-    "location": "page:11",
-    "content": "[Image xref 61]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "61"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 11,
-      "image_index": 61,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_59",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 59,
-    "chunk_type": "image",
-    "location": "page:11",
-    "content": "[Image xref 62]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "62"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 11,
-      "image_index": 62,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_60",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 60,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_29",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 29,
     "chunk_type": "text",
     "location": "page:12",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 9 -\n(1) 작업의자형달비계작업대는로프슬링에의해4 개모서리를매달아야하고\n강도가충분하고부드러운나무로제작하되폭은25cm, 길이60cm 이상과\n목재인경우는두께5cm 이상및내수성합판인경우는1.8cm 이상이어야한다.\n(2) 작업대를고정하는로프는작업대를대각선으로교차한후고정철물등으로\n고정하여로프가작업대에서탈락되지않도록하여야한다.\n(3) 작업대로부터상부50cm 되는지점까지는로프를보호하는보호대(Guard)를\n설치하여야한다.\n(4) 못을이용하여로프를고정할경우에는로프의중간을관통하여못을고정\n함으로써로프의손상및강도저하의원인이되므로로프를고정할때에\n는로프를관통하지않고고정하여야한다.\n(5) 작업대의재질은평형을잃지않도록미끄러짐이없는재질로하여야한다.\n(6) 작업대의최대적재량은1.08kN(110 kgf) 이하가되어야한다.\n4.2.5 매듭작업시주의사항\n(1) 매듭방법은<부록>을참조하되단단하게조여서만들어야한다.\n(2) 매듭은보통두줄이함께돌아가게되는데서로엇갈리거나겹치지말고\n나란히돌아가야한다.\n(3) 매듭의끝은항상옭매듭으로마무리하여야한다.\n(4) 사용중에도매듭의상태는수시로점검하여야한다.\n(5) 매듭부분에서의강도상태는<표2> 와같다.\n<표2> 매듭부위의강도상태",
+    "content": "Part １스마트 야드의 필요성 및 기대 효과\n조선업과 관련산업의 영속을 위해\n생산기술/설비의 끊임없는 혁신 진행",
     "embedding": null,
     "metadata": {
-      "length": 606,
+      "length": 63,
       "chunk_in_content": 0,
       "keywords": [
-        "표2",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "작업의자형달비계작업대는로프슬링에의해4",
-        "개모서리를매달아야하고",
-        "강도가충분하고부드러운나무로제작하되폭은25cm",
-        "길이60cm",
-        "이상과"
+        "Part",
+        "스마트",
+        "야드의",
+        "필요성",
+        "기대",
+        "효과",
+        "조선업과",
+        "관련산업의",
+        "영속을",
+        "위해"
       ],
-      "quality_score": 0.8999999999999999,
+      "quality_score": 0.7999999999999999,
       "search_priority": "high",
       "data_type": "text",
       "page": 12,
@@ -1540,317 +855,11 @@
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_61",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 61,
-    "chunk_type": "text",
-    "location": "page:13",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 10 -\n구분\n강도상태(%)\n매듭을하지않은상태(로프강도)\n100 %\n8 자매듭\n75～80 %\n보울라인매듭\n70～75 %\n에반스매듭\n60～65 %\n옭매듭\n60～65 %\n까베스탕매듭\n60～65 %\n피셔맨매듭\n60～65 %\n5. 작업의자형달비계작업시안전준수사항\n5.1 준비작업\n(1) 작업책임자는작업전에현장에대하여고정점의확인, 건물의높이, 경사\n진지붕에서의추락위험등을정확하게파악을한후작업계획을수립하\n여야한다.\n(2) 경사진지붕에서준비작업(로프결속, 작업도구운반, 이동등) 중추락위험이\n있을경우KOSHA GUIDE C-59-2022(지붕공사안전보건작업기술지침)에\n따라추락위험을방지하기위한조치를하여야한다. 이때안전대부착설비\n(고정기구, 철물등)를<그림7>과같이설치하는경우, 해당안전대부착설비는\n달비계작업용로프및구명줄고정점과혼용하여사용해서는아니된다.\n<그림7> 경사진지붕에서의안전대부착설비설치예\n(3) 작업자는작업계획을충분히숙지하고작업용로프및구명줄, 작업대와샤클\n등달비계작업에필요한설비와추락방지에필요한안전대등에대한사전\n점검을실시하여야한다.\n(4) 달비계및추락방지설비의단계별사전점검사항은다음과같다.",
-    "embedding": null,
-    "metadata": {
-      "length": 579,
-      "chunk_in_content": 0,
-      "keywords": [
-        "60",
-        "65",
-        "GUIDE",
-        "2022",
-        "75",
-        "그림7",
-        "KOSHA",
-        "33",
-        "10",
-        "구분"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 13,
-      "chunking_method": "page"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_62",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 62,
+    "chunk_id": "DR_스마트야드개론(데모용)_image_30",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 30,
     "chunk_type": "image",
-    "location": "page:13",
-    "content": "[Image xref 69]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "69"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 13,
-      "image_index": 69,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_63",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 63,
-    "chunk_type": "image",
-    "location": "page:13",
-    "content": "[Image xref 70]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "70"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 13,
-      "image_index": 70,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_64",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 64,
-    "chunk_type": "text",
-    "location": "page:14",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 11 -\n(가) 1 단계: 고리(Anchor), 안전대, 카라비너, 샤클등철물의점검\n- 손상되거나부서지거나휘어지면안된다.\n- 날카로운모서리, 틈, 닳은부분, 녹등이없어야한다.\n- 카라비너의후크는자유롭게움직이고닫힐때자동으로잠겨야한다.\n(나) 2 단계: 로프의검사\n- 로프는헤지거나소선의절단, 마모또는불타거나변색된부분이없어야한다.\n- 로프는과도한흙, 도료(페인트), 녹이나얼룩이없어야한다.\n- 그을리거나변색되거나물러진부분등화학적또는열에의한손상\n여부를확인한다.\n- 로프표면의변색과터짐등자외선에의한손상을확인한다.\n- 이상의모든요소들은강도가줄어들었음을나타내므로손상되거나의\n구심이드는로프를사용하면안된다.\n(다) 3 단계: 작업대의검사\n- 작업대의나무판을검사하여나무의균열여부를확인한다. 거친모서\n리나홈은갈라짐을야기할수있으므로주의하여검사한다.\n- 작업대(나무판외) 변형, 손상등접합부의상태에대한이상유무를\n검사한다.\n(라) 4 단계: 검사날짜와결과를기록\n- 검사를실시한후날짜와결과를기록하여보관한다.\n(5) 검사결과불안전하거나결함이있는달비계또는추락방지설비는제거또는\n폐기하여야한다.\n(6) 다음각호의어느하나에해당하는경우에는달비계의작업을중지하여야한다.\n①풍속이초당10m 이상인경우\n②강우량이시간당1mm 이상인경우\n③강설량이시간당1cm 이상인경우\n5.2 로프내리기작업\n(1) 안전대를지지하는구명줄고정점은작업용로프를지지하는고정점과별도로\n고정점을확보하여안전대를지지하는구명줄을지지하도록하여야한다.",
-    "embedding": null,
-    "metadata": {
-      "length": 737,
-      "chunk_in_content": 0,
-      "keywords": [
-        "단계",
-        "이상인경우",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "11",
-        "고리",
-        "Anchor",
-        "안전대"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 14,
-      "chunking_method": "page"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_65",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 65,
-    "chunk_type": "text",
-    "location": "page:15",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 12 -\n(2) 구명줄및작업용로프의한쪽끝을고정점에관리감독자확인아래결속하\n여야한다.\n(3) 구명줄에안전대를로프연결철물등으로체결하고안전대를착용하여야\n한다.\n(4) 안전대를착용한상태에서작업용로프를내리고로프가지상바닥에충\n분히닫도록길이를확인하여야한다.\n(5) 작업용로프와구명줄의엉킴을방지하기위하여작업용로프와구명줄은\n약1m 정도이격하여설치하여야한다.\n(6) 제3자에의한로프풀림등의위험요인이있으므로로프고정점등에는“작\n업중”이라는표지및자물쇠등을부착하여제3자가로프에손을대지않\n도록하여야한다.\n5.3 로프결속작업\n(1) 로프를고정점에결속하는방법은앞의매듭부위강도상태에서언급한바\n와같이여러가지방법이있으나가능한가장보편적인방법으로설치, 해체\n가용이하고안전한8자매듭법을이용하여결속하도록한다.\n(2) 매듭은가능한크게하는것이좋으며(카라비나에연결하는경우에는매듭이\n작은것이안전성이있으나달비계작업시로프매듭을작게하면작업으로\n인한작은충격에도매듭이빠지면서풀리게됨) 로프의풀림에대비하여\n반드시2개의고정점을이용하여2중으로결속하여야한다.\n(3) 결속점의로프2차풀림방지를위하여샤클또는철근등을체결고리에설\n치하여야한다.\n(4)\n작업용\n로프와\n구명줄은\n각각\n별도의\n고정점에\n묶어야\n하며\n고정점은\n22.9kN(2,340 kgf) 이상을지지할수있어야한다.\n5.4 로프의보호",
-    "embedding": null,
-    "metadata": {
-      "length": 652,
-      "chunk_in_content": 0,
-      "keywords": [
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "12",
-        "구명줄및작업용로프의한쪽끝을고정점에관리감독자확인아래결속하",
-        "여야한다",
-        "구명줄에안전대를로프연결철물등으로체결하고안전대를착용하여야",
-        "한다",
-        "안전대를착용한상태에서작업용로프를내리고로프가지상바닥에충"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 15,
-      "chunking_method": "page"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_66",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 66,
-    "chunk_type": "text",
-    "location": "page:16",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 13 -\n(1) 로프를시멘트바닥이나표면이거친땅바닥에끌면서사용하면로프의절\n단등으로인한치명적인손상을입게되므로취급시주의하여야한다.\n(2) 로프를사용할경우건물이나구조물의예리한모서리에접촉되면접촉부\n분이급격히손상되므로가죽이나고무패드로로프를보호하여야한다.\n(3) 합성섬유로프는특히열에취약하므로열주위에가까이하거나, 닿으면\n즉시녹으므로고온의물체주위에서작업을할때에는특별히주의해서\n사용하여야한다.\n5.5 작업의자형달비계에탑승및작업\n(1) 작업의자형달비계에탑승하기전에반드시안전모와안전대를착용하고안전대를\n안전대부착설비(구명줄)에부착하여야한다.\n(2) 작업의자형달비계탑승을위해안전난간등시설물을넘어갈경우에는시\n설물의파손, 탈락등에의한추락, 전도등의재해를예방하기위해사전점\n검을철저히하여야한다.\n(3) 작업의자형달비계를이용한작업구역에는출입금지구역을설정하고경고\n표지를작업장소아래에설치하여다른작업자가쉽게알수있도록하여야한다.\n(4) 작업의자형달비계이용작업시작업대에서과도하게몸을내밀어작업을\n할경우작업대에서이탈하여추락할우려가있으므로가급적무게중심이\n작업대에서벗어나지않도록하여야한다.\n5.6 작업후작업의자형달비계의보관\n(1) 로프를풀때비틀리면꺽임이발생되어강도가급격히저하되므로꼬임을\n잘풀어꺽임이발생되지않도록하여야한다.\n(2) 작업후달비계를보관할때에는물과중성세제로로프를세척하고기타\n로프재료의특성에적합한방식으로깨끗이세척하여야한다.\n(3) 세척후에는마르고깨끗한천으로닦고대기중에널어말리고건조를위해",
-    "embedding": null,
-    "metadata": {
-      "length": 724,
-      "chunk_in_content": 0,
-      "keywords": [
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "13",
-        "로프를시멘트바닥이나표면이거친땅바닥에끌면서사용하면로프의절",
-        "단등으로인한치명적인손상을입게되므로취급시주의하여야한다",
-        "로프를사용할경우건물이나구조물의예리한모서리에접촉되면접촉부",
-        "분이급격히손상되므로가죽이나고무패드로로프를보호하여야한다",
-        "합성섬유로프는특히열에취약하므로열주위에가까이하거나"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 16,
-      "chunking_method": "page"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_67",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 67,
-    "chunk_type": "text",
-    "location": "page:17",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 14 -\n열을가해서는안된다.\n(4) 합성섬유로프는햇빛에약하므로옥내에보관하거나, 옥외에보관할때는\n천막등을덮어햇빛을차단시켜야한다.\n(5) 나일론로프는일반폴리프로필렌로프와달리수분을흡수할경우, 매우딱딱\n해져서취급및사용이불편하므로항상건조한곳에보관하여야한다.\n(6) 작업대와로프는공기가잘통하고건조하며직사광선을피해깨끗한장소에\n보관하여야한다.\n(7) 화학물질이있는곳은피하여야하며장기간의저장후에는달비계의구\n성품을철저하게검사하여야한다.\n6. 관리감독자의유해·위험방지직무수행사항\n(1) 관리감독자는작업실시전에작업자에게작업용로프의적합한설비, 작업용\n로프의기본적인검사방법, 구명줄과앵커, 작업의자형달비계의안전한사용법,\n추락방지시스템과응급대처방법등을포함한작업계획에대한교육을실시\n하여야한다.\n(2) 관리감독자는작업용로프및구명줄, 작업용로프및구명줄의고정점, 구명줄의\n조정점, 작업대, 고리걸이용철구및안전대등의결손여부를확인하여야한다.\n(3) 관리감독자는작업시작전또는휴식후작업재개전에는작업용로프및\n구명줄이고정점에풀리지않는매듭방법으로결속되었는지확인하여야한다.\n(4) 관리감독자는근로자가작업대에탑승하기전안전모및안전대를착용하고\n안전대를구명줄에체결했는지확인하여야한다.\n(5) 관리감독자는작업방법및근로자배치를결정하고로프고정장소에서작업\n진행상태를감시하여야한다.",
-    "embedding": null,
-    "metadata": {
-      "length": 653,
-      "chunk_in_content": 0,
-      "keywords": [
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "14",
-        "열을가해서는안된다",
-        "합성섬유로프는햇빛에약하므로옥내에보관하거나",
-        "옥외에보관할때는",
-        "천막등을덮어햇빛을차단시켜야한다",
-        "나일론로프는일반폴리프로필렌로프와달리수분을흡수할경우"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 17,
-      "chunking_method": "page"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_68",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 68,
-    "chunk_type": "text",
-    "location": "page:18",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 15 -\n<부록>\n로프의매듭방법\n1. 8자매듭\n(1) 두줄을겹쳐잡아한번꼬아서뒷줄뒤에고리를만든다.\n(2) 매듭줄을뒷줄의앞으로돌린다.\n(3) 매듭줄을고리의뒤쪽으로통과시킨다.\n(4) 매듭을정돈하고확인한다.\n<그림1> 8 자매듭결속방법\n2. 보울라인매듭\n(1) 먼저줄을꼬아서고리를만든다\n(2) 줄의끝쪽을고리속으로통과시킨다.\n(3) 줄끝을빼내고원래줄의뒤로돌린다.\n(4) 줄끝을처음만든고리로다시통과시킨다\n(5) 보울라인매듭이완성된다.\n<그림2> 보울라인매듭결속방법",
-    "embedding": null,
-    "metadata": {
-      "length": 281,
-      "chunk_in_content": 0,
-      "keywords": [
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "15",
-        "부록",
-        "로프의매듭방법",
-        "8자매듭",
-        "두줄을겹쳐잡아한번꼬아서뒷줄뒤에고리를만든다",
-        "매듭줄을뒷줄의앞으로돌린다"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 18,
-      "chunking_method": "page"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_69",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 69,
-    "chunk_type": "image",
-    "location": "page:18",
-    "content": "[Image xref 86]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "86"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 18,
-      "image_index": 86,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_70",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 70,
-    "chunk_type": "image",
-    "location": "page:18",
-    "content": "[Image xref 87]",
-    "embedding": null,
-    "metadata": {
-      "length": 15,
-      "chunk_in_content": 0,
-      "keywords": [
-        "Image",
-        "xref",
-        "87"
-      ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
-      "data_type": "text",
-      "page": 18,
-      "image_index": 87,
-      "chunking_method": "adaptive"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_71",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 71,
-    "chunk_type": "text",
-    "location": "page:19",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 16 -\n3. 에반스매듭\n(1) 줄로고리를만든후긴쪽줄을따라3 회이상감는다.\n(2) 줄의끝을감은줄사이로넣은후빼낸다.\n(3) 짧은줄을당기면매듭이완성된다.\n<그림3> 에반스매듭결속방법\n4. 옭매듭\n(1) 매듭방법은두줄을겹쳐잡아놓는다.\n(2) 잡아놓은두줄을한번감아돌려넣어서빼내면완성된다.\n<그림4> 옭매듭\n5. 까베스탕매듭\n(1) 두개의고리를가운데줄을두고서로반대방향으로꼬아만든다.\n(2) 왼쪽고리를오른쪽고리밑으로서로앞과뒤로엇갈리게겹쳐구멍을만\n든다.\n(3) 가운데겹침으로인해새로생기는구멍에카라비너를걸어사용한다.",
-    "embedding": null,
-    "metadata": {
-      "length": 308,
-      "chunk_in_content": 0,
-      "keywords": [
-        "옭매듭",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "16",
-        "에반스매듭",
-        "줄로고리를만든후긴쪽줄을따라3",
-        "회이상감는다",
-        "줄의끝을감은줄사이로넣은후빼낸다"
-      ],
-      "quality_score": 0.8999999999999999,
-      "search_priority": "high",
-      "data_type": "text",
-      "page": 19,
-      "chunking_method": "page"
-    }
-  },
-  {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_72",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 72,
-    "chunk_type": "image",
-    "location": "page:19",
+    "location": "page:12",
     "content": "[Image xref 91]",
     "embedding": null,
     "metadata": {
@@ -1864,17 +873,17 @@
       "quality_score": 0.55,
       "search_priority": "medium",
       "data_type": "text",
-      "page": 19,
+      "page": 12,
       "image_index": 91,
       "chunking_method": "adaptive"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_73",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 73,
+    "chunk_id": "DR_스마트야드개론(데모용)_image_31",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 31,
     "chunk_type": "image",
-    "location": "page:19",
+    "location": "page:12",
     "content": "[Image xref 92]",
     "embedding": null,
     "metadata": {
@@ -1888,17 +897,17 @@
       "quality_score": 0.55,
       "search_priority": "medium",
       "data_type": "text",
-      "page": 19,
+      "page": 12,
       "image_index": 92,
       "chunking_method": "adaptive"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_74",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 74,
+    "chunk_id": "DR_스마트야드개론(데모용)_image_32",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 32,
     "chunk_type": "image",
-    "location": "page:19",
+    "location": "page:12",
     "content": "[Image xref 93]",
     "embedding": null,
     "metadata": {
@@ -1912,47 +921,100 @@
       "quality_score": 0.55,
       "search_priority": "medium",
       "data_type": "text",
-      "page": 19,
+      "page": 12,
       "image_index": 93,
       "chunking_method": "adaptive"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_75",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 75,
-    "chunk_type": "text",
-    "location": "page:20",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 17 -\n<그림5> 까베스탕매듭결속방법(1)\n<그림6> 반(半) 까베스탕매듭결속방법(2)\n6. 피셔맨매듭\n(1) 두개의줄을역으로나란히하여한줄로다른줄을두번감아돌려넣\n어서당기며조여준다.\n(2) 나머지한줄도반대로돌려똑같은방법으로두번감아돌려감은뒤당\n긴다.\n(3) 마지막으로양쪽으로당겨주면완성된다.\n<그림7> 피셔맨매듭",
+    "chunk_id": "DR_스마트야드개론(데모용)_image_33",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 33,
+    "chunk_type": "image",
+    "location": "page:12",
+    "content": "[Image xref 94]",
     "embedding": null,
     "metadata": {
-      "length": 201,
+      "length": 15,
       "chunk_in_content": 0,
       "keywords": [
-        "까베스탕매듭결속방법",
-        "피셔맨매듭",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "2022",
-        "17",
-        "그림5",
-        "그림6",
-        "두개의줄을역으로나란히하여한줄로다른줄을두번감아돌려넣"
+        "Image",
+        "xref",
+        "94"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 12,
+      "image_index": 94,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_34",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 34,
+    "chunk_type": "text",
+    "location": "page:13",
+    "content": "Part 2\n인공지능 (AI) 및 빅데이터 분석\nAI 및 빅데이터 분석 : 대량의 데이터를 분석하고 학습하여 패턴을 발견하고 미래를 예측\n개발 방법 : 머신러닝, 딥러닝 등. 지도 학습, 비지도 학습, 강화 학습 등\nAI  자동화 : MCP 를활용한 AI Agent 개발과 적용\n조선 산업에서의 활용 방안: 설계, 생산, 품질 관리, 안전 관리 등 조선소 전반에 걸쳐 적용\n\n설계 최적화: AI 기반 선박 설계 자동화 및 최적화\n\n생산 공정 최적화: AI 기반 생산 계획 수립 및 공정 제어\n\n품질 관리:  AI 기반 불량 검사 및 품질 예측\n\n위험 예측: AI 기반 안전 사고 예측 및 예방\n\n데이터 기반 의사 결정: AI 분석 결과를 바탕으로 정확하고 신속한 의사 결정 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 379,
+      "chunk_in_content": 0,
+      "keywords": [
+        "AI",
+        "기반",
+        "예측",
+        "분석",
+        "학습",
+        "설계",
+        "생산",
+        "품질",
+        "관리",
+        "최적화"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
       "data_type": "text",
-      "page": 20,
+      "page": 13,
       "chunking_method": "page"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_76",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 76,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_35",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 35,
+    "chunk_type": "text",
+    "location": "page:14",
+    "content": "Part 4\n빠른 계획 수립 & Rolling\n공정별 계획 최적화 주요 미션",
+    "embedding": null,
+    "metadata": {
+      "length": 42,
+      "chunk_in_content": 0,
+      "keywords": [
+        "계획",
+        "Part",
+        "빠른",
+        "수립",
+        "Rolling",
+        "공정별",
+        "최적화",
+        "주요",
+        "미션"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 14,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_36",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 36,
     "chunk_type": "image",
-    "location": "page:20",
+    "location": "page:14",
     "content": "[Image xref 97]",
     "embedding": null,
     "metadata": {
@@ -1966,41 +1028,47 @@
       "quality_score": 0.55,
       "search_priority": "medium",
       "data_type": "text",
-      "page": 20,
+      "page": 14,
       "image_index": 97,
       "chunking_method": "adaptive"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_77",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 77,
-    "chunk_type": "image",
-    "location": "page:20",
-    "content": "[Image xref 98]",
+    "chunk_id": "DR_스마트야드개론(데모용)_text_37",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 37,
+    "chunk_type": "text",
+    "location": "page:15",
+    "content": "Part 7\n조선소의 경쟁력 = 산업 생태계의 경쟁력\n< ‘22년 3분기 조선산업 정부R&D 기획 >",
     "embedding": null,
     "metadata": {
-      "length": 15,
+      "length": 56,
       "chunk_in_content": 0,
       "keywords": [
-        "Image",
-        "xref",
-        "98"
+        "경쟁력",
+        "Part",
+        "조선소의",
+        "산업",
+        "생태계의",
+        "22년",
+        "3분기",
+        "조선산업",
+        "정부R",
+        "기획"
       ],
-      "quality_score": 0.55,
-      "search_priority": "medium",
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
       "data_type": "text",
-      "page": 20,
-      "image_index": 98,
-      "chunking_method": "adaptive"
+      "page": 15,
+      "chunking_method": "page"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_image_78",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 78,
+    "chunk_id": "DR_스마트야드개론(데모용)_image_38",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 38,
     "chunk_type": "image",
-    "location": "page:20",
+    "location": "page:15",
     "content": "[Image xref 99]",
     "embedding": null,
     "metadata": {
@@ -2014,39 +1082,1378 @@
       "quality_score": 0.55,
       "search_priority": "medium",
       "data_type": "text",
-      "page": 20,
+      "page": 15,
       "image_index": 99,
       "chunking_method": "adaptive"
     }
   },
   {
-    "chunk_id": "작업의자형 달비계 안전작업 지침_text_79",
-    "document_id": "작업의자형 달비계 안전작업 지침",
-    "chunk_index": 79,
+    "chunk_id": "DR_스마트야드개론(데모용)_text_39",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 39,
     "chunk_type": "text",
-    "location": "page:21",
-    "content": "KOSHA GUIDE\nC - 33 - 2022\n- 18 -\n지침개정이력\n□개정일: 2022. 12.\n○개정자: 한국산업안전보건공단건설안전실\n○개정사유: 작업의자형달비계작업시관리감독자의직무관련산업안전보건기준에관한\n규칙개정(시행’21.11.19., 고용노동부령제337호)사항을반영하고, 작업전고정점이\n없는지붕, 옥상에서의안전기준을명확화하려는것임\n○주요개정내용\n- 3. 용어의정의“고정점” 신설\n- <그림1> 그림수정“고정점2개소이상”\n- <그림3> 작업의자형달비계작업순서추가“작업전지붕위안전조치및확인사항”\n- 4.2.3 고정점이없는옥상, 지붕에서의안전조치사항\n↳산업안전보건기준에관한규칙제63조제2항의제3호, 제4호, 제5호\n- 5. 작업의자형달비계작업시안전준수사항의5.1 준비작업에“작업전옥상, 지붕위에서의\n안전조치기준마련”\n↳산업안전보건기준에관한규칙제45조\n- 6. 관리감독자의유해·위험방지직무수행사항\n↳산업안전보건기준에관한규칙제35조및동규칙[별표2] 10.",
+    "location": "page:16",
+    "content": "Part 7\n조선소의 경쟁력 = 산업 생태계의 경쟁력\n< ‘22년 3분기 조선산업 정부R&D 기획 >",
     "embedding": null,
     "metadata": {
-      "length": 479,
+      "length": 56,
       "chunk_in_content": 0,
       "keywords": [
-        "2022",
-        "KOSHA",
-        "GUIDE",
-        "33",
-        "18",
-        "지침개정이력",
-        "개정일",
-        "12",
-        "개정자",
-        "한국산업안전보건공단건설안전실"
+        "경쟁력",
+        "Part",
+        "조선소의",
+        "산업",
+        "생태계의",
+        "22년",
+        "3분기",
+        "조선산업",
+        "정부R",
+        "기획"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 16,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_40",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 40,
+    "chunk_type": "image",
+    "location": "page:16",
+    "content": "[Image xref 101]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "101"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 16,
+      "image_index": 101,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_41",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 41,
+    "chunk_type": "text",
+    "location": "page:17",
+    "content": "Part 7\n지역 클러스터 관점으로의 발전 추구\n< 사례 : 북유럽 풍력, 해양 산업 클러스터 >",
+    "embedding": null,
+    "metadata": {
+      "length": 54,
+      "chunk_in_content": 0,
+      "keywords": [
+        "클러스터",
+        "Part",
+        "지역",
+        "관점으로의",
+        "발전",
+        "추구",
+        "사례",
+        "북유럽",
+        "풍력",
+        "해양"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 17,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_42",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 42,
+    "chunk_type": "image",
+    "location": "page:17",
+    "content": "[Image xref 104]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "104"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 17,
+      "image_index": 104,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_43",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 43,
+    "chunk_type": "image",
+    "location": "page:17",
+    "content": "[Image xref 103]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "103"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 17,
+      "image_index": 103,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_44",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 44,
+    "chunk_type": "text",
+    "location": "page:18",
+    "content": "Part 7\n스마트 야드 관련 정책 및 규제\n국내외 스마트 야드 관련 정책 및 규제 동향 파악: 정부 정책, 산업 표준 등 분석\n기술 개발 및 도입에 미치는 영향 분석: 정책 및 규제가 스마트 야드 기술 개발 및 도입에 미치\n는 영향 분석\n정책 지원 방안 모색: 스마트 야드 확산 위한 정부 지원책 및 규제 개선 방안 제시\n➔Q : 어느 정도 예산이 사용되는가? 수혜의 주체는 누구인가?\n➔Q : 구축을 제한하는 규제가 있는가?",
+    "embedding": null,
+    "metadata": {
+      "length": 239,
+      "chunk_in_content": 0,
+      "keywords": [
+        "정책",
+        "스마트",
+        "야드",
+        "규제",
+        "분석",
+        "관련",
+        "정부",
+        "기술",
+        "개발",
+        "도입에"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 18,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_45",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 45,
+    "chunk_type": "text",
+    "location": "page:19",
+    "content": "Part 7\n스마트 야드 관련 정책\n정부는 국내 제조업의 혁신과 경쟁력 강화를 위해 다양한 스마트 팩토리 지원 정책을 추진\n정책 목표:\n제조업 경쟁력 강화 \n정보통신기술(ICT)을 활용하여 생산성 향상, 품질 향상, 원가 절감 등을 통해 제조업의 \n근본적인 경쟁력을 강화하는 것을 목표\n중소·중견기업의 \n디지털 전환 촉진 \n상대적으로 디지털 전환에 어려움을 겪는 중소·중견기업을 대상으로 맞춤형 지원을 제공\n하여 스마트 제조 역량을 높이는 데 중점\n산업 생태계 조성 \n스마트 팩토리 관련 기술과 솔루션을 개발·공급하는 기업을 육성하고, 수요-공급 기업 간 \n협력을 촉진하여 건전한 산업 생태계를 조성\n일자리 창출 \n스마트 팩토리 도입 및 확산을 통해 새로운 기술 관련 일자리를 창출하고, 숙련 노동자의 \n역량 강화를 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 403,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "관련",
+        "팩토리",
+        "정책",
+        "제조업의",
+        "경쟁력",
+        "강화를",
+        "지원",
+        "목표",
+        "향상"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 19,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_46",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 46,
+    "chunk_type": "text",
+    "location": "page:20,block:1",
+    "content": "Part 7스마트 야드 관련 정책",
+    "embedding": null,
+    "metadata": {
+      "length": 18,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Part",
+        "7스마트",
+        "야드",
+        "관련",
+        "정책"
+      ],
+      "quality_score": 0.7,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 20,
+      "block": 1,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_47",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 47,
+    "chunk_type": "text",
+    "location": "page:20,block:2",
+    "content": "주요 지원 내용:",
+    "embedding": null,
+    "metadata": {
+      "length": 9,
+      "chunk_in_content": 0,
+      "keywords": [
+        "주요",
+        "지원",
+        "내용"
+      ],
+      "quality_score": 0.5,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 20,
+      "block": 2,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_48",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 48,
+    "chunk_type": "text",
+    "location": "page:20,block:3",
+    "content": "스마트   공장 구축 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 14,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "공장",
+        "구축",
+        "지원"
+      ],
+      "quality_score": 0.5,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 20,
+      "block": 3,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_49",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 49,
+    "chunk_type": "text",
+    "location": "page:20,block:4",
+    "content": "정부일반형중소·중견 제조기업의 스마트공장 구축 및 고도화를 지원. 기업의 수준에 따라 맞춤형 솔루션 구축 비용을 일부 지원하며, 자동화 장비, 제어기, 센서 등의 도입도 지원 대상에 포함",
+    "embedding": null,
+    "metadata": {
+      "length": 104,
+      "chunk_in_content": 0,
+      "keywords": [
+        "구축",
+        "지원",
+        "정부일반형중소",
+        "중견",
+        "제조기업의",
+        "스마트공장",
+        "고도화를",
+        "기업의",
+        "수준에",
+        "따라"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 4,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_50",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 50,
+    "chunk_type": "text",
+    "location": "page:20,block:5",
+    "content": "고도화 지원이미 스마트공장을 구축한 기업을 대상으로 생산성 향상, 품질 개선 등을 위한 고도화 솔루션 도입을 지원. 인공지능(AI), 빅데이터, 디지털 트윈 등의 첨단 기술 도입을 장려",
+    "embedding": null,
+    "metadata": {
+      "length": 103,
+      "chunk_in_content": 0,
+      "keywords": [
+        "고도화",
+        "도입을",
+        "지원이미",
+        "스마트공장을",
+        "구축한",
+        "기업을",
+        "대상으로",
+        "생산성",
+        "향상",
+        "품질"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 5,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_51",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 51,
+    "chunk_type": "text",
+    "location": "page:20,block:6",
+    "content": "특화 지원특정 산업 또는 기업의 특성을 고려한 맞춤형 스마트공장 구축을 지원. 예를 들어, 탄소 중립 스마트공장 구축 지원 등을 통해 특정 목표 달성을 위한 지원을 제공",
+    "embedding": null,
+    "metadata": {
+      "length": 94,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트공장",
+        "지원",
+        "특화",
+        "지원특정",
+        "산업",
+        "또는",
+        "기업의",
+        "특성을",
+        "고려한",
+        "맞춤형"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 6,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_52",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 52,
+    "chunk_type": "text",
+    "location": "page:20,block:7",
+    "content": "대·중소 상생형대기업과 협력하여 중소기업의 스마트공장 구축을 지원하는 모델. 대기업의 기술과 경험을 활용하여 중소기업의 스마트 제조 역량을 강화하는 것을 목표",
+    "embedding": null,
+    "metadata": {
+      "length": 88,
+      "chunk_in_content": 0,
+      "keywords": [
+        "중소기업의",
+        "중소",
+        "상생형대기업과",
+        "협력하여",
+        "스마트공장",
+        "구축을",
+        "지원하는",
+        "모델",
+        "대기업의",
+        "기술과"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 7,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_53",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 53,
+    "chunk_type": "text",
+    "location": "page:20,block:8",
+    "content": "스마트 제조혁신 역량 강화 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 17,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "제조혁신",
+        "역량",
+        "강화",
+        "지원"
+      ],
+      "quality_score": 0.6,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 20,
+      "block": 8,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_54",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 54,
+    "chunk_type": "text",
+    "location": "page:20,block:9",
+    "content": "인력 양성스마트 팩토리 운영 및 관리에 필요한 전문 인력을 양성하는 교육 프로그램을 지원. 현장 맞춤형 교육, 전문 기술 교육 등을 통해 기업의 디지털 전환 역량을 강화",
+    "embedding": null,
+    "metadata": {
+      "length": 94,
+      "chunk_in_content": 0,
+      "keywords": [
+        "교육",
+        "전문",
+        "인력",
+        "양성스마트",
+        "팩토리",
+        "운영",
+        "관리에",
+        "필요한",
+        "인력을",
+        "양성하는"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 9,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_55",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 55,
+    "chunk_type": "text",
+    "location": "page:20,block:10",
+    "content": "컨설팅 지원스마트공장 도입 전략 수립, 시스템 구축, 운영 등에 대한 전문 컨설팅을 제공하여 기업의 성공적인 스마트 팩토리 구축을 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 75,
+      "chunk_in_content": 0,
+      "keywords": [
+        "컨설팅",
+        "지원스마트공장",
+        "도입",
+        "전략",
+        "수립",
+        "시스템",
+        "구축",
+        "운영",
+        "등에",
+        "대한"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 10,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_56",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 56,
+    "chunk_type": "text",
+    "location": "page:20,block:11",
+    "content": "기술 지원스마트 팩토리 관련 기술 개발 및 적용을 위한 연구 개발(R&D) 지원, 기술 매칭 등을 통해 기업의 기술 경쟁력 강화를 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 75,
+      "chunk_in_content": 0,
+      "keywords": [
+        "기술",
+        "개발",
+        "지원",
+        "지원스마트",
+        "팩토리",
+        "관련",
+        "적용을",
+        "위한",
+        "연구",
+        "매칭"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 11,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_57",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 57,
+    "chunk_type": "text",
+    "location": "page:20,block:12",
+    "content": "스마트 제조혁신 기반 구축",
+    "embedding": null,
+    "metadata": {
+      "length": 14,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "제조혁신",
+        "기반",
+        "구축"
+      ],
+      "quality_score": 0.5,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 20,
+      "block": 12,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_58",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 58,
+    "chunk_type": "text",
+    "location": "page:20,block:13",
+    "content": "테스트베드 구축",
+    "embedding": null,
+    "metadata": {
+      "length": 8,
+      "chunk_in_content": 0,
+      "keywords": [
+        "테스트베드",
+        "구축"
+      ],
+      "quality_score": 0.4,
+      "search_priority": "low",
+      "data_type": "text",
+      "page": 20,
+      "block": 13,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_59",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 59,
+    "chunk_type": "text",
+    "location": "page:20,block:14",
+    "content": "중소기업이 스마트 팩토리 관련 기술과 솔루션을 시험하고 적용해 볼 수 있는 테스트베드 구축을 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 54,
+      "chunk_in_content": 0,
+      "keywords": [
+        "중소기업이",
+        "스마트",
+        "팩토리",
+        "관련",
+        "기술과",
+        "솔루션을",
+        "시험하고",
+        "적용해",
+        "있는",
+        "테스트베드"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 14,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_60",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 60,
+    "chunk_type": "text",
+    "location": "page:20,block:15",
+    "content": "데이터 플랫폼구축",
+    "embedding": null,
+    "metadata": {
+      "length": 9,
+      "chunk_in_content": 0,
+      "keywords": [
+        "데이터",
+        "플랫폼구축"
+      ],
+      "quality_score": 0.4,
+      "search_priority": "low",
+      "data_type": "text",
+      "page": 20,
+      "block": 15,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_61",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 61,
+    "chunk_type": "text",
+    "location": "page:20,block:16",
+    "content": "제조 데이터를 수집, 분석, 활용할 수 있는 플랫폼 구축을 지원하여 데이터 기반의 스마트 제조 혁신을 촉진",
+    "embedding": null,
+    "metadata": {
+      "length": 59,
+      "chunk_in_content": 0,
+      "keywords": [
+        "제조",
+        "데이터를",
+        "수집",
+        "분석",
+        "활용할",
+        "있는",
+        "플랫폼",
+        "구축을",
+        "지원하여",
+        "데이터"
+      ],
+      "quality_score": 0.7999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 20,
+      "block": 16,
+      "chunking_method": "adaptive_block"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_62",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 62,
+    "chunk_type": "text",
+    "location": "page:21",
+    "content": "Part 7\n스마트 야드 관련 정책\n2024년 주요 지원 사업 :\n지능형(스마트)제\n조혁신 지원사업\n정부 주도로 다양한 유형의 스마트공장 구축 및 고도화를 지원하는 핵심 사업.\n총 2,180억원 규모로 통합 공고. 스마트공장 구축 및 고도화, 로봇 및 자동화 도입, \n스마트공장 수준 확인, 데이터 인프라 구축 등을 지원하는 데 사용\n지역특화형 스마트\n공장 구축지원사업\n지방자치단체와 협력하여 지역별 특성에 맞는 스마트공장 구축을 지원\nK-스마트 등대공\n장 육성사업\n선도적인 스마트 팩토리 구축 사례를 발굴하고 확산하여 국내 제조업의 혁신을 이\n끄는 모델 공장을 육성\n2025년 주요 지원 사업 :\nICT 융합 스마트공\n장 보급 확산\n2,361억원으로 확대 편성. 이는 전년 대비 170억원 증액된 금액으로, 스마트공장 \n지원 예산을 질적 고도화 방향으로 확대하고 민·관 협력 방식의 스마트공장 고도화 \n지원 규모를 확대한 결과\n지역특화형 스마트\n공장 구축지원사업\n중소벤처기업부와 지방자치단체가 함께 164억 5천만원을 투입하여 스마트 공장 \n구축을 지원",
+    "embedding": null,
+    "metadata": {
+      "length": 534,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "지원",
+        "스마트공장",
+        "구축",
+        "사업",
+        "고도화",
+        "공장",
+        "주요",
+        "지원하는",
+        "지역특화형"
       ],
       "quality_score": 0.8999999999999999,
       "search_priority": "high",
       "data_type": "text",
       "page": 21,
       "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_63",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 63,
+    "chunk_type": "text",
+    "location": "page:22",
+    "content": "Part 7\n스마트 야드 관련 규제\n관련된 법률 및 정책 방향 속에서 고려해야 할 사항이나 간접적인 영향을 주는 요소들이 존재\n법률 및 \n제도적\n측면\n중소기업 스마트제조\n혁신 촉진에 관한 법률 \n(스마트제조혁신법) \n이 법률은 스마트 제조혁신을 촉진하고 지원하기 위한 기본적인 틀을 제공. 직접적\n인 규제보다는 지원 정책의 근거가 되는 법률이지만, 동시에 스마트 제조혁신 추진 \n과정에서의 기본 원칙과 방향을 제시. 예를 들어, 보안 강화, 인력 양성, 표준 보급 \n등에 대한 국가의 책무를 명시하고 있어, 기업들은 이러한 방향에 맞춰 스마트 팩\n토리를 구축하고 운영해야 함\n산업안전보건법\n스마트 팩토리 구축 시 자동화된 설비 및 로봇 도입이 증가하므로, 산업안전보건법\n에 따른 안전 기준 및 절차를 준수해야 함. 특히, 로봇 안전 기준 등 새로운 기술 도\n입에 따른 안전규정을 숙지하고 적용해야 함\n개인정보보호법 및 \n데이터 관련 법규\n스마트 팩토리 운영 과정에서 생산 데이터, 설비 데이터 등 다양한 데이터가 수집, \n활용될 수 있음. 이러한 데이터 활용 시 개인정보보호법 및 데이터 관련 법규를 준\n수하여야 함. 특히, 근로자 관련 데이터나 고객 정보 등이 포함될 경우 법적 의무사\n항을 충족해야 함\n환경 관련 법규\n스마트 팩토리 구축 및 운영이 에너지 효율 향상 및 환경 개선을 목표로 하는 경우\n가 많지만, 동시에 새로운 설비 도입이나 생산 방식 변화로 인해 환경 관련 법규의 \n적용을 받을 수 있음. 예를 들어, 폐기물 처리, 대기 및 수질 오염 방지 등에 대한 규\n제를 준수해야 함",
+    "embedding": null,
+    "metadata": {
+      "length": 780,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "관련",
+        "데이터",
+        "법률",
+        "팩토리",
+        "설비",
+        "환경",
+        "동시에",
+        "예를",
+        "들어"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 22,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_64",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 64,
+    "chunk_type": "text",
+    "location": "page:23",
+    "content": "Part 7\n스마트 야드 관련 규제\n정책적 \n측면\n지원 사업 참여 조건\n일정 수준의 역량을 갖추거나 특정한 조건을 충족해야 함. 이러한 참여 조건은 일종\n의 규제로 작용할 수 있지만, 목표 달성을 위한 기준을 제시하고 사업의 효과성을 높\n이기 위한 목적을 가짐. (예) 스마트공장 구축 완료 시 일정 수준 이상의 스마트화 수\n준을 달성해야 정부 지원금을 환수할 수 있다는 조건 등\n표준화 및 상호운용\n성 확보 노력\n정부는 스마트 팩토리 관련 기술 및 데이터의 표준화, 그리고 시스템 간 상호운용성 \n확보를 위한 정책을 추진하고 있음. 이는 개별 기업에게 자율성을 제한하는 것처럼 \n보일 수 있지만, 장기적으로는 효율성을 높이고 생태계 발전을 촉진하기 위한 방향임\n보안 및 사이버 안전\n스마트 팩토리는 네트워크로 연결된 시스템이므로 사이버 공격의 위험에 노출될 수 \n있음. 정부는 스마트 팩토리의 보안 강화를 위한 정책 및 가이드라인을 제시하고 있\n으며, 이는 기업들이 보안 시스템 구축에 투자하고 관련 규정을 준수하도록 요구하는 \n간접적인 규제로 작용할 수 있음\n그 외 \n고려 \n사항\n노동 관련 규제\n스마트 팩토리 도입으로 인해 인력 구조 변화가 발생할 수 있으며, 이는 기존의 노동 \n관련 법규 및 노사 관계에 영향을 미칠 수 있음. 자동화 도입 시 근로자 보호, 고용 안\n정 등에 대한 고려가 필요\n관련된 법률 및 정책 방향 속에서 고려해야 할 사항이나 간접적인 영향을 주는 요소들이 존재",
+    "embedding": null,
+    "metadata": {
+      "length": 723,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "관련",
+        "위한",
+        "있음",
+        "이는",
+        "보안",
+        "규제",
+        "참여",
+        "조건",
+        "일정"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 23,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_65",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 65,
+    "chunk_type": "text",
+    "location": "page:24",
+    "content": "Part 7\n정책 도출 방안과 방향성\n스마트 야드 구축 및 운영 분야의 전문 인력 양성 사업\n산학연 협력\n대학, 연구기관, 기업 간의 협력을 통해 교육과정 개발 및 운영, 현장실습기회 제공\n수요 맞춤형 교육\n현장의 수요를 반영한 교육과정을 개발하여 졸업생들이 현장에 즉시 투입될 수 있도록 지원\n재직자 역량 강화\n조선소 현장 실무자들의 스마트 야드 관련 기술역량 강화를 위한 교육 프로그램 운영\n교육 인프라 구축\n스마트 야드 관련 실습 장비 및 시설 구축을 지원\n미래혁신인재양성\n센터\n민관 협력으로 설립. 조선 산업 재직자와 재학생을 대상으로 스마트 야드 관련 교육을 제공\nAI·빅데이터, 친환경 선박, 자율운항 선박, 스마트 야드를 4대 핵심 기술 분야로 선정하여 \n맞춤형 교육 커리큘럼 운영\n수도권(HD현대 GRC)과 동남권(삼성중공업 DT캠퍼스)에 교육 거점 마련. 지역별 특화 시설을 \n활용한 현장 맞춤형 프로젝트 실습 기회 제공\n스마트야드 전문  \n인력 양성 사업\n전문 인력 양성(학사/석사) 산·학·연 프로젝트 추진. 재직자 대상 단기 전문 교육 과정운영. 인력 \n양성 센터 확대: 수도권, 동남권 등 지역별 조선 인력 양성의 허브 역할\nK-조선 재도약 전략\n정부 전략의 일환으로, 스마트 야드 구축을 위한 기술 개발 및 인력 양성을 중요 과제로 추진\n기자재 생산 디지털화, 저·무탄소 선박, 자율운항 선박,스마트 야드를 핵심 분야로 육성\n< 추진 방식 >\n< 주요 사업>",
+    "embedding": null,
+    "metadata": {
+      "length": 718,
+      "chunk_in_content": 0,
+      "keywords": [
+        "스마트",
+        "인력",
+        "교육",
+        "야드",
+        "운영",
+        "전문",
+        "양성",
+        "선박",
+        "사업",
+        "제공"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 24,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_66",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 66,
+    "chunk_type": "text",
+    "location": "page:25",
+    "content": "Part 8\n미래 조선소의 모습\n완전 자동화, 무인화 조선소 전망: \n생산 공정 자동화, 원격 제어 시스템 도입 확대\n디지털 플랫폼 기반 협업 생태계 구축: \n설계, 생산, 영업 등 전 부서 디지털 플랫폼 통해 \n실시간 정보 공유 및 협업 강화\n친환경 스마트 야드 구현: \n에너지 효율 향상 시스템 도입, 친환경 선박 \n건조 기술 개발\n지속가능한 조선소에 대한 비전 제시: \n스마트 야드 기술 통해 조선 산업 경쟁력 강화 \n및 지속 가능한 발전 추구",
+    "embedding": null,
+    "metadata": {
+      "length": 251,
+      "chunk_in_content": 0,
+      "keywords": [
+        "자동화",
+        "생산",
+        "시스템",
+        "도입",
+        "디지털",
+        "플랫폼",
+        "협업",
+        "통해",
+        "강화",
+        "친환경"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 25,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_67",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 67,
+    "chunk_type": "image",
+    "location": "page:25",
+    "content": "[Image xref 113]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "113"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 25,
+      "image_index": 113,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_68",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 68,
+    "chunk_type": "text",
+    "location": "page:26",
+    "content": "Part 8\n미래 조선소의 모습 : 외업\nhttps://youtu.be/yG35uwFM5Dg?si=dGuBDfF-fXtn0r4i\nhttps://youtu.be/yG35\nuwFM5Dg?si=dGuBDf\nF-fXtn0r4i\n외업 권역 : 옥내화 / 자동화 / 기피업무 경감 / 휴머노이드 \nhttps://youtu.be/EY3_lODN7iA?si=6Y1r4DhrYD7667fut=31\nhttps://youtu.be/EY3_lODN\n7iA?si=6Y1r4DhrYD7667fu\n&t=31\n옥내화의 범위와 한계는?\n조선용 휴머노이드의 요건은? \n도입 분야와 순서는?",
+    "embedding": null,
+    "metadata": {
+      "length": 311,
+      "chunk_in_content": 0,
+      "keywords": [
+        "https",
+        "youtu",
+        "be",
+        "si",
+        "외업",
+        "fXtn0r4i",
+        "EY3",
+        "31",
+        "Part",
+        "미래"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 26,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_69",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 69,
+    "chunk_type": "image",
+    "location": "page:26",
+    "content": "[Image xref 117]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "117"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 26,
+      "image_index": 117,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_70",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 70,
+    "chunk_type": "image",
+    "location": "page:26",
+    "content": "[Image xref 118]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "118"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 26,
+      "image_index": 118,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_71",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 71,
+    "chunk_type": "image",
+    "location": "page:26",
+    "content": "[Image xref 119]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "119"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 26,
+      "image_index": 119,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_72",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 72,
+    "chunk_type": "image",
+    "location": "page:26",
+    "content": "[Image xref 120]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "120"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 26,
+      "image_index": 120,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_73",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 73,
+    "chunk_type": "text",
+    "location": "page:27",
+    "content": "Part 8\n미래 조선소의 모습 : 로봇 활용\n조선생산에서 자동화/무인화된 \n공장운영이 어디까지 가능한가? \n= 대형중량물 대상으로 \n옥내화,라인화의 물리적 수준, \n경제적 수준은 어디인가?\n한 두 공장만 무인화해도 야드 \n전체의 생산성이 올라가는가? \n외업에 \n휴머노이드/4족보행로봇은 \n어디까지 가능한가? \n작업장소까지 로봇을 운반하는 \n일은? 전력공급은? \n스마트팜(딸기농장)은 \n완전자동화되었는가?",
+    "embedding": null,
+    "metadata": {
+      "length": 226,
+      "chunk_in_content": 0,
+      "keywords": [
+        "어디까지",
+        "가능한가",
+        "Part",
+        "미래",
+        "조선소의",
+        "모습",
+        "로봇",
+        "활용",
+        "조선생산에서",
+        "자동화"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 27,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_74",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 74,
+    "chunk_type": "image",
+    "location": "page:27",
+    "content": "[Image xref 123]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "123"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 27,
+      "image_index": 123,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_75",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 75,
+    "chunk_type": "image",
+    "location": "page:27",
+    "content": "[Image xref 124]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "124"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 27,
+      "image_index": 124,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_76",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 76,
+    "chunk_type": "text",
+    "location": "page:28",
+    "content": "Part 8\n미래 조선소의 모습 : AI에 의한 운영\nhttps://youtu.be/xsGjBw_-zsI?si=xJA1sHk0dCl5HOa_\nhttps://youtu.be/naELAIw5xFE?si=WLE0mRXadnlkUt_R\nhttps://youtu.be/gbTN8zE7kkY?si=CmlPR6DwlE7F5cYe\nhttps://youtu.be/Xt_RLNx1eBM?si=PSBGBFS891zE22gk\nAI development & operation platform",
+    "embedding": null,
+    "metadata": {
+      "length": 261,
+      "chunk_in_content": 0,
+      "keywords": [
+        "https",
+        "youtu",
+        "be",
+        "si",
+        "Part",
+        "미래",
+        "조선소의",
+        "모습",
+        "AI에",
+        "의한"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 28,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_77",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 77,
+    "chunk_type": "image",
+    "location": "page:28",
+    "content": "[Image xref 134]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "134"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 28,
+      "image_index": 134,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_78",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 78,
+    "chunk_type": "image",
+    "location": "page:28",
+    "content": "[Image xref 135]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "135"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 28,
+      "image_index": 135,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_79",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 79,
+    "chunk_type": "image",
+    "location": "page:28",
+    "content": "[Image xref 136]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "136"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 28,
+      "image_index": 136,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_80",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 80,
+    "chunk_type": "image",
+    "location": "page:28",
+    "content": "[Image xref 130]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "130"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 28,
+      "image_index": 130,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_81",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 81,
+    "chunk_type": "image",
+    "location": "page:28",
+    "content": "[Image xref 131]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "131"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 28,
+      "image_index": 131,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_82",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 82,
+    "chunk_type": "image",
+    "location": "page:28",
+    "content": "[Image xref 132]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "132"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 28,
+      "image_index": 132,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_83",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 83,
+    "chunk_type": "image",
+    "location": "page:28",
+    "content": "[Image xref 133]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "133"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 28,
+      "image_index": 133,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_text_84",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 84,
+    "chunk_type": "text",
+    "location": "page:29",
+    "content": "Part 8\n미래 조선소의 모습 : Industrial AI\nhttps://youtu.be/TqwASxK4Sag?si=VM5RJr\nmVq-t6qx9-\nhttps://youtu.be/BxkBRd3QEDs?si=l7a13Edxmj\nPXXMeF\nhttps://youtu.be/OuYDBzEkCHE?si=1lx\np8VZOrLZjcBYo\nhttps://youtu.be/WgZj5Fp_qXc?si=cHdo8\n-1_3GWzkLdq\nhttps://youtu.be/HlzTLigYNUI?si=X5PZG\n2XH8NAxILk7",
+    "embedding": null,
+    "metadata": {
+      "length": 283,
+      "chunk_in_content": 0,
+      "keywords": [
+        "https",
+        "youtu",
+        "be",
+        "si",
+        "Part",
+        "미래",
+        "조선소의",
+        "모습",
+        "Industrial",
+        "AI"
+      ],
+      "quality_score": 0.8999999999999999,
+      "search_priority": "high",
+      "data_type": "text",
+      "page": 29,
+      "chunking_method": "page"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_85",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 85,
+    "chunk_type": "image",
+    "location": "page:29",
+    "content": "[Image xref 149]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "149"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 29,
+      "image_index": 149,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_86",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 86,
+    "chunk_type": "image",
+    "location": "page:29",
+    "content": "[Image xref 150]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "150"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 29,
+      "image_index": 150,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_87",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 87,
+    "chunk_type": "image",
+    "location": "page:29",
+    "content": "[Image xref 151]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "151"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 29,
+      "image_index": 151,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_88",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 88,
+    "chunk_type": "image",
+    "location": "page:29",
+    "content": "[Image xref 148]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "148"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 29,
+      "image_index": 148,
+      "chunking_method": "adaptive"
+    }
+  },
+  {
+    "chunk_id": "DR_스마트야드개론(데모용)_image_89",
+    "document_id": "DR_스마트야드개론(데모용)",
+    "chunk_index": 89,
+    "chunk_type": "image",
+    "location": "page:29",
+    "content": "[Image xref 152]",
+    "embedding": null,
+    "metadata": {
+      "length": 16,
+      "chunk_in_content": 0,
+      "keywords": [
+        "Image",
+        "xref",
+        "152"
+      ],
+      "quality_score": 0.55,
+      "search_priority": "medium",
+      "data_type": "text",
+      "page": 29,
+      "image_index": 152,
+      "chunking_method": "adaptive"
     }
   }
 ]
