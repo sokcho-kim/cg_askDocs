@@ -6,13 +6,16 @@ RAG 시스템의 검색 및 검색 결과 처리 모듈
 import json
 from typing import List, Dict, Any, Optional
 from pathlib import Path
-import chromadb
-from chromadb.config import Settings
 import numpy as np
+import faiss
+import openai
 import os
-import requests
-from dotenv import load_dotenv
-load_dotenv()
+# import chromadb  # (Chroma 관련 의존성, 주석 처리)
+# from chromadb.config import Settings
+# import chromadb.utils.embedding_functions
+# import requests
+# from dotenv import load_dotenv
+# load_dotenv()
 
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 
@@ -38,22 +41,22 @@ class EnhancedRetriever:
         self.db_path.mkdir(parents=True, exist_ok=True)
         
         # ChromaDB 클라이언트 초기화
-        self.client = chromadb.PersistentClient(
-            path=str(self.db_path),
-            settings=Settings(anonymized_telemetry=False)
-        )
+        # self.client = chromadb.PersistentClient(
+        #     path=str(self.db_path),
+        #     settings=Settings(anonymized_telemetry=False)
+        # )
         
         # 컬렉션 이름
         self.collection_name = "documents"
         
         # 컬렉션 가져오기 또는 생성
-        try:
-            self.collection = self.client.get_collection(self.collection_name)
-        except:
-            self.collection = self.client.create_collection(
-                name=self.collection_name,
-                metadata={"description": "Document chunks for RAG system"}
-            )
+        # try:
+        #     self.collection = self.client.get_collection(self.collection_name)
+        # except:
+        #     self.collection = self.client.create_collection(
+        #         name=self.collection_name,
+        #         metadata={"description": "Document chunks for RAG system"}
+        #     )
     
     def add_chunks(self, chunks: List[Dict[str, Any]]):
         """청크들을 벡터 DB에 추가합니다."""
@@ -80,11 +83,11 @@ class EnhancedRetriever:
         
         # 벡터 DB에 추가 (ChromaDB가 자동으로 임베딩 생성)
         if ids:
-            self.collection.add(
-                ids=ids,
-                documents=documents,
-                metadatas=metadatas
-            )
+            # self.collection.add(
+            #     ids=ids,
+            #     documents=documents,
+            #     metadatas=metadatas
+            # )
             print(f"[✓] {len(ids)}개 청크를 벡터 DB에 추가했습니다.")
     
     def _convert_metadata_for_chroma(self, metadata: Dict[str, Any]) -> Dict[str, Any]:
@@ -120,78 +123,78 @@ class EnhancedRetriever:
             return []
         
         # 모든 문서 가져오기
-        all_docs = self.collection.get()
+        # all_docs = self.collection.get()
         
         # 키워드 매칭 점수 계산
         scored_results = []
-        if all_docs['metadatas']:
-            for i, metadata in enumerate(all_docs['metadatas']):
-                if not metadata:
-                    continue
+        # if all_docs['metadatas']:
+        #     for i, metadata in enumerate(all_docs['metadatas']):
+        #         if not metadata:
+        #             continue
                     
-                # keywords 필드를 문자열에서 리스트로 파싱
-                keywords_str = metadata.get('keywords', '')
-                if isinstance(keywords_str, str):
-                    try:
-                        # JSON 문자열인 경우 파싱
-                        if keywords_str.startswith('[') and keywords_str.endswith(']'):
-                            import json
-                            chunk_keywords = json.loads(keywords_str)
-                        else:
-                            # 쉼표로 구분된 문자열인 경우
-                            chunk_keywords = [kw.strip() for kw in keywords_str.split(',') if kw.strip()]
-                    except:
-                        # 파싱 실패시 쉼표로 분리
-                        chunk_keywords = [kw.strip() for kw in keywords_str.split(',') if kw.strip()]
-                else:
-                    chunk_keywords = []
+        #         # keywords 필드를 문자열에서 리스트로 파싱
+        #         keywords_str = metadata.get('keywords', '')
+        #         if isinstance(keywords_str, str):
+        #             try:
+        #                 # JSON 문자열인 경우 파싱
+        #                 if keywords_str.startswith('[') and keywords_str.endswith(']'):
+        #                     import json
+        #                     chunk_keywords = json.loads(keywords_str)
+        #                 else:
+        #                     # 쉼표로 구분된 문자열인 경우
+        #                     chunk_keywords = [kw.strip() for kw in keywords_str.split(',') if kw.strip()]
+        #             except:
+        #                 # 파싱 실패시 쉼표로 분리
+        #                 chunk_keywords = [kw.strip() for kw in keywords_str.split(',') if kw.strip()]
+        #         else:
+        #             chunk_keywords = []
                 
-                if not chunk_keywords:
-                    continue
+        #         if not chunk_keywords:
+        #             continue
                 
-                # 키워드 매칭 점수 계산
-                matches = set(query_keywords) & set(chunk_keywords)
-                if matches:
-                    score = len(matches) / len(query_keywords)
-                    quality_score = metadata.get('quality_score', 0)
-                    if not isinstance(quality_score, (int, float)):
-                        quality_score = 0
+        #         # 키워드 매칭 점수 계산
+        #         matches = set(query_keywords) & set(chunk_keywords)
+        #         if matches:
+        #             score = len(matches) / len(query_keywords)
+        #             quality_score = metadata.get('quality_score', 0)
+        #             if not isinstance(quality_score, (int, float)):
+        #                 quality_score = 0
                     
-                    # 최종 점수 = 키워드 매칭 점수 * 품질 점수
-                    final_score = score * quality_score
+        #             # 최종 점수 = 키워드 매칭 점수 * 품질 점수
+        #             final_score = score * quality_score
                     
-                    scored_results.append({
-                        'chunk_id': all_docs['ids'][i],
-                        'content': all_docs['documents'][i],
-                        'metadata': metadata,
-                        'score': final_score,
-                        'keyword_matches': list(matches)
-                    })
+        #             scored_results.append({
+        #                 'chunk_id': all_docs['ids'][i],
+        #                 'content': all_docs['documents'][i],
+        #                 'metadata': metadata,
+        #                 'score': final_score,
+        #                 'keyword_matches': list(matches)
+        #             })
         
         # 점수 순으로 정렬
-        scored_results.sort(key=lambda x: x['score'], reverse=True)
+        # scored_results.sort(key=lambda x: x['score'], reverse=True)
         
         return scored_results[:n_results]
     
     def semantic_search(self, query: str, n_results: int = 5) -> List[Dict[str, Any]]:
         """의미적 검색 (벡터 유사도)"""
         try:
-            results = self.collection.query(
-                query_texts=[query],
-                n_results=n_results
-            )
+            # results = self.collection.query(
+            #     query_texts=[query],
+            #     n_results=n_results
+            # )
             
             # 결과를 표준 형식으로 변환
             formatted_results = []
-            if results['ids'] and results['ids'][0]:  # 결과가 있는 경우
-                for i in range(len(results['ids'][0])):
-                    formatted_results.append({
-                        'chunk_id': results['ids'][0][i],
-                        'content': results['documents'][0][i],
-                        'metadata': results['metadatas'][0][i] if results['metadatas'] and results['metadatas'][0] else {},
-                        'distance': results['distances'][0][i] if 'distances' in results and results['distances'] and results['distances'][0] else None,
-                        'score': 1 - (results['distances'][0][i] if 'distances' in results and results['distances'] and results['distances'][0] else 0)
-                    })
+            # if results['ids'] and results['ids'][0]:  # 결과가 있는 경우
+            #     for i in range(len(results['ids'][0])):
+            #         formatted_results.append({
+            #             'chunk_id': results['ids'][0][i],
+            #             'content': results['documents'][0][i],
+            #             'metadata': results['metadatas'][0][i] if results['metadatas'] and results['metadatas'][0] else {},
+            #             'distance': results['distances'][0][i] if 'distances' in results and results['distances'] and results['distances'][0] else None,
+            #             'score': 1 - (results['distances'][0][i] if 'distances' in results and results['distances'] and results['distances'][0] else 0)
+            #         })
             
             return formatted_results
         except Exception as e:
@@ -292,13 +295,14 @@ class EnhancedRetriever:
     def get_chunk_by_id(self, chunk_id: str) -> Optional[Dict[str, Any]]:
         """청크 ID로 특정 청크 조회"""
         try:
-            result = self.collection.get(ids=[chunk_id])
-            if result['ids']:
-                return {
-                    'chunk_id': result['ids'][0],
-                    'content': result['documents'][0],
-                    'metadata': result['metadatas'][0] if result['metadatas'] else {}
-                }
+            # result = self.collection.get(ids=[chunk_id])
+            # if result['ids']:
+            #     return {
+            #         'chunk_id': result['ids'][0],
+            #         'content': result['documents'][0],
+            #         'metadata': result['metadatas'][0] if result['metadatas'] else {}
+            #     }
+            pass # Chroma 관련 코드 대체
         except:
             pass
         return None
@@ -306,65 +310,154 @@ class EnhancedRetriever:
     def get_collection_stats(self) -> Dict[str, Any]:
         """컬렉션 통계 정보 반환"""
         try:
-            count = self.collection.count()
+            # count = self.collection.count()
             # 품질 점수 통계
-            all_metadata = self.collection.get()
-            if all_metadata and 'metadatas' in all_metadata and all_metadata['metadatas']:
-                # Only include int/float values for quality_score
-                quality_scores = [meta.get('quality_score', 0) for meta in all_metadata['metadatas'] if meta and isinstance(meta.get('quality_score', 0), (int, float))]
-            else:
-                quality_scores = []
-            # sum 등 모든 연산에서 int/float만 사용
-            numeric_scores = [s for s in quality_scores if isinstance(s, (int, float))]
-            stats = {
-                'total_chunks': count,
-                'avg_quality_score': sum(numeric_scores) / len(numeric_scores) if numeric_scores else 0,
-                'high_quality_chunks': len([s for s in numeric_scores if s > 0.7]),
-                'medium_quality_chunks': len([s for s in numeric_scores if 0.4 <= s <= 0.7]),
-                'low_quality_chunks': len([s for s in numeric_scores if s < 0.4])
-            }
-            return stats
+            # all_metadata = self.collection.get()
+            # if all_metadata and 'metadatas' in all_metadata and all_metadata['metadatas']:
+            #     # Only include int/float values for quality_score
+            #     quality_scores = [meta.get('quality_score', 0) for meta in all_metadata['metadatas'] if meta and isinstance(meta.get('quality_score', 0), (int, float))]
+            # else:
+            #     quality_scores = []
+            # # sum 등 모든 연산에서 int/float만 사용
+            # numeric_scores = [s for s in quality_scores if isinstance(s, (int, float))]
+            # stats = {
+            #     'total_chunks': count,
+            #     'avg_quality_score': sum(numeric_scores) / len(numeric_scores) if numeric_scores else 0,
+            #     'high_quality_chunks': len([s for s in numeric_scores if s > 0.7]),
+            #     'medium_quality_chunks': len([s for s in numeric_scores if 0.4 <= s <= 0.7]),
+            #     'low_quality_chunks': len([s for s in numeric_scores if s < 0.4])
+            # }
+            # return stats
+            pass # Chroma 관련 코드 대체
         except Exception as e:
             return {'error': str(e)}
     
     def clear_collection(self):
         """컬렉션의 모든 데이터 삭제"""
         try:
-            self.client.delete_collection(self.collection_name)
-            self.collection = self.client.create_collection(
-                name=self.collection_name,
-                metadata={"description": "Document chunks for RAG system"}
-            )
+            # self.client.delete_collection(self.collection_name)
+            # self.collection = self.client.create_collection(
+            #     name=self.collection_name,
+            #     metadata={"description": "Document chunks for RAG system"}
+            # )
             print(f"[✓] 컬렉션 '{self.collection_name}'을 초기화했습니다.")
         except Exception as e:
             print(f"[❌] 컬렉션 초기화 실패: {e}")
 
 
-# 사용 예시
-if __name__ == "__main__":
-    retriever = EnhancedRetriever()
-    
-    # 검색 테스트
-    query = "스마트 야드 자동화"
-    print(f"[🔍] 검색 쿼리: {query}")
-    
-    # 다양한 검색 방법 테스트
-    print("\n1. 하이브리드 검색:")
-    results = retriever.hybrid_search(query, 3)
-    for i, result in enumerate(results, 1):
-        print(f"  {i}. {result['chunk_id']} (점수: {result['final_score']:.3f})")
-    
-    print("\n2. 품질 필터링 검색:")
-    results = retriever.quality_filtered_search(query, 3, min_quality_score=0.6)
-    for i, result in enumerate(results, 1):
-        print(f"  {i}. {result['chunk_id']} (품질: {result['metadata'].get('quality_score', 0):.2f})")
-    
-    print("\n3. 우선순위 검색:")
-    results = retriever.search_by_priority(query, 3)
-    for i, result in enumerate(results, 1):
-        priority = result['metadata'].get('search_priority', 'low')
-        print(f"  {i}. {result['chunk_id']} (우선순위: {priority})")
-    
-    # 통계 정보
-    stats = retriever.get_collection_stats()
-    print(f"\n📊 컬렉션 통계: {stats}")
+# ---- FAISS Retriever (경량화 버전) ----
+# class FaissRetriever:
+#     def __init__(self, embedding_function):
+#         self.embedding_function = embedding_function
+#         self.index = None
+#         self.id_to_chunk = {}
+
+#     def index_chunks(self, chunks):
+#         embeddings = np.array([self.embedding_function(c['content']) for c in chunks]).astype('float32')
+#         self.index = faiss.IndexFlatL2(embeddings.shape[1])
+#         self.index.add(embeddings)
+#         for i, chunk in enumerate(chunks):
+#             self.id_to_chunk[i] = chunk
+
+#     def search(self, query, top_k=3):
+#         query_emb = np.array([self.embedding_function(query)]).astype('float32')
+#         D, I = self.index.search(query_emb, top_k)
+#         return [self.id_to_chunk[i] for i in I[0]]
+
+# ---- ChromaRetriever (main 방식) ----
+# class ChromaRetriever:
+#     def __init__(self, embedding_function=None):
+#         self.client = chromadb.Client()
+#         self.collection = self.client.get_or_create_collection("documents")
+#         if embedding_function is None:
+#             self.embedding_function = chromadb.utils.embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
+#         else:
+#             self.embedding_function = embedding_function
+
+#     def _convert_metadata_for_chroma(self, metadata):
+#         import json
+#         chroma_metadata = {}
+#         for key, value in metadata.items():
+#             if isinstance(value, list) or isinstance(value, dict):
+#                 chroma_metadata[key] = json.dumps(value, ensure_ascii=False)
+#             elif isinstance(value, (str, int, float, bool)) or value is None:
+#                 chroma_metadata[key] = value
+#             else:
+#                 chroma_metadata[key] = str(value)
+#         return chroma_metadata
+
+#     def index_chunks(self, chunks):
+#         ids = [str(i) for i in range(len(chunks))]
+#         documents = [c['content'] for c in chunks]
+#         metadatas = [self._convert_metadata_for_chroma(c.get('metadata', {})) for c in chunks]
+#         all_ids = self.collection.get()['ids']
+#         if all_ids:
+#             self.collection.delete(ids=all_ids)
+#         self.collection.add(ids=ids, documents=documents, metadatas=metadatas)
+
+#     def search(self, query, top_k=3):
+#         results = self.collection.query(query_texts=[query], n_results=top_k)
+#         hits = []
+#         for i in range(len(results['ids'][0])):
+#             hit = {
+#                 'content': results['documents'][0][i],
+#                 'metadata': results['metadatas'][0][i],
+#                 'id': results['ids'][0][i],
+#                 'distance': results['distances'][0][i] if 'distances' in results else None
+#             }
+#             hits.append(hit)
+#         return hits
+
+# ---- 외부 임베딩 API 래퍼 ----
+# import openai
+
+# def get_embedding_function():
+#     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#     client = openai.OpenAI(api_key=OPENAI_API_KEY)
+#     def embed(text):
+#         response = client.embeddings.create(
+#             input=text,
+#             model="text-embedding-ada-002"
+#         )
+#         return response.data[0].embedding
+#     return embed
+
+# ---- FAISS + OpenAI 임베딩만 동작 ----
+def get_embedding_function():
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    client = openai.OpenAI(api_key=OPENAI_API_KEY)
+    def embed_batch(texts):
+        response = client.embeddings.create(
+            input=texts,
+            model="text-embedding-ada-002"
+        )
+        return [d.embedding for d in response.data]
+    return embed_batch
+
+class FaissRetriever:
+    def __init__(self, embedding_function):
+        self.embedding_function = embedding_function
+        self.index = None
+        self.id_to_chunk = {}
+
+    def index_chunks(self, chunks):
+        texts = [c['content'] for c in chunks]
+        embeddings = np.array(self.embedding_function(texts)).astype('float32')
+        self.index = faiss.IndexFlatL2(embeddings.shape[1])
+        self.index.add(embeddings)
+        for i, chunk in enumerate(chunks):
+            self.id_to_chunk[i] = chunk
+
+    def search(self, query, top_k=3):
+        query_emb = np.array(self.embedding_function([query])).astype('float32')
+        D, I = self.index.search(query_emb, top_k)
+        return [self.id_to_chunk[i] for i in I[0]]
+
+# ---- Chroma 관련 코드(주석/패싱) ----
+# class ChromaRetriever:
+#     def __init__(self, embedding_function=None):
+#         pass
+#     def index_chunks(self, chunks):
+#         pass
+#     def search(self, query, top_k=3):
+#         return []

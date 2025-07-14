@@ -1,30 +1,7 @@
-# fastapi
-# uvicorn
-# pandas
-# openpyxl
-# pymupdf
-# chromadb
-# sentence-transformers
-# requests
-# python-dotenv
-# openai
-# jinja2
-
-# 필수 패키지
-fastapi
-uvicorn
-pandas
-openpyxl
-pymupdf  # fitz의 PyPI 패키지명
-requests
-python-dotenv
-openai
-jinja2
-numpy==1.26.4
-chromadb==0.4.24  # ← 버전 고정 필수
-sentence-transformers
-python-multipart
-httpx
-
-# 기타 (필요시)
-# shutil, base64, argparse 등은 표준 라이브러리이므로 별도 설치 불필요
+faiss-cpu         # FAISS 벡터 DB
+openai            # OpenAI Embedding API
+numpy             # 벡터 연산
+# chromadb        # (ChromaDB, 주석 처리)
+# sentence-transformers  # (로컬 임베딩, 주석 처리)
+# requests        # (HuggingFace API 등, 주석 처리)
+# python-dotenv   # (환경변수 로딩, 주석 처리)
