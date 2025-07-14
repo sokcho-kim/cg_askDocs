@@ -25,6 +25,7 @@ PDF 파일을 다양한 방식으로 청킹하여 텍스트, 표, 이미지 청�
 import sys
 from pathlib import Path
 from typing import Literal
+import os
 
 # 프로젝트 루트를 Python 경로에 추가
 project_root = Path(__file__).parent.parent
@@ -54,6 +55,9 @@ def parse_pdf_to_chunks(
             - "section": 섹션 단위 (제목 기반 분할)
             - "adaptive": 적응형 (내용에 따라 자동 선택)
     """
+    # 1. 문서 ID 자동 생성
+    if document_id is None:
+        document_id = os.path.splitext(os.path.basename(pdf_path))[0]
     # 1. 문서 객체 생성
     doc = PDFDocument(pdf_path)
     
@@ -135,7 +139,7 @@ def compare_chunking_methods(pdf_path: str, output_dir: str = "data/processed"):
             chunks = parse_pdf_to_chunks(
                 pdf_path=pdf_path,
                 output_path=output_path,
-                document_id=f"smart_yard_intro_{method}",
+                document_id=f"pdf_{method}",
                 chunking_method=method
             )
             results[method] = {

@@ -16,6 +16,27 @@ sys.path.append(str(project_root))
 
 from rag.retriever import EnhancedRetriever
 
+# --- smart_filter 함수 추가 ---
+def is_duplicate(content, seen=None):
+    if seen is None:
+        seen = set()
+    key = content.strip()[:50]
+    if key in seen:
+        return True
+    seen.add(key)
+    return False
+
+def smart_filter(results, score_threshold=0.4, min_length=50):
+    seen = set()
+    filtered = []
+    for r in results:
+        if (
+            r.get("score", 0) >= score_threshold
+            and len(r.get("content", "")) >= min_length
+            and not is_duplicate(r["content"], seen)
+        ):
+            filtered.append(r)
+    return filtered
 
 class RAGChatbot:
     """향상된 검색 기능을 활용하는 RAG 챗봇"""
@@ -64,7 +85,7 @@ class RAGChatbot:
         Returns:
             검색된 컨텍스트 리스트
         """
-        n_results = kwargs.get('n_results', 5)
+        n_results = kwargs.get('n_results', 10)
         
         if search_method == "enhanced":
             return self._enhanced_search(query, n_results)
@@ -159,21 +180,19 @@ class RAGChatbot:
     
     def generate_response(self, query: str, contexts: List[Dict[str, Any]]) -> str:
         """컨텍스트를 바탕으로 응답을 생성합니다."""
-        if not contexts:
-            return "죄송합니다. 질문에 대한 관련 정보를 찾을 수 없습니다."
-        
-        # Gemma API 사용 가능한 경우
-        if self.llm_available:
-            try:
-                prompt = self._build_llm_prompt(query, contexts)
-                response = self._call_gemma_api(prompt)
-                if response:
-                    return response
-            except Exception as e:
-                print(f"Gemma API 호출 실패, 대체 답변 사용: {e}")
-        
-        # Gemma API 사용이 불가능한 경우 또는 실패한 경우
-        return self._generate_simple_response(query, contexts)
+        filtered = smart_filter(contexts)
+        if not filtered:
+            return "관련 정보를 찾을 수 없습니다."
+        answer = "질문에 가장 관련 있는 정보:\n"
+        for ctx in filtered[:3]:
+            chunk_id = ctx.get('chunk_id', 'unknown')
+            metadata = ctx.get('metadata', {})
+            doc_name = chunk_id.split('_')[0] if '_' in chunk_id else chunk_id
+            location = metadata.get('location', '')
+            answer += f"[문서: {doc_name} | 위치: {location}]\n"
+            answer += f"내용: {ctx['content'][:300]}...\n"
+        answer += "\n더 구체적인 질문이 있으시면 말씀해 주세요."
+        return answer
     
     def _build_llm_prompt(self, query: str, contexts: List[Dict[str, Any]]) -> str:
         """LLM용 프롬프트를 생성합니다."""
