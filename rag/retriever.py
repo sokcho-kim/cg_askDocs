@@ -9,13 +9,21 @@ from pathlib import Path
 import chromadb
 from chromadb.config import Settings
 import numpy as np
-from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
+import os
+import requests
+from dotenv import load_dotenv
+load_dotenv()
 
-embedding_function = SentenceTransformerEmbeddingFunction(
-    model_name="all-MiniLM-L6-v2",
-    device="cpu",
-    use_onnx=False  # ✅ 이거 꼭 추가!
-)
+HF_API_TOKEN = os.getenv("HF_API_TOKEN")
+
+
+def get_bge_m3_embedding(text):
+    url = "https://api-inference.huggingface.co/pipeline/feature-extraction/BAAI/bge-m3"
+    headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
+    payload = {"inputs": text}
+    response = requests.post(url, headers=headers, json=payload)
+    response.raise_for_status()
+    return response.json()[0]
 
 
 class EnhancedRetriever:
@@ -299,19 +307,22 @@ class EnhancedRetriever:
         """컬렉션 통계 정보 반환"""
         try:
             count = self.collection.count()
-            
             # 품질 점수 통계
-            all_metadata = self.collection.get()['metadatas']
-            quality_scores = [meta.get('quality_score', 0) for meta in all_metadata if meta]
-            
+            all_metadata = self.collection.get()
+            if all_metadata and 'metadatas' in all_metadata and all_metadata['metadatas']:
+                # Only include int/float values for quality_score
+                quality_scores = [meta.get('quality_score', 0) for meta in all_metadata['metadatas'] if meta and isinstance(meta.get('quality_score', 0), (int, float))]
+            else:
+                quality_scores = []
+            # sum 등 모든 연산에서 int/float만 사용
+            numeric_scores = [s for s in quality_scores if isinstance(s, (int, float))]
             stats = {
                 'total_chunks': count,
-                'avg_quality_score': sum(quality_scores) / len(quality_scores) if quality_scores else 0,
-                'high_quality_chunks': len([s for s in quality_scores if s > 0.7]),
-                'medium_quality_chunks': len([s for s in quality_scores if 0.4 <= s <= 0.7]),
-                'low_quality_chunks': len([s for s in quality_scores if s < 0.4])
+                'avg_quality_score': sum(numeric_scores) / len(numeric_scores) if numeric_scores else 0,
+                'high_quality_chunks': len([s for s in numeric_scores if s > 0.7]),
+                'medium_quality_chunks': len([s for s in numeric_scores if 0.4 <= s <= 0.7]),
+                'low_quality_chunks': len([s for s in numeric_scores if s < 0.4])
             }
-            
             return stats
         except Exception as e:
             return {'error': str(e)}

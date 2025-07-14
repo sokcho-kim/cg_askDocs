@@ -19,9 +19,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 retriever = EnhancedRetriever()
 
-# Gemma API URL 설정
-# gemma_api_url = os.getenv('GEMMA_API_URL')
-
 # === 환경 변수 로드 ===
 import os
 try:
