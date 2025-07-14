@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>RAG 웹 챗봇</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>RAG 문서 챗봇</h2>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">문서 업로드</button>
+    </form>
+    <div id="upload-status"></div>
+    <hr>
+    <div id="chat-box"></div>
+    <form id="chat-form">
+        <input type="text" id="user-input" placeholder="질문을 입력하세요" required>
+        <button type="submit">전송</button>
+    </form>
+    <script>
+        document.getElementById('upload-form').onsubmit = async function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const res = await fetch('/upload', {method: 'POST', body: formData});
+            const data = await res.json();
+            document.getElementById('upload-status').innerText = data.result === 'success'
+                ? `업로드 및 파싱 완료! 청크 수: ${data.chunks}`
+                : `오류: ${data.error}`;
+        };
+        document.getElementById('chat-form').onsubmit = async function(e) {
+            e.preventDefault();
+            const input = document.getElementById('user-input');
+            const userMsg = input.value;
+            addMsg('사용자', userMsg);
+            input.value = '';
+            const res = await fetch('/chat', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: 'query=' + encodeURIComponent(userMsg)
+            });
+            const data = await res.json();
+            addMsg('챗봇', data.response);
+        };
+        function addMsg(sender, msg) {
+            const box = document.getElementById('chat-box');
+            box.innerHTML += `<b>${sender}:</b> ${msg}<br><br>`;
+            box.scrollTop = box.scrollHeight;
+        }
+    </script>
+</body>
+</html> 
