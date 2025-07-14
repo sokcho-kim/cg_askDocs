@@ -63,3 +63,16 @@ cg_askDocs/
     ├── rag_chat.prompt
     └── image_description.prompt
 ```
+
+## ⚠️ ChromaDB 버전 및 DB 파일 관리 주의사항
+
+- 본 프로젝트는 `chromadb==0.4.24` 버전에 맞춰 개발되었습니다. requirements.txt의 버전을 임의로 변경하지 마세요.
+- **ChromaDB 버전을 업그레이드/다운그레이드하거나, 외부에서 생성된 DB 파일을 복사할 경우 반드시 기존 DB 파일(`data/db/chroma/` 내부 파일)을 삭제 후 재생성해야 합니다.**
+- 버전 불일치 또는 DB 파일이 남아 있으면 `sqlite3.OperationalError: no such column: collections.topic` 등 스키마 오류가 발생할 수 있습니다.
+- 오류 발생 시, 아래 명령어로 DB 파일을 삭제 후 서버를 재시작하세요:
+
+```bash
+rm -rf data/db/chroma/*
+```
+
+---

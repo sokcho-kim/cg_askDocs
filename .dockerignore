@@ -1,0 +1,25 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore data and uploaded files
+uploaded_files/
+data/
+
+# Ignore logs, DBs, and large files
+*.db
+*.sqlite3
+*.log
+*.json
+*.csv
+*.xlsx
+*.pdf
+temp.json
+
+# Ignore OS and editor junk
+.DS_Store
+.env
+*.ipynb
+marimo/ 
