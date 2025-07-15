@@ -21,7 +21,9 @@ python-dotenv
 openai
 jinja2
 numpy==1.26.4
-chromadb==0.4.24  # ← 버전 고정 필수
+chromadb==0.4.13
+  # ← 버전 고정 필수 chromadb==0.4.13
+
 sentence-transformers
 python-multipart
 httpx
