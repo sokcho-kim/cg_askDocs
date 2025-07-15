@@ -13,8 +13,8 @@ from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunct
 
 embedding_function = SentenceTransformerEmbeddingFunction(
     model_name="all-MiniLM-L6-v2",
-    device="cpu",
-    use_onnx=False  # ✅ 이거 꼭 추가!
+    # device="cpu",
+    # use_onnx=False  # ✅ 이거 꼭 추가!
 )
 
 
